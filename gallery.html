@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-witdh, initial-scale=1">
+<meta charset="utf-8">
+  <style>
+  body{
+    width: auto;
+  }
+  #items{
+  
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap;
+
+  }
+  .item{
+     display: inline-block;
+     width: 1350px;
+     height: 80px;
+     border:1px solid;
+  }
+  </style>	
+<link href="css/main.css" rel="stylesheet" type="text/css"></link>	
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+<script src="js/menu.js"></script>
+<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
+	<script>
+		$(function() {
+
+		   $("html,body,*").mousewheel(function(event, delta) {
+
+		      this.scrollLeft -= (delta * 30);
+		    
+		      event.preventDefault();
+
+		   });
+
+		});
+	</script>
+
+
+</head>
+
+<body>
+
+
+<div style="position:fixed;">
+<div id="box">
+<div id="text1" class="menu-options" style="margin-left:-200px;margin-top:10px;"><h3>EFFERVESCENCE</h3></div>
+<div id="text2" class="menu-options" style="margin-top:60px;"><a href="index.html">Home</a></div>
+<div id="text3" class="menu-options" style="margin-top:80px;"><a href="#">Events</a></div>
+<div id="text4" class="menu-options" style="margin-top:100px;"><a href="#">Pro Shows</a></div>
+<div id="text5" class="menu-options" style="margin-top:120px;margin-left:-190px;"><a href="gallery.html">gallery</a></div>
+<div id="text6" class="menu-options" style="margin-top:140px;"><a href="contact.html">Contact Us</a></div>
+
+</div>
+<div id="menu">
+Menu
+<img id="btn1" src="image/down.png" style="width:25px;height:15px;margin-left:100px;">
+<img id="btn2" src="image/up.png" style="width:25px;height:15px;">
+
+</div>
+</div>
+
+<div id="items">
+           <div class="item">
+             <img src="image/theme1.jpg" width=1350px height=620px>
+           </div>
+           <div class="item">
+             <img src="image/theme2.jpg" width=1350px height=620px>        
+           </div>
+           <div class="item">
+             <img src="image/theme3.jpg" width=1350px height=620px>
+           </div>
+           <div class="item">
+             <img src="image/theme1.jpg" width=1350px height=620px>
+           </div>
+           <div class="item">
+             <img src="image/theme2.jpg" width=1350px height=620px>
+           </div>
+           <div class="item">
+             <img src="image/theme3.jpg" width=1350px height=620px> 
+           </div>
+        </div>
+ 
+</body>
+</html>

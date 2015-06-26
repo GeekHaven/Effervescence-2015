@@ -1,0 +1,52 @@
+.loader {
+  background-color: #849B53;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index : 3;
+}
+
+#bg {
+  background-image: url('http://i.imgur.com/Cq6K3Uq.jpg');
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height : 50px;
+  width : 100%;
+}
+
+#bar {
+  position : absolute;
+  z-index : 5;
+  top : 50%;
+  background-color : #B24A00;
+  width : 0%;
+  height : 50px;
+  opacity : 0.6;
+}
+
+#num {
+  top : 50%;
+}
+
+#menu{
+	background:black;color:white;width:250px;margin-left:6px;padding:10px;
+	border-radius:5px;
+    border-top: 1px solid yellow;
+}
+#menu:hover{
+	color:#848484;
+}
+#box{
+	background:black;height:0px;width:270px;margin-left:6px;color:white;border-radius:5px;
+}
+.menu-options{
+	position:absolute;margin-left:-130px;
+}
+
+a:link    {color:#E6E6E6; background-color:transparent; text-decoration:none}
+a:visited {color:#E6E6E6; background-color:transparent; text-decoration:none}
+a:hover   {color:#848484; background-color:transparent; text-decoration:none}
+a:active  {color:#E6E6E6; background-color:transparent; text-decoration:none}
