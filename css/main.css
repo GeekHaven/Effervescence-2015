@@ -9,7 +9,7 @@
 }
 
 #bg {
-  background-image: url('http://i.imgur.com/Cq6K3Uq.jpg');
+  background-image: url('../image/loader-bg.jpg');
   position: absolute;
   top: 50%;
   left: 0;
