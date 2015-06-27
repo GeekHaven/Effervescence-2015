@@ -27,23 +27,38 @@
   opacity : 0.6;
 }
 
-#num {
-  top : 50%;
+.nav-menu {
+  position:fixed;
+  z-index:20;
+  margin-top:6px;
 }
 
 #menu{
-	background:black;color:white;width:250px;margin-left:6px;padding:10px;
+	background:black;
+  color:white;
+  width:250px;
+  margin-left:6px;
+  padding:10px;
 	border-radius:5px;
-    border-top: 1px solid yellow;
+  border-top: 1px solid yellow;
 }
+
 #menu:hover{
 	color:#848484;
 }
+
 #box{
-	background:black;height:0px;width:270px;margin-left:6px;color:white;border-radius:5px;
+	background:black;
+  height:0px;
+  width:250px;
+  margin-left:6px;
+  color:white;
+  border-radius:5px;
 }
+
 .menu-options{
-	position:absolute;margin-left:-130px;
+	position:absolute;
+  margin-left:-130px;
 }
 
 a:link    {color:#E6E6E6; background-color:transparent; text-decoration:none}

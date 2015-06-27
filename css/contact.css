@@ -1,4 +1,24 @@
-#each{
+/*responsive */
+#con-nav {
+	position:fixed;
+	opacity:0.4;
+	height:90%;
+	padding-top:10%;
+	padding-left:2%;
+	padding-right:1%;
+	background-color: #2E2E2E;
+	z-index : 3;
+}
+
+@media (max-width : 768px) {
+	#con-nav {
+		display : none;
+	}
+}
+
+/*responsive end*/
+
+	.each{
 		width:250px;
 		height:250px;
 		margin: 20px;
@@ -6,7 +26,7 @@
 		
 		background-color: black;
 	}
-	#each1{
+	.each1{
 		width:150px;
 		height:150px;
 		float:left;
@@ -14,23 +34,23 @@
 		
 		background-color: black;
 	}
-	#imagesnew{
-		width:250px;
-		height:250px;
-		margin: 20px;
-		float:left;
-		
-		
+	.imagesnew {
+		height:auto;
+		float:left;	
+		text-align:center;
 	}
-	#imagesnew1{
-		width:180px;
-		height:200px;
-		float:left;
-		margin: 20px;
-		
-	
+
+	.imagesnew > img {
+		max-width : 180px;
 	}
-	#images{
+
+	@media (max-width : 768px) {
+    	.imagesnew  > img{
+        	display : none;
+    	}
+	}
+
+	.images{
 		width:80%;
 		height:80%;
 		margin-left:10%;
@@ -42,50 +62,48 @@
       -ms-transition: all 1s ease;
           transition: all 1s ease;
 	}
-	#images:hover {
-  width: 90%;
-  height: 90%;
-  margin-left:5%;
-}
-	#text-image{
+	.images:hover {
+  		width: 90%;
+  		height: 90%;
+  		margin-left:5%;
+	}
+
+	.text-image{
 		text-align: center;
 		white-space: normal;
 	}
-	#name{
+	.name{
 		color: #F2F2F2;
 		font-size:20px;
 	}
-	#post{
-		color:#A4A4A4;
-		font-size:15px;
-	}
-	#name1{
+	.name1{
 		color: #F2F2F2;
 		font-size:15px;
 	}
-	#post1{
+	.post1{
 		color:#A4A4A4;
 		font-size:13px;
 	}
-	#wing{
+	.wing{
 		width:100%;
 		background-color: #2E2E2E;
 	}
-	#text-wing{
+	.text-wing{
 		text-align:center;
 
 		-webkit-text-stroke: 1px black;
 		
 		font-size: 30px;
    		color: #F2F2F2;
-  text-shadow:
-   -1px -1px 0 #A4A4A4,  
-    1px -1px 0 #A4A4A4,
-    -1px 1px 0 #A4A4A4,
-     1px 1px 0 #A4A4A4;
+	  	text-shadow:
+		   	-1px -1px 0 #A4A4A4,  
+		    1px -1px 0 #A4A4A4,
+		    -1px 1px 0 #A4A4A4,
+		 	1px 1px 0 #A4A4A4;
    }
    .member-img{
-   	margin-top:30%;
-   	margin-left:10%;
-   	padding-bottom: 25%;
+	   	margin-top:30%;
+	   	margin-left:10%;
+	   	padding-bottom: 25%;
    }
+
