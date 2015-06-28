@@ -15,16 +15,18 @@
   }
   .item{
      display: inline-block;
-     width: 1350px;
-     height: 80px;
      border:1px solid;
+  }
+
+  .items > img {
+    max-width : 100%;
+    height : auto;
   }
   </style>	
 <link href="css/main.css" rel="stylesheet" type="text/css"></link>	
-
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/gallery.js"></script>
 <script type='text/javascript' src='js/jquery.mousewheel.js'></script>
 	<script>
 		$(function() {
@@ -46,7 +48,7 @@
 <body>
 
 
-<div style="position:fixed;">
+<div class="nav-menu">
 <div id="box">
 <div id="text1" class="menu-options" style="margin-left:-200px;margin-top:10px;"><h3>EFFERVESCENCE</h3></div>
 <div id="text2" class="menu-options" style="margin-top:60px;"><a href="index.html">Home</a></div>
@@ -58,8 +60,7 @@
 </div>
 <div id="menu">
 Menu
-<img id="btn1" src="image/down.png" style="width:25px;height:15px;margin-left:100px;">
-<img id="btn2" src="image/up.png" style="width:25px;height:15px;">
+<img id="btn1" src="image/down.png">
 
 </div>
 </div>
