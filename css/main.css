@@ -56,6 +56,12 @@
   border-radius:5px;
 }
 
+#btn1 {
+  width:25px;
+  height:15px;
+  margin-left:100px;
+}
+
 .menu-options{
 	position:absolute;
   margin-left:-130px;

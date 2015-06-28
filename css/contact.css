@@ -10,6 +10,12 @@
 	z-index : 3;
 }
 
+.con-data {
+    color : grey;
+    text-align:center;
+}
+
+
 @media (max-width : 768px) {
 	#con-nav {
 		display : none;
