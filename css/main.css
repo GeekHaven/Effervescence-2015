@@ -1,3 +1,35 @@
+/*for chrome and other browsers*/
+::-webkit-scrollbar {
+    width: 12px;
+	height: 35px;
+}
+::-webkit-scrollbar-track {
+    background: url('../image/loader-bg.jpg');
+	background-size: 9em;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(178, 74, 0, 0.55);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(178, 74, 0, 0.7)
+}
+
+/*for mozilla*/
+::-moz-scrollbar {
+    width: 12px;
+	height: 35px;
+}
+::-moz-scrollbar-track {
+    background: url('../image/loader-bg.jpg');
+	background-size: 9em;
+}
+::-moz-scrollbar-thumb {
+    background-color: rgba(178, 74, 0, 0.55);
+}
+::-moz-scrollbar-thumb:hover {
+    background-color: rgba(178, 74, 0, 0.7)
+}
+
 .loader {
   background-color: #849B53;
   position: fixed;
