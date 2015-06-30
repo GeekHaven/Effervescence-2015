@@ -1,8 +1,13 @@
 $(document).ready(function(){
     var flag = 0;
+    var height = 300;
+    if (window.innerWidth <= 768) {
+        height = window.innerHeight - 50;
+        console.log(height + " " + window.innerHeight);
+    } 
     $("#btn1").click(function(){
         if (flag == 0) {
-            $("#box").animate({height: "300px",width:"270px"},{duration:400,easing:'swing'});
+            $("#box").animate({height: height,width:$('#menu').css('width')},{duration:400,easing:'swing'});
             $("#text1").delay(50).animate({left: '240px'},{duration: 300,easing:'swing'});
             $("#text2").delay(100).animate({left: '150px'});
             $("#text3").delay(200).animate({left: '150px'});

@@ -37,7 +37,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  z-index : 3;
+  z-index : 300;
 }
 
 #bg {
@@ -68,11 +68,18 @@
 #menu{
 	background:black;
   color:white;
-  width:250px;
+  width:270px;
   margin-left:6px;
   padding:10px;
 	border-radius:5px;
   border-top: 1px solid yellow;
+  box-sizing: border-box;
+}
+
+@media (max-width : 768px) {
+  #menu {
+    width : 768px;
+  }
 }
 
 #menu:hover{
@@ -82,7 +89,7 @@
 #box{
 	background:black;
   height:0px;
-  width:250px;
+  width:0px;
   margin-left:6px;
   color:white;
   border-radius:5px;
