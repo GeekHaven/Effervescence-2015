@@ -5,7 +5,18 @@
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/stylesheet.css" rel="stylesheet">
       <link href="css/main.css" rel="stylesheet">
+      <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+
       <link href="css/contact.css" rel="stylesheet">
+      <style type="text/css">
+			/* Styles specific to this particular page */
+			.scroll-pane
+			{
+				overflow: auto;
+			}
+			
+		</style>
+
       <script src="js/jquery-1.11.3.min.js"></script>
       <script type='text/javascript' src='js/menu.js'></script>
       <script type="text/javascript" src="js/contact.js"></script>
@@ -20,6 +31,26 @@
 
       	/*resizes the section as the device changes */
   	  </script> 
+
+  	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		
+		<script type="text/javascript" id="sourcecode">
+			$(function()
+			{
+				$('.scroll-pane').jScrollPane(
+					{
+						
+						verticalDragMinHeight: 100,
+						verticalDragMaxHeight: 100,
+						horizontalDragMinWidth: 100,
+						horizontalDragMaxWidth: 100
+					}
+				);
+			});
+		</script>
+
+
    </head>
    <body style="background-color:#2E2E2E;">
       <div class="nav-menu">
@@ -44,7 +75,7 @@
          <p><a href="#3" class="smoothScroll">Cultural Council</a></p>
          <p><a href="#4" class="smoothScroll">Sponsorship team</a></p>
       </div>
-      <div class="horizontal">
+      <div class="horizontal scroll-pane">
          <div class="table">
             <section>
     	      	<a id="webd"></a>
