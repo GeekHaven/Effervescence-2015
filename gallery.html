@@ -1,8 +1,9 @@
 <html>
-<head>
-<meta name="viewport" content="width=device-witdh, initial-scale=1">
-<meta charset="utf-8">
-  <style>
+	<head>
+		<meta charset="utf-8">
+		<title>...</title>
+
+<style>
   body{
     width: auto;
   }
@@ -19,15 +20,61 @@
   }
   
   .item > img {
-	height:91%;
-  }
+	height:65%;
+  }
+  </style>
+		<link href="css/main.css" rel="stylesheet" type="text/css"></link>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/CSSreset.min.css" ></link>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/als_demo.css" ></link>
+		<link rel="stylesheet" href="css/lightbox.css"></link>
+		
+		
+				
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/gallery.js"></script>	
+                
+		<script type="text/javascript">
+			$(document).ready(function() 
+			{
+				$("#lista1").als({
+					visible_items: 6,
+					scrolling_items: 1,
+					orientation: "horizontal",
+					circular: "yes",
+					autoscroll: "no",
+					interval: 5000,
+					speed: 300,
+					easing: "linear",
+					direction: "right",
+					start_from: 0
+				});
+				
+				
+				//logo hover
+				$("#logo_img").hover(function()
+				{
+					$(this).attr("src","image/als_logo_hover212x110.png");
+				},function()
+				{
+					$(this).attr("src","image/als_logo212x110.png");
+				});
+				
+				//logo click
+				$("#logo_img").click(function()
+				{
+					location.href = "http://als.musings.it/index.php";
+				});
+				
+				$("a[href^='http://']").attr("target","_blank");
+				$("a[href^='http://als']").attr("target","_self");
+			});
+		</script>
 
-  
-  </style>	
-<link href="css/main.css" rel="stylesheet" type="text/css"></link>	
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/gallery.js"></script>
+	
+
+
 <script type='text/javascript' src='js/jquery.mousewheel.js'></script>
 	<script>
 		$(function() {
@@ -42,13 +89,10 @@
 
 		});
 	</script>
-
-
 </head>
 
+
 <body>
-
-
 <div class="nav-menu">
 <div id="box">
 <div id="text1" class="menu-options" style="margin-left:-200px;margin-top:10px;"><h3>EFFERVESCENCE</h3></div>
@@ -56,36 +100,65 @@
 <div id="text3" class="menu-options" style="margin-top:80px;"><a href="#">Events</a></div>
 <div id="text4" class="menu-options" style="margin-top:100px;"><a href="#">Pro Shows</a></div>
 <div id="text5" class="menu-options" style="margin-top:120px;margin-left:-190px;"><a href="gallery.html">Previous year gallery</a></div>
-<div id="text6" class="menu-options" style="margin-top:140px;"><a href="contact.html">Contact Us</a></div>
+<div id="text6" class="menu-options" style="margin-top:140px;"><a href="contact.html">Contact Us</a></div>
 
 </div>
 <div id="menu">
 Menu
 <img id="btn1" src="image/down.png">
 
+
 </div>
 </div>
 
 <div id="items">
            <div class="item">
-             <img src="image/theme1.jpg">
+             <img src="image/theme1.jpg" width=1400px height=450px>
            </div>
            <div class="item">
-             <img src="image/theme2.jpg">        
+             <img src="image/theme2.jpg" width=1400px height=450px>        
            </div>
            <div class="item">
-             <img src="image/theme3.jpg">
+             <img src="image/theme3.jpg" width=1400px height=450px>
            </div>
            <div class="item">
-             <img src="image/theme1.jpg">
+             <img src="image/theme1.jpg" width=1400px height=450px>
            </div>
            <div class="item">
-             <img src="image/theme2.jpg">
+             <img src="image/theme2.jpg" width=1400px height=450px>
            </div>
            <div class="item">
-             <img src="image/theme3.jpg"> 
+             <img src="image/theme3.jpg" width=1400px height=450px> 
            </div>
-        </div>
+        </div>			
+			<div id="lista1" class="als-container">
+				<span class="als-prev"><img src="image/thin_left_arrow_333.png" alt="prev" title="previous" /></span>
+				<div class="als-viewport">
+					<ul class="als-wrapper">
+						<li class="als-item"><a class="example-image-link" href="image/asif.jpg" data-lightbox="example-1"><img src="image/asif.jpg" height=150px width=128px alt="asif" title="asif" />asif</a></li>
+						<li class="als-item"><a class="example-image-link" href="image/abhishek.jpg" data-lightbox="example-1"><img src="image/abhishek.jpg" height=150px width=128px alt="abhishek" title="abhishek" />abhishek</li>
+						<li class="als-item"><a class="example-image-link" href="image/aditya.jpg" data-lightbox="example-1"><img src="image/aditya.jpg" height=150px width=128px alt="aditya" title="aditya" />aditya</li>
+						<li class="als-item"><a class="example-image-link" href="image/madhuri.jpg" data-lightbox="example-1"><img src="image/madhuri.jpg" height=150px width=128px alt="madhuri" title="madhuri" />madhuri</li>
+						<li class="als-item"><a class="example-image-link" href="image/saptak.jpg" data-lightbox="example-1"><img src="image/saptak.jpg" height=150px width=128px alt="saptak" title="saptak" />saptak</li>
+						<li class="als-item"><a class="example-image-link" href="image/theme1.jpg" data-lightbox="example-1"><img src="image/theme1.jpg" height=150px width=128px alt="theme1.jpg" title="theme1.jpg" />theme1</li>
+						<li class="als-item"><a class="example-image-link" href="image/theme2.jpg" data-lightbox="example-1"><img src="image/theme2.jpg" height=150px width=128px alt="theme2.jpg" title="theme2.jpg" />theme2</li>
+						<li class="als-item"><a class="example-image-link" href="image/theme3.jpg" data-lightbox="example-1"><img src="image/theme3.jpg" height=150px width=128px alt="pin" title="pin" />pin</li>
+						<li class="als-item"><a class="example-image-link" href="image/theme1.jpg" data-lightbox="example-1"><img src="image/theme1.jpg" height=150px width=128px alt="mobile phone" title="mobile phone" />mobile phone</li>
+						<li class="als-item"><a class="example-image-link" href="image/theme2.jpg" data-lightbox="example-1"><img src="image/theme2.jpg" height=150px width=128x alt="camera" title="camera" />camera</li>
+						<li class="als-item"><a class="example-image-link" href="image/theme3.jpg" data-lightbox="example-1"><img src="image/theme3.jpg" height=150px width=128px alt="music note" title="music note" />music note</li>
+						<li class="als-item"><a class="example-image-link" href="image/theme1.jpg" data-lightbox="example-1"><img src="image/theme1.jpg" height=150px width=128px alt="umbrella" title="umbrella" />umbrella</li>
+						<li class="als-item"><a class="example-image-link" href="image/theme2.jpg" data-lightbox="example-1"><img src="image/theme2.jpg" height=150px width=128px alt="television" title="television" />television</a></li>
+					</ul>
+				</div>
+				<span class="als-next"><img src="image/thin_right_arrow_333.png" alt="next" title="next" /></span>
+			</div>
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.als-1.7.min.js"></script>
+
+<script src="js/gallery.js"></script>
+<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
  
 </body>
 </html>

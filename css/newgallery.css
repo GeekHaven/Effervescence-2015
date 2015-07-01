@@ -1,0 +1,23 @@
+#menu-outer {
+	height: 84px;
+	background: url(image/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table; 
+	margin-left: 10px;
+        margin-top:-130px;
+	
+	
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 10px;
+	margin-right: 0px;
+	margin-left:0px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
