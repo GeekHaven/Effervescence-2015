@@ -1,22 +1,20 @@
 /*for chrome and other browsers*/
 ::-webkit-scrollbar {		
-   width: 100%; /*12px*/		
-	height: 30px;	/*20px*/
+   width: 12px;		
+	height: 35px;		
 }		
 ::-webkit-scrollbar-track {		
-    background: url('../image/check_scroll.png');		
-	background-size: 2em;/*9em*/		
+    background: url('../image/loader-bg.jpg');		
+	background-size: 9em;		
 }		
 ::-webkit-scrollbar-thumb {		
-  background: url('../image/scroll_tmb_hor.png') no-repeat center;
-  background-size: 46px 37px;
-    /*background-color: rgba(178, 74, 0, 0.55);*/		
+    background-color: rgba(178, 74, 0, 0.55);		
 }		
 ::-webkit-scrollbar-thumb:hover {		
-    /*background-color: rgba(178, 74, 0, 0.7)		*/
+    background-color: rgba(178, 74, 0, 0.7)		
 }
 .loader {
-  background-color: #2E2E2E;
+  background-color: #849B53;
   position: fixed;
   top: 0;
   left: 0;
