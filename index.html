@@ -4,8 +4,23 @@
 <meta name="viewport" content="width=device-witdh, initial-scale=1">
 	
 <link href="css/main.css" rel="stylesheet" type="text/css"></link>	
-<link rel="stylesheet" type="text/css" href="css/cloth.css" />
+<link href="css/grain.css" rel="stylesheet" type="text/css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+window.setInterval(function(){
+    $("#canvas").css({"width": "100%"});
+}, 1500);
+
+$(document).ready(function(){
+    
+    $("body").mousemove(function(){
+        $("#canvas").css({"width": "0%"});
+        
+    });
+
+});
+</script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 <script src="js/menu.js"></script>
@@ -14,7 +29,7 @@
 
 </head>
 
-<body style="background:#171304;margin:0; overflow-y:hidden;">
+<body style="margin:0; overflow-y:hidden;">
 
 <!-- loader -->
 <div class="loader">
@@ -42,18 +57,12 @@ Menu
 </div>
 <div>
     <img src="image/frame3done.png" style="width:50%;height:27%;position:absolute;margin-left:25%;margin-top:15%;"></img>
- </div>  
- <canvas id="c"></canvas>
+ </div> 
+ <div> 
+      <canvas id="canvas"></canvas>
+</div>
+<script src="js/grain.js"></script>
 
- <script type="text/javascript">
-        document.getElementById('close').onmousedown = function(e) {
-            e.preventDefault();
-            document.getElementById('info').style.display = 'none';
-            return false;
-        };
-    </script>
     
-    <script type="text/javascript" src="js/Cloth.js"></script>
-
 </body>
 </html>
