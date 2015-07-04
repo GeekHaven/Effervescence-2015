@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-witdh, initial-scale=1">
 	
 <link href="css/main.css" rel="stylesheet" type="text/css"></link>	
+<link rel="stylesheet" type="text/css" href="css/cloth.css" />
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
@@ -14,6 +15,7 @@
 </head>
 
 <body style="background:#171304;margin:0; overflow-y:hidden;">
+
 <!-- loader -->
 <div class="loader">
 	<div id="bg"></div>
@@ -40,6 +42,18 @@ Menu
 </div>
 <div>
     <img src="image/frame3done1.png" style="width:50%;height:27%;position:absolute;margin-left:25%;margin-top:15%;"></img>
- </div>   
+ </div>  
+ <canvas id="c"></canvas>
+
+ <script type="text/javascript">
+        document.getElementById('close').onmousedown = function(e) {
+            e.preventDefault();
+            document.getElementById('info').style.display = 'none';
+            return false;
+        };
+    </script>
+    
+    <script type="text/javascript" src="js/Cloth.js"></script>
+
 </body>
 </html>

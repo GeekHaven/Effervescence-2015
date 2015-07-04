@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+body {
+    background: #F2F2F2;
+}
+#c {
+    display: block;
+    margin: 20px auto 0;
+}
