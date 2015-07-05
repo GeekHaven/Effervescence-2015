@@ -12,14 +12,14 @@ window.setInterval(function(){
     $("#canvas").css({"width": "100%"});
 }, 1500);
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     
     $("body").mousemove(function(){
         $("#canvas").css({"width": "0%"});
         
     });
 
-});
+});*/
 </script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
@@ -56,7 +56,7 @@ Menu
 </div>
 </div>
 <div>
-    <img src="image/frame3done.png" style="width:50%;height:27%;position:absolute;margin-left:25%;margin-top:15%;"></img>
+    <img src="image/frame3done.png" style="width:50%;height:27%;z-index:2;position:absolute;margin-left:25%;margin-top:15%;"></img>
  </div> 
  <div> 
       <canvas id="canvas"></canvas>
