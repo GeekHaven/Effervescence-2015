@@ -50,16 +50,24 @@
   margin-top:6px;
 }
 
+
+.text1,h3{
+  color:#FF0000;
+  font-size:24px;
+  font-family:Algerian,cursive;
+}
+
 #menu{
-	background:black;
+  background:black;
   color:white;
-  width:270px;
+  width:300px;
   margin-left:6px;
   padding:10px;
-	border-radius:5px;
-  border-top: 1px solid yellow;
+  border-radius:5px;
+  border-top: 2px dashed #888888;
   box-sizing: border-box;
 }
+
 
 @media (max-width : 768px) {
   #menu {
@@ -68,11 +76,21 @@
 }
 
 #menu:hover{
-	color:#848484;
+	color:#FF0000;
+	font-size:17px;
+	font-family:Palatino Linotype,sans-serif;
+}
+
+div.menu-options a:hover{
+	color:#FF0000;
+}
+
+div.menu-options a:active{
+	color:#FFFF66;
 }
 
 #box{
-	background:black;
+  background:black;
   height:0px;
   width:0px;
   margin-left:6px;
@@ -86,10 +104,8 @@
   margin-left:60%;
 }
 
-
-
 .menu-options{
-	position:absolute;
+  position:absolute;
   margin-left:-130px;
 }
 
