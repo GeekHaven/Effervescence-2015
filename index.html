@@ -31,6 +31,17 @@ window.setInterval(function(){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/loader.js"></script>
+<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
+      <script>
+      	$(function(){
+      		$("html,body,*").mousewheel(function(event, delta){
+      			this.scrollLeft -=(delta * 30); 
+      			event.preventDefault();
+      		});
+      	});
+
+      	/*resizes the section as the device changes */
+  	  </script> 
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
