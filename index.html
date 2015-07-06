@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-witdh, initial-scale=1">
-	
+	<style>
+      #map-canvas {
+        width: 700px;
+        height: 400px;
+      }
+    </style>
 <link href="css/main.css" rel="stylesheet" type="text/css"></link>	
 <link href="css/grain.css" rel="stylesheet" type="text/css">
 
@@ -26,11 +32,23 @@ window.setInterval(function(){
 <script src="js/menu.js"></script>
 <script src="js/loader.js"></script>
 
-
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(25.429988100000000000, 81.772549900000060000),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body style="margin:0; overflow-y:hidden;">
-
+<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 <!-- loader -->
 <div class="loader">
 	<div id="bg"></div>
@@ -41,7 +59,7 @@ window.setInterval(function(){
 
 <div class="nav-menu">
 <div id="box">
-<div id="text1" class="menu-options" style="margin-left:-200px;margin-top:10px;"><h3>EFFERVESCENCE</h3></div>
+<div id="text1" class="menu-options" style="margin-left:-220px;margin-top:10px;"><h3>EFFERVESCENCE</h3></div>
 <div id="text2" class="menu-options" style="margin-top:60px;"><a href="index.html">Home</a></div>
 <div id="text3" class="menu-options" style="margin-top:80px;"><a href="#">Events</a></div>
 <div id="text4" class="menu-options" style="margin-top:100px;"><a href="#">Pro Shows</a></div>
@@ -61,8 +79,22 @@ Menu
  <div> 
       <canvas id="canvas" ></canvas>
 </div>
- <div style="width:2620px;margin-left:1310px;">
-    <img src="image/home_2.jpg" style="width:1310px;height:100%;float:left;">
+ <div style="width:2640px;margin-left:1310px;color:white;">
+     
+    <div style="position:absolute;color:white;margin-left:48%;width:600px;">
+        <h2>About Us</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        </p>
+    </div>
+    <div style="position:absolute;margin-left:105%;margin-top:41%;" class="fb-like" data-href="https://www.facebook.com/effervescence.iiita?fref=ts" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-colorscheme="dark" ></div>
+    <div style="position:absolute;margin-left:105%;margin-top:20%;">
+        <a href="https://www.youtube.com/user/effervescenceMM13"><img src="image/youtube.png" style="width:200px;height:150px;"></a>
+    </div>
+    <div style="position:absolute;margin-left:145%;margin-top:10%;">
+        <div id="map-canvas"></div>
+    </div>
+    <img src="image/home_2.jpg" style="width:1330px;height:100%;float:left;">
     <img src="image/home_3.jpg" style="width:1310px;height:100%;float:left;">
  </div> 
  
