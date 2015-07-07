@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+.counter {
+	position: absolute;
+	right:0%;
+	top:1.5%;
+	height:92%;
+	width:10%;
+	background-color: black;
+	border-bottom-left-radius:15%;
+	border-top-left-radius:15%;
+	opacity:0.9;
+	padding:1.2%;
+}
+
+#days {
+	position:absolute;
+	top:2%;
+	width:85%;
+	height:18%;
+}
+
+#db {
+	width:100%;
+	height:100%;
+}
+
+#dl {
+	position:absolute;
+	top:41.5%;
+	left:50.5%;
+	width:28%;
+	border-color:black;
+	transform-origin:left;
+}
+
+#dh {
+	background-color:white;
+	position:absolute;
+	top:0%;
+	height:100%;
+	width:100%;
+	opacity:0.2;
+}
+
+#ddays {
+	position:absolute;
+	top:-7%;
+	left:30%;
+	color:black;
+	font-size:40px;
+	font-weight:bold;
+}
+
+#dt {
+	position:absolute;
+	top:78%;
+	left:33%;
+	font-family:"Comic Sans MS";
+	font-size:140%;
+	color:white;
+}
+
+#hours {
+	position:absolute;
+	top:27%;
+	width:85%;
+	height:18%;
+}
+
+#hb {
+	width:100%;
+	height:100%;
+}
+
+#hl {
+	position:absolute;
+	top:41.5%;
+	left:50.5%;
+	width:28%;
+	border-color:black;
+	transform-origin:left;
+}
+
+#hh {
+	background-color:white;
+	position:absolute;
+	top:0%;
+	height:100%;
+	width:100%;
+	opacity:0.2;
+}
+
+#hhours {
+	position:absolute;
+	top:-7%;
+	left:38%;
+	color:black;
+	font-size:40px;
+	font-weight:bold;
+}
+
+
+#ht {
+	position:absolute;
+	top:78%;
+	left:30%;
+	font-family:"Comic Sans MS";
+	font-size:140%;
+	color:white;
+}
+
+#minutes {
+	position:absolute;
+	top:52%;
+	width:85%;
+	height:18%;
+}
+
+#mb {
+	width:100%;
+	height:100%;
+}
+
+#ml {
+	position:absolute;
+	top:41.5%;
+	left:50.5%;
+	width:28%;
+	border-color:black;
+	transform-origin:left;
+}
+
+#mh {
+	background-color:white;
+	position:absolute;
+	top:0%;
+	height:100%;
+	width:100%;
+	opacity:0.3;
+}
+
+#mminutes {
+	position:absolute;
+	top:-7%;
+	left:36%;
+	color:black;
+	font-size:40px;
+	font-weight:bold;
+}
+
+
+#mt {
+	position:absolute;
+	top:78%;
+	left:20%;
+	font-family:"Comic Sans MS";
+	font-size:140%;
+	color:white;
+}
+
+#seconds {
+	position:absolute;
+	top:77%;
+	width:85%;
+	height:18%;
+}
+
+#sb {
+	width:100%;
+	height:100%;
+}
+
+#sl {
+	position:absolute;
+	top:41.5%;
+	left:50.5%;
+	width:28%;
+	border-color:black;
+	transform-origin:left;
+}
+
+#sh {
+	background-color:white;
+	position:absolute;
+	top:0%;
+	height:100%;
+	width:100%;
+	opacity:0.3;
+}
+
+#sseconds {
+	position:absolute;
+	top:-7%;
+	left:36%;
+	color:black;
+	font-size:40px;
+	font-weight:bold;
+}
+
+
+#st {
+	position:absolute;
+	top:78%;
+	left:20%;
+	font-family:"Comic Sans MS";
+	font-size:140%;
+	color:white;
+}
