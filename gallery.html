@@ -1,21 +1,50 @@
-
-<!DOCTYPE html>
 <html>
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
     
-    <link href="css/main.css" rel="stylesheet" type="text/css"></link>	
-    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
-    <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
-    <script src="js/menu.js"></script>
 
+    <title>gallery</title>
+
+    <link href="css/main.css" rel="stylesheet" type="text/css"></link>	
+    <link href='css/css.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">    
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/theme_settings.css">
+    <link rel="stylesheet" type="text/css" href="css/skin.css">
+	<link rel="stylesheet" type="text/css" href="css/color_theme.css" id="theme_color">
+        
+    <!--[if IE 8 ]>
+    <link rel="stylesheet" type="text/css" href="css/ie_css.css">
+    <script>
+        var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+        for (var i = 0; i < e.length; i++) {
+            document.createElement(e[i]);
+        }		
+    </script>
+    <![endif]-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fs_gllaery.css">
+	<script type="text/javascript" src="js/fs_gllaery.js"></script>
+  <script src="js/menu.js"></script>
+<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
+	<script>
+		$(function() {
+
+		   $("html,body,*").mousewheel(function(event, delta) {
+
+		      this.scrollLeft -= (delta * 30);
+		    
+		      event.preventDefault();
+
+		   });
+
+		});
+	</script>
 </head>
 
-<body style="overflow-y:hidden;">
+<body class="fullscreen_layout">
 <div class="nav-menu">
 <div id="box">
 <div id="text1" class="menu-options" style="margin-left:-200px;margin-top:10px;"><h3>EFFERVESCENCE</h3></div>
@@ -33,30 +62,41 @@ Menu
 
 </div>
 </div>
+	
+    
+    <div class="fullscreen_block"></div>    
+    <script>
+		gallery_set = [	//Gallery Data
+			{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood1', fit : 'cover', title : "bollywood1", description: "be ready to get filmy this effe"},
+			{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg', alt : 'bollywood2', fit : 'cover', title : "bollywood2", description: "be ready to get filmy this effe"},
+			{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg', alt : 'bollywood3', fit : 'cover', title : "bollywood3", description: "be ready to get filmy this effe"},
+			{image : 'image/frame1done.png', thmb : 'image/theme44.jpg', alt : 'bollywood4', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/frame2done.png', thmb : 'image/theme55.jpg', alt : 'bollywood5', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/frame3done.png', thmb : 'image/theme66.jpg', alt : 'bollywood6', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/home_3.jpg', thmb : 'image/home_33.jpg', alt : 'bollywood7', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/home_2.jpg', thmb : 'image/home_22.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
 
-<header data-role="header" id="header"></header>
-
-<div class="horizon-prev"><img src="image/l-arrow.png"></div>
-<div class="horizon-next"><img src="image/r-arrow.png"></div>
-
-<section data-role="section" id="section-section1"></section>
-<section data-role="section" id="section-section2"></section>
-<section data-role="section" id="section-section3"></section>
-<section data-role="section" id="section-section4"></section>
-<section data-role="section" id="section-section5"></section>
-<section data-role="section" id="section-section6"></section>
-<section data-role="section" id="section-section7"></section>
-<section data-role="section" id="section-section8"></section>
-
-<footer data-role="footer" id="footer"></footer>
-
-<script type="text/javascript">
-    // By default, swipe is enabled.
-    $('section').horizon();
-
-    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
-    //$('section').horizon({swipe: false});
-</script>
-
+			{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/frame1done.png', thmb : 'image/theme44.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/frame2done.png', thmb : 'image/theme55.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/frame3done.png', thmb : 'image/theme66.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/home_3.jpg', thmb : 'image/home_33.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/home_2.jpg', thmb : 'image/home_22.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"}
+		];
+		$('body').fs_gallery({
+			fx : 'fade', /*fade, zoom, slide_left, slide_right, slide_top, slide_bottom*/
+			slide_time : 3300, /*This time must be < then time in css*/
+			slides : gallery_set
+		});
+	</script>
+    
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/theme.js"></script>	
 </body>
 </html>

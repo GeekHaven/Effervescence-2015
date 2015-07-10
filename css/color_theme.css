@@ -1,0 +1,93 @@
+/* *** MAIN COLOR: #ff5474 *** */
+
+::selection {background:#ff5474;}
+::-moz-selection {background:#ff5474;}
+
+.highlighted_colored,
+.widget_nav_menu ul li a:hover,
+.widget_archive ul li a:hover,
+.widget_pages ul li a:hover,
+.widget_categories ul li a:hover,
+.widget_recent_entries ul li a:hover,
+blockquote.type1:before,
+.shortcode_accordion_item_title:hover, 
+.shortcode_toggles_item_title:hover,
+.feedback_form .feedback_go:hover, 
+.feedback_form .feedback_reset:hover,
+#commentform #reset:hover,
+#commentform #submit:hover,
+.btn_login:hover,
+.module_iconboxes:hover,
+.carousel_fadder,
+.gallery_fadder,
+.shortcode_promoblock .promo_button_block a,
+.shortcode_tab_item_title:hover,
+.skills_list li .skill_div,
+.price_item.most_popular .price_item_title,
+.price_item .price_item_btn a:hover,
+.price_item.most_popular .price_item_btn a,
+.shortcode_button.btn_type4,
+.pagerblock li a:hover,
+.widget_tag_cloud a:hover,
+.fs_thmb_viewport .fs_thmb_list li .fs_thmb_fadder,
+.fs_grid_module .grid_gallery-item .item_hover-img .item_hover-fadder {
+	background-color:#ff5474;
+}
+.widget_mailchimpsf_widget .mc_submit:hover,
+.flickr_fadder,
+.shortcode_button.btn_type1:hover {
+	background-color:#ff5474!important;
+}
+header nav ul.menu  li .sub-menu a {
+	background:#ff5474;
+	background:rgba(255,84,116,0.9);
+}
+header nav ul.menu  li .sub-menu li {
+	border-top-color:rgba(255,84,116,0.7);
+}
+a,
+.dropcap.colored,
+#footer_bar .recent_posts_content .post_title,
+.featured_slider ul li .carousel_meta a:hover,
+.shortcode_promoblock h3,
+.module_contact_info a:hover,
+.columns1 .portfolio_meta span a:hover,
+.blog_head .blogpost_meta span a:hover,
+.fs_blog_module .fs_blog-meta a:hover,
+.module_fs_meta a:hover,
+.twitter_list li a { 
+	color:#ff5474;
+}
+header ul.menu > li > a:hover,
+header ul.menu > li:hover > a,
+header ul.menu > li.current-menu-item > a,
+header ul.menu > li.current-menu-parent > a,
+ol.commentlist li .thiscommentbody .comment_info span a:hover,
+.fullscreen_block .filter_block li a:hover,
+.fullscreen_block .filter_block li.selected a,
+.mobile_menu li > a:hover,
+.mobile_menu li.current-menu-item > a,
+.mobile_menu li.current-menu-parent > a,
+.fs_blog_module .blog_item h6 a:hover {
+	color:#ff5474!important;
+}
+
+hr.colored,
+.fullscreen_title h1 {
+	border-color:#ff5474;
+}
+.fs_title_wrapper {
+	border-color:#ff5474!important;
+}
+
+
+header nav ul.menu  li > .sub-menu > li:first-child:before {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #ff5474;
+}
+.fullscreen_layout header nav ul.menu  li > .sub-menu > li:last-child:before {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #ff5474;
+}
