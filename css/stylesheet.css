@@ -46,6 +46,7 @@ div.horizontal {
     text-align: center;
     border : 1px dotted black;
     /*padding-left: 5%;*/
+    padding: 0% !important;
   }
 
   div.horizontal {
