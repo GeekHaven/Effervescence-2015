@@ -48,6 +48,7 @@
   position:fixed;
   z-index:20;
   margin-top:6px;
+  box-shadow:4px 4px 20px #888888;
 }
 
 
