@@ -15,8 +15,10 @@
     <script>
 		$(function(){
 			$("html,body,*").mousewheel(function(event, delta){
-				this.scrollLeft -=(delta * 30); 
-				event.preventDefault();
+                if (window.innerWidth > 768) {
+				    this.scrollLeft -=(delta * 30); 
+				    event.preventDefault();
+                }
 			});
 		});
     /*resizes the section as the device changes */
