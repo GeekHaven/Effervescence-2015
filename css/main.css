@@ -15,6 +15,7 @@
 ::-webkit-scrollbar-thumb:hover {		
     /*background-color: rgba(178, 74, 0, 0.7)		*/
 }
+/***Loader***/
 .loader {
   background-color: #2E2E2E;
   position: fixed;
@@ -43,7 +44,72 @@
   height : 50px;
   opacity : 0.6;
 }
+/***\Loader***/
 
+
+/***home page ***/
+#map-canvas {
+  width: 600px;
+  height: 400px;
+}
+	  
+.social_links {
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 20%;
+  float: left;
+}
+
+.map-home {
+  margin-right: 2%;
+  margin-top: 7%;
+  float: right;
+}
+
+.home-container {
+  width:300%;
+  height:100%;
+  margin-left:0%;
+  color:white;
+}
+
+.home-canv {
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/glasses.jpg');
+  width:33%;
+  height:100%;
+  float:left;
+}
+
+.effe-title {
+  width:50%;
+  height:35%;
+  z-index:2;
+  position:absolute;
+  margin-left:25%;
+  margin-top:15%;
+}
+
+.about-cont {
+  background-image:url('../image/home_2.jpg');
+  width:33%;
+  height:100%;
+  float:left;
+}
+
+.home-about-content {
+  margin: 7% 5% 0% 45%;
+  text-align: justify;
+}
+
+.contact-cont {
+  background-image:url('../image/home_3.jpg');
+  width:34%;
+  height:100%;
+  float:left;
+}
+
+
+/***\home page ***/
 .nav-menu {
   position:fixed;
   z-index:20;

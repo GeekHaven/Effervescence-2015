@@ -1,224 +1,229 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-witdh, initial-scale=1">
-	<style>
-    	#map-canvas {
-        	width: 700px;
-        	height: 400px;
-    	}
-    </style>
-<<<<<<< HEAD
-    <link href="css/main.css" rel="stylesheet" type="text/css"></link>	
-    <link href="css/grain.css" rel="stylesheet" type="text/css">
-    <link href="css/counter.css" rel="stylesheet" type="text/css">
-=======
-<link href="css/main.css" rel="stylesheet" type="text/css"></link>	
-<link href="css/grain.css" rel="stylesheet" type="text/css">
-<link href="css/counter.css" rel="stylesheet" type="text/css">
-<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<head>
+		<meta name="viewport" content="width=device-witdh, initial-scale=1">
+		<link href="css/main.css" rel="stylesheet" type="text/css"></link>	
+		<link href="css/grain.css" rel="stylesheet" type="text/css">
+		<link href="css/counter.css" rel="stylesheet" type="text/css">
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-window.setInterval(function(){
-    $("#canvas").css({"width": "100%"});
-}, 1500);
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			window.setInterval(function(){
+				$("#canvas").css({"width": "100%"});
+			}, 1500);
 
-/*$(document).ready(function(){
->>>>>>> origin/master
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-		window.setInterval(function(){
-			$("#canvas").css({"width": "100%"});
-		}, 1500);
-		
-		/*$(document).ready(function(){
-			
-			$("body").mousemove(function(){
-				$("#canvas").css({"width": "0%"});
+			/*$(document).ready(function(){
 				
+				$("body").mousemove(function(){
+					$("#canvas").css({"width": "0%"});
+					
+				});
+
+			});*/
+		</script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/loader.js"></script>
+		<script src="js/counter.js"></script>
+		<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
+		<script>
+		$(function(){
+			$("html,body,*").mousewheel(function(event, delta){
+				this.scrollLeft -=(delta * 30); 
+				event.preventDefault();
 			});
+		});
+
+		/*resizes the section as the device changes */
+		</script> 
+
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		  function initialize() {
+			var mapCanvas = document.getElementById('map-canvas');
+			var mapOptions = {
+			  center: new google.maps.LatLng(25.429988100000000000, 81.772549900000060000),
+			  zoom: 16,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(mapCanvas, mapOptions)
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+
+	<body style="margin:0; overflow-y:hidden;">
+		<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- loader -->
+		<div class="loader">
+			<div id="bg"></div>
+			<div id="bar"></div>
+		</div>
+		<!-- loader end -->
+
+		<!-- Counter -->
+		<div class="counter">
+			<div id="days">
+				<img src="image/11724717_838735919545817_451920651_o.jpg" id="db">
+				<hr id="dl">
+				<div id="dh"></div>
+				<p id="ddays"></p>
+				<p id="dt">Days</p>
+			</div>
+			<div id="hours">
+				<img src="image/11724717_838735919545817_451920651_o.jpg" id="hb">
+				<hr id="hl">
+				<div id="hh"></div>
+				<p id="hhours"></p>
+				<p id="ht">Hours</p>
+			</div>
+			<div id="minutes">
+				<img src="image/11724717_838735919545817_451920651_o.jpg" id="mb">
+				<hr id="ml">
+				<div id="mh"></div>
+				<p id="mminutes"></p>
+				<p id="mt">Minutes</p>
+			</div>
+			<div id="seconds">
+				<img src="image/11724717_838735919545817_451920651_o.jpg" id="sb">
+				<hr id="sl">
+				<div id="sh"></div>
+				<p id="sseconds"></p>
+				<p id="st">Seconds</p>
+			</div>
+		</div>
+		<!-- Counter Ends -->
+
+		<div class="nav-menu">
+			<div id="box">
+				<div id="text1" class="menu-options" style="margin-left:-220px;margin-top:10px;"><h3>EFFERVESCENCE</h3></div>
+				<div id="text2" class="menu-options" style="margin-top:60px;"><a href="index.html">Home</a></div>
+				<div id="text3" class="menu-options" style="margin-top:80px;"><a href="#">Events</a></div>
+				<div id="text4" class="menu-options" style="margin-top:100px;"><a href="#">Pro Shows</a></div>
+				<div id="text5" class="menu-options" style="margin-top:120px;margin-left:-190px;"><a href="gallery.html">Previous year gallery</a></div>
+				<div id="text6" class="menu-options" style="margin-top:140px;"><a href="contact.html">Contact Us</a></div>
+			</div>
+			<div id="menu">
+				Menu
+				<img id="btn1" src="image/down.png"></img>
+			</div>
+		</div>
+
+		<div class="home-container">
+		<div class="home-canv">
+			<div>
+				<img src="image/frame3done.png" class="effe-title"></img>
+			</div>
+			<div style="position:absolute;margin-left:5%;margin-top:41%;" class="fb-like" data-href="https://www.facebook.com/effervescence.iiita?fref=ts" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-colorscheme="dark" ></div>
+			<div> 
+				<canvas id="canvas" ></canvas>
+			</div>
+		</div>
+		<div class="about-cont">     
+			<div class="home-about-content">
+				<h2>About Us</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+				</p>
+			</div>
+		</div>
+		<div class="contact-cont">
+			<div class="social_links">
+				<a href="https://www.facebook.com/effervescence.iiita?fref=ts" class="icon icon-border facebook">facebook</a>
+				<a href="https://www.youtube.com/user/effervescenceMM13" class="icon icon-border twitter">twitter</a>
+				<a href="https://www.youtube.com/user/effervescenceMM13" class="icon icon-border youtube">youtube</a>
+				<a href="https://www.iiita.ac.in" class="icon icon-border effe">effervescence</a></div>
+			<div class="map-home">
+				<div id="map-canvas"></div>
+			</div>
+		</div>
+
+		<!--
+		<div style="position:absolute;margin-left:310%;margin-top:13%;">
+			<a href="https://www.youtube.com/user/effervescenceMM13"><img src="image/youtube.png" style="width:200px;height:150px;position:absolute;"></a>
+			<a href="https://www.facebook.com/effervescence.iiita?fref=ts"><img src="image/facebook.png" style="width:200px;height:150px;margin-left:200px;position:absolute;"></a>
+			<a href="https://www.youtube.com/user/effervescenceMM13"><img src="image/twitter.png" style="width:200px;height:150px;margin-left:200px;margin-top:150px;position:absolute;"></a>
+			<a href="https://www.iiita.ac.in"><img src="image/effesocial.png" style="width:200px;height:150px;margin-top:150px;position:absolute;"></a>
+		</div>
+		<div style="position:absolute;margin-left:345%;margin-top:10%;">
+			<div id="map-canvas"></div>
+		</div>
+		<!--<div  style="background:black;width:1330px;height:655px;float:left;">
+		  
+		  <div style="width:44%;">
+			<img src="music.jpeg" style="float:left;height:40%;width:66%;margin: 10px 10px 10px 10px;">
+			<img src="music.jpeg" style="float:left;height:40%;width:28%;margin: 10px 10px 10px 0px;">
+
+		  </div>
+		  <div style="margin:10px 10px 10px 0px;float:left;height:40%;width:25%;">
+			<img src="music.jpeg" style="float:left;height:60%;width:100%;">
+			<img src="music.jpeg" style="float:left;height:100%;width:100%;margin-top:10px;">
+		  </div>
+		  <div style="margin:10px 10px 10px 0px;float:left;height:40%;width:28%;margin-left:10px;">
+			<img src="music.jpeg" style="float:left;height:40%;width:43%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:40%;width:43%;">
+			<img src="music.jpeg" style="float:left;height:40%;width:43%;margin-right:10px;margin-top:10px;">
+			<img src="music.jpeg" style="float:left;height:40%;width:43%;margin-top:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:90%;margin-top:10px;">
+		  </div>
+		  <div style="width:44%;height:24%;margin-left:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:31%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:30.5%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:30.5%;">
+		  </div>
+		  <div style="position:absolute;height:22%;width:69%;margin-top:22.5%;margin-left:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:19.5%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:37.5%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:38%;">
+		  </div>
+		  
+		  
+
+
+		</div>
+		<img src="image/home_2.jpg" style="width:1330px;height:100%;float:left;">
+		<!--<div  style="background:black;width:1330px;height:655px;float:left;">
+		  
+		  <div style="width:44%;">
+			<img src="music.jpeg" style="float:left;height:40%;width:66%;margin: 10px 10px 10px 10px;">
+			<img src="music.jpeg" style="float:left;height:40%;width:28%;margin: 10px 10px 10px 0px;">
+
+		  </div>
+		  <div style="margin:10px 10px 10px 0px;float:left;height:40%;width:25%;">
+			<img src="music.jpeg" style="float:left;height:60%;width:100%;">
+			<img src="music.jpeg" style="float:left;height:100%;width:100%;margin-top:10px;">
+		  </div>
+		  <div style="margin:10px 10px 10px 0px;float:left;height:40%;width:28%;margin-left:10px;">
+			<img src="music.jpeg" style="float:left;height:40%;width:43%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:40%;width:43%;">
+			<img src="music.jpeg" style="float:left;height:40%;width:43%;margin-right:10px;margin-top:10px;">
+			<img src="music.jpeg" style="float:left;height:40%;width:43%;margin-top:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:90%;margin-top:10px;">
+		  </div>
+		  <div style="width:44%;height:24%;margin-left:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:31%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:30.5%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:30.5%;">
+		  </div>
+		  <div style="position:absolute;height:22%;width:69%;margin-top:22.5%;margin-left:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:19.5%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:37.5%;margin-right:10px;">
+			<img src="music.jpeg" style="float:left;height:100%;width:38%;">
+		  </div>
+		  
+		  
+
+
+		</div>
+
+		<img src="image/home_3.jpg" style="width:1352px;height:100%;float:left;">-->
+
+		</div> 
+	 
+		<script src="js/grain.js"></script>
+
 		
-		});*/
-    </script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/loader.js"></script>
-    <script src="js/counter.js"></script>
-    <script type='text/javascript' src='js/jquery.mousewheel.js'></script>
-	<script src="js/grain.js"></script>
-	<script>
-      	$(function(){
-            $("html,body,*").mousewheel(function(event, delta){
-                this.scrollLeft -=(delta * 30); 
-                event.preventDefault();
-            });
-        });
-
-        /*resizes the section as the device changes */
-    </script> 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-    	function initialize() {
-            var mapCanvas = document.getElementById('map-canvas');
-            var mapOptions = {
-            	center: new google.maps.LatLng(25.429988100000000000, 81.772549900000060000),
-                zoom: 16,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var map = new google.maps.Map(mapCanvas, mapOptions)
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-</head>
-
-<body style="margin:0; overflow-y:hidden;">
-    <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
-    <!-- loader -->
-    <div class="loader">
-        <div id="bg"></div>
-        <div id="bar"></div>
-    </div>
-    <!-- loader end -->
-    
-    <!-- Counter -->
-    <div class="counter">
-        <div id="days">
-            <img src="image/11724717_838735919545817_451920651_o.jpg" id="db">
-            <hr id="dl">
-            <div id="dh"></div>
-            <p id="ddays"></p>
-            <p id="dt">Days</p>
-        </div>
-        <div id="hours">
-            <img src="image/11724717_838735919545817_451920651_o.jpg" id="hb">
-            <hr id="hl">
-            <div id="hh"></div>
-            <p id="hhours"></p>
-            <p id="ht">Hours</p>
-        </div>
-        <div id="minutes">
-            <img src="image/11724717_838735919545817_451920651_o.jpg" id="mb">
-            <hr id="ml">
-            <div id="mh"></div>
-            <p id="mminutes"></p>
-            <p id="mt">Minutes</p>
-        </div>
-        <div id="seconds">
-            <img src="image/11724717_838735919545817_451920651_o.jpg" id="sb">
-            <hr id="sl">
-            <div id="sh"></div>
-            <p id="sseconds"></p>
-            <p id="st">Seconds</p>
-        </div>
-    </div>
-    <!-- Counter Ends -->
-
-	<div class="nav-menu">
-        <div id="box">
-            <div id="text1" class="menu-options" style="margin-left:-220px;margin-top:10px;"><h3>EFFERVESCENCE</h3></div>
-            <div id="text2" class="menu-options" style="margin-top:60px;"><a href="index.html">Home</a></div>
-            <div id="text3" class="menu-options" style="margin-top:80px;"><a href="#">Events</a></div>
-            <div id="text4" class="menu-options" style="margin-top:100px;"><a href="#">Pro Shows</a></div>
-            <div id="text5" class="menu-options" style="margin-top:120px;margin-left:-190px;"><a href="gallery.html">Previous year gallery</a></div>
-            <div id="text6" class="menu-options" style="margin-top:140px;"><a href="contact.html">Contact Us</a></div>
-	    </div>
-        <div id="menu">
-            Menu
-            <img id="btn1" src="image/down.png"></img>
-        </div>
-    </div>
-<<<<<<< HEAD
-    <div>
-        <img src="image/frame3done.png" style="width:50%;height:35%;z-index:2;position:absolute;margin-left:25%;margin-top:15%;"></img>
-    </div>
-    <div style="position:absolute;margin-left:5%;margin-top:41%;" class="fb-like" data-href="https://www.facebook.com/effervescence.iiita?fref=ts" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-colorscheme="dark" ></div>
-    <div> 
-         <canvas id="canvas" ></canvas>
-=======
-	<div style="position:absolute;margin-left:110%;margin-top:13%;" class="social_links">
-        <a href="https://www.facebook.com/effervescence.iiita?fref=ts" class="icon icon-border facebook">facebook</a>
-        <a href="https://www.youtube.com/user/effervescenceMM13" class="icon icon-border twitter">twitter</a>
-        <a href="https://www.youtube.com/user/effervescenceMM13" class="icon icon-border youtube">youtube</a>
-        <a href="https://www.iiita.ac.in" class="icon icon-border effe">effervescence</a></div>
-    <div style="position:absolute;margin-left:145%;margin-top:10%;">
-    <div id="map-canvas"></div>
->>>>>>> origin/master
-    </div>
-    <div style="width:28000px;margin-left:1310px;color:white;">
-        <div style="position:absolute;color:white;margin-left:145%;width:600px;">
-            <h2>About Us</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-            </p>
-        </div>
-        <div style="position:absolute;margin-left:310%;margin-top:13%;">
-            <a href="https://www.youtube.com/user/effervescenceMM13"><img src="image/youtube.png" style="width:200px;height:150px;position:absolute;"></a>
-            <a href="https://www.facebook.com/effervescence.iiita?fref=ts"><img src="image/facebook.png" style="width:200px;height:150px;margin-left:200px;position:absolute;"></a>
-            <a href="https://www.youtube.com/user/effervescenceMM13"><img src="image/twitter.png" style="width:200px;height:150px;margin-left:200px;margin-top:150px;position:absolute;"></a>
-            <a href="https://www.iiita.ac.in"><img src="image/effesocial.png" style="width:200px;height:150px;margin-top:150px;position:absolute;"></a>
-        </div>
-        <div style="position:absolute;margin-left:345%;margin-top:10%;">
-            <div id="map-canvas"></div>
-        </div>
-        <div  style="background:black;width:1330px;height:655px;float:left;">
-        	<div style="width:44%;">
-            	<img src="music.jpeg" style="float:left;height:40%;width:66%;margin: 10px 10px 10px 10px;">
-	            <img src="music.jpeg" style="float:left;height:40%;width:28%;margin: 10px 10px 10px 0px;">
-          	</div>
-            <div style="margin:10px 10px 10px 0px;float:left;height:40%;width:25%;">
-                <img src="music.jpeg" style="float:left;height:60%;width:100%;">
-                <img src="music.jpeg" style="float:left;height:100%;width:100%;margin-top:10px;">
-            </div>
-            <div style="margin:10px 10px 10px 0px;float:left;height:40%;width:28%;margin-left:10px;">
-                <img src="music.jpeg" style="float:left;height:40%;width:43%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:40%;width:43%;">
-                <img src="music.jpeg" style="float:left;height:40%;width:43%;margin-right:10px;margin-top:10px;">
-                <img src="music.jpeg" style="float:left;height:40%;width:43%;margin-top:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:90%;margin-top:10px;">
-            </div>
-            <div style="width:44%;height:24%;margin-left:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:31%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:30.5%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:30.5%;">
-            </div>
-            <div style="position:absolute;height:22%;width:69%;margin-top:22.5%;margin-left:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:19.5%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:37.5%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:38%;">
-            </div>
-		</div>
-        <img src="image/home_2.jpg" style="width:1330px;height:100%;float:left;">
-	    <div  style="background:black;width:1330px;height:655px;float:left;">
-            <div style="width:44%;">
-                <img src="music.jpeg" style="float:left;height:40%;width:66%;margin: 10px 10px 10px 10px;">
-                <img src="music.jpeg" style="float:left;height:40%;width:28%;margin: 10px 10px 10px 0px;">
-            </div>
-            <div style="margin:10px 10px 10px 0px;float:left;height:40%;width:25%;">
-                <img src="music.jpeg" style="float:left;height:60%;width:100%;">
-                <img src="music.jpeg" style="float:left;height:100%;width:100%;margin-top:10px;">
-            </div>
-            <div style="margin:10px 10px 10px 0px;float:left;height:40%;width:28%;margin-left:10px;">
-                <img src="music.jpeg" style="float:left;height:40%;width:43%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:40%;width:43%;">
-                <img src="music.jpeg" style="float:left;height:40%;width:43%;margin-right:10px;margin-top:10px;">
-                <img src="music.jpeg" style="float:left;height:40%;width:43%;margin-top:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:90%;margin-top:10px;">
-            </div>
-            <div style="width:44%;height:24%;margin-left:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:31%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:30.5%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:30.5%;">
-            </div>
-            <div style="position:absolute;height:22%;width:69%;margin-top:22.5%;margin-left:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:19.5%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:37.5%;margin-right:10px;">
-                <img src="music.jpeg" style="float:left;height:100%;width:38%;">
-            </div>
-		</div>
-     	<img src="image/home_3.jpg" style="width:1352px;height:100%;float:left;">
-	</div>      
-</body>
+	</body>
 </html>
