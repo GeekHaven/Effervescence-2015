@@ -1,8 +1,10 @@
 /*for chrome and other browsers*/
-::-webkit-scrollbar {		
-   width: 100%; /*12px*/		
-	height: 30px;	/*20px*/
-}		
+@media (min-width : 768px) {
+  ::-webkit-scrollbar {		
+    width: 100%; /*12px*/		
+	  height: 30px;	/*20px*/
+  }		
+}
 ::-webkit-scrollbar-track {		
     background: url('../image/check_scroll.png');		
 	background-size: 2em;/*9em*/		

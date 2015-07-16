@@ -24,6 +24,21 @@
 
 /*responsive end*/
 
+	.scroll-pane {
+            overflow: auto;
+    }
+
+    @media (max-width : 768px) {
+        .scroll-pane {
+            overflow-x : hidden;
+            overflow-y : visible !important;
+        }
+        ::-webkit-scrollbar {		
+   			width: 34px;		
+			height: 30px;	/*20px*/
+		}	
+    }
+
 	.each{
 		width:250px;
 		height:250px;
