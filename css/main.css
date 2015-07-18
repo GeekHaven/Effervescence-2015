@@ -150,14 +150,6 @@
 	font-family:Palatino Linotype,sans-serif;
 }
 
-div.menu-options a:hover{
-	color:#FF0000;
-}
-
-div.menu-options a:active{
-	color:#FFFF66;
-}
-
 #box{
   background:black;
   height:0px;
@@ -175,10 +167,120 @@ div.menu-options a:active{
 
 .menu-options{
   position:absolute;
-  margin-left:-130px;
+  margin-left:-148px;
+  left:-130px;
 }
 
 a:link    {color:#E6E6E6; background-color:transparent; text-decoration:none}
 a:visited {color:#E6E6E6; background-color:transparent; text-decoration:none}
 a:hover   {color:#848484; background-color:transparent; text-decoration:none}
 a:active  {color:#E6E6E6; background-color:transparent; text-decoration:none}
+
+.nav-wrap{
+	height:0;
+	width:0;
+}
+
+/*#text2{
+	margin-top:80px;
+}
+#text3{
+	margin-top:100px;}
+#text4{
+	margin-top:120px;}
+#text5{
+	margin-top:140px;margin-left:-190px;}
+#text6{
+	margin-top:160px;}
+*/	
+
+/*css for fix-hover-style-on-menu*/
+
+#text5{
+margin-left:-208px;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+.unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unstyled a {
+  text-decoration: none;
+}
+
+.list-inline {
+  overflow: hidden;
+}
+
+.list-inline li {
+  float: left;
+}
+
+.header {
+  position: fixed;
+  left: 5px;
+  top:80px;
+  bottom: 0;
+  width: 17em;
+  height:2em;
+  
+}
+
+.main-nav ul {
+  border-top: solid 1px #3C3735;
+}
+
+.main-nav li {
+  border-bottom: solid 1px #3C3735;
+}
+
+.main-nav a {
+  padding:2.5px 10px;
+  color: #DFDBD9;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-size:1.45em;
+  text-align: left;
+  text-transform:capitalize;
+}
+
+.main-nav a:hover {
+  color: #ff0000;
+}
+
+.list-hover-slide li {
+  position: relative;
+  overflow: hidden;
+  width:21.3em;
+}
+
+.list-hover-slide a {
+  display: block;
+  position: relative;
+  z-index:20;
+  transition: .35s ease color;
+  height:1.8em;
+}
+
+.list-hover-slide a:before {
+  content: '';
+  display: block;
+  z-index: -1;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-right: solid 5px #FF0000;
+  background: #3C3735;
+  transition: .35s ease left;
+}
+
+.list-hover-slide a.is-current:before, .list-hover-slide a:hover:before {
+  left: 0;
+}
