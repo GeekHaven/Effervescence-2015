@@ -119,11 +119,11 @@
   box-shadow:4px 4px 20px #888888;
 }
 
-
 .text1,h3{
-  color:#FF0000;
-  font-size:24px;
-  font-family:Algerian,cursive;
+  color:#7A991F;
+  font-size:180%;
+  font-family:Georgia, serif;
+  font-weight:800;
 }
 
 #menu{
@@ -133,20 +133,23 @@
   margin-left:6px;
   padding:10px;
   border-radius:5px;
-  border-top: 2px dashed #888888;
+  border-top: 2px dashed #FFFF00;
   box-sizing: border-box;
+  font-size:140%;
+  font-family:Georgia, serif;
+  font-weight:800;
 }
-
 
 @media (max-width : 768px) {
   #menu {
-    width : 768px;
+    width : 780px;
   }
 }
 
 #menu:hover{
-	color:#FF0000;
-	font-size:17px;
+	color:#7A991F;
+	font-size:22px;
+	font-weight:700;
 	font-family:Palatino Linotype,sans-serif;
 }
 
@@ -192,7 +195,7 @@ a:active  {color:#E6E6E6; background-color:transparent; text-decoration:none}
 	margin-top:140px;margin-left:-190px;}
 #text6{
 	margin-top:160px;}
-*/	
+*/
 
 /*css for fix-hover-style-on-menu*/
 
@@ -222,10 +225,10 @@ margin-left:-208px;
   float: left;
 }
 
-.header {
+.header1{
   position: fixed;
   left: 5px;
-  top:80px;
+  top:100px;
   bottom: 0;
   width: 17em;
   height:2em;
@@ -233,24 +236,25 @@ margin-left:-208px;
 }
 
 .main-nav ul {
-  border-top: solid 1px #3C3735;
+  border-top:0px ;
 }
 
 .main-nav li {
-  border-bottom: solid 1px #3C3735;
+  border-bottom:0px ;
 }
 
 .main-nav a {
   padding:2.5px 10px;
   color: #DFDBD9;
-  font-family:"Trebuchet MS", Helvetica, sans-serif;
-  font-size:1.45em;
+  font-family:Papyrus, fantasy;
+  font-weight:500;
+  font-size:1.2em;
   text-align: left;
   text-transform:capitalize;
 }
 
 .main-nav a:hover {
-  color: #ff0000;
+  color:#FFFF00;
 }
 
 .list-hover-slide li {
@@ -276,8 +280,8 @@ margin-left:-208px;
   top: 0;
   width: 100%;
   height: 100%;
-  border-right: solid 5px #FF0000;
-  background: #3C3735;
+  border-right: solid 5px #FFFF00;
+  background:#0A0A05;
   transition: .35s ease left;
 }
 
