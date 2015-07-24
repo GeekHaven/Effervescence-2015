@@ -1,76 +1,1278 @@
-html, body {
-	width:100%;
-	height:100%;
-	padding:0;
-	margin:0;
-	overflow:hidden;
+@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
-section {
-	float:left;
-	display:block;
-	height:100%;
-	padding:0;
-	margin:0;
+html {
+  font-size: 62.5%;
 }
 
-#section-section1 {
-	 background-image: url('../image/theme1.jpg');
-    	 background-position: center; 
-	 background-size: 100% 100%;
-    	 background-repeat: no-repeat;
+body {
+  overflow:hidden;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #4089a6;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-#section-section2 {
-	 background-image: url('../image/theme2.jpg');
-    	 background-position: center; 
-	 background-size: 100% 100%;
-    	 background-repeat: no-repeat;
+
+a {
+  color: #283040;
+  text-decoration: none;
 }
-#section-section3 {
-	 background-image: url('../image/theme3.jpg');
-    	 background-position: center; 
-	 background-size: 100% 100%;
-    	 background-repeat: no-repeat;
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 1em;
+  font-size: 2.2rem;
 }
-#section-section4 {
-	 background-image: url('../image/frame1done.png');
-    	 background-position: center; 
-	 background-size: 100% 100%;
-    	 background-repeat: no-repeat;
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.4rem;
+    font-weight: 300;
+  }
 }
-#section-section5 {
-	 background-image: url('../image/frame2done.png');
-    	 background-position: center; 
-	 background-size: 100% 100%;
-    	 background-repeat: no-repeat;
+
+/*--------------------------------
+
+        Counter
+
+----------------------------------*/
+
+/* Get the bourbon mixin from http://bourbon.io */
+/* Reset */
+.flip-clock-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
-#section-section6 {
-	 background-image: url('../image/frame3done.png');
-    	 background-position: center; 
-	 background-size: 100% 100%;
-    	 background-repeat: no-repeat;
+
+.flip-clock-wrapper a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ccc; }
+
+.flip-clock-wrapper a:hover {
+  color: #fff; }
+
+.flip-clock-wrapper ul {
+  list-style: none; }
+
+.flip-clock-wrapper.clearfix:before,
+.flip-clock-wrapper.clearfix:after {
+  content: " ";
+  display: table; }
+
+.flip-clock-wrapper.clearfix:after {
+  clear: both; }
+
+.flip-clock-wrapper.clearfix {
+  *zoom: 1; }
+
+/* Main */
+.flip-clock-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }
+
+.flip-clock-meridium {
+  background: none !important;
+  box-shadow: 0 0 0 !important;
+  font-size: 36px !important; }
+
+.flip-clock-meridium a { color: #313333; }
+
+.flip-clock-wrapper {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin: 1em;
+  transform:translateX(47%) translateY(28%) scale(0.47);
 }
-#section-section7 {
-	 background-image: url('../image/frame3done1.png');
-    	 background-position: center; 
-	 background-size: 100% 100%;
-    	 background-repeat: no-repeat;
+
+.flip-clock-wrapper:before,
+.flip-clock-wrapper:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
-#section-section8 {
-	 background-image: url('../image/theme2.jpg');
-    	 background-position: center; 
-	 background-size: 100% 100%;
-    	 background-repeat: no-repeat;
+.flip-clock-wrapper:after {
+    clear: both;
 }
-.horizon-prev, .horizon-next {
-position: fixed;
-top: 50%;
-margin-top: -24px;
-z-index: 9999;
+
+/* Skeleton */
+.flip-clock-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 5px;
+  width: 60px;
+  height: 90px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 87px;
+  border-radius: 6px;
+  background: #000;
 }
-.horizon-prev {
-left: 20px;
+
+.flip-clock-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 87px;
+  text-decoration: none !important;
 }
-.horizon-next {
-right: 20px;
+
+.flip-clock-wrapper ul li:first-child {
+  z-index: 2; }
+
+.flip-clock-wrapper ul li a {
+  display: block;
+  height: 100%;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important;
+  cursor: default !important; }
+
+.flip-clock-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-size: 80px;
+  overflow: hidden; 
+  outline: 1px solid transparent; }
+
+.flip-clock-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+.flip-clock-wrapper ul li a div.up {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  top: 0; }
+
+.flip-clock-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.flip-clock-wrapper ul li a div.down {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  bottom: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 70px; }
+
+.flip-clock-wrapper ul li a div.up div.inn {
+  top: 0; }
+
+.flip-clock-wrapper ul li a div.down div.inn {
+  bottom: 0; }
+
+/* PLAY */
+.flip-clock-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }
+
+.flip-clock-wrapper .flip {   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+
+.flip-clock-wrapper ul.play li.flip-clock-active {
+  -webkit-animation: asd 0.5s 0.5s linear both;
+  -moz-animation: asd 0.5s 0.5s linear both;
+  animation: asd 0.5s 0.5s linear both;
+  z-index: 5; }
+
+.flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px; }
+
+.flip-clock-divider:first-child {
+  width: 0; }
+
+.flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 5px; }
+
+.flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.5em;
+  right: -86px;
+  color: black;
+  text-shadow: none; }
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px; }
+
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px; }
+
+.flip-clock-dot.top {
+  top: 30px; }
+
+.flip-clock-dot.bottom {
+  bottom: 30px; }
+
+@-webkit-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@-moz-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@-o-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  -moz-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(90deg); }
+
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+
+@-moz-keyframes turn {
+  0% {
+    -moz-transform: rotateX(90deg); }
+
+  100% {
+    -moz-transform: rotateX(0deg); } }
+
+@-o-keyframes turn {
+  0% {
+    -o-transform: rotateX(90deg); }
+
+  100% {
+    -o-transform: rotateX(0deg); } }
+
+@keyframes turn {
+  0% {
+    transform: rotateX(90deg); }
+
+  100% {
+    transform: rotateX(0deg); } }
+
+.flip-clock-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  -moz-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }
+
+@-webkit-keyframes turn2 {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+
+  100% {
+    -webkit-transform: rotateX(-90deg); } }
+
+@-moz-keyframes turn2 {
+  0% {
+    -moz-transform: rotateX(0deg); }
+
+  100% {
+    -moz-transform: rotateX(-90deg); } }
+
+@-o-keyframes turn2 {
+  0% {
+    -o-transform: rotateX(0deg); }
+
+  100% {
+    -o-transform: rotateX(-90deg); } }
+
+@keyframes turn2 {
+  0% {
+    transform: rotateX(0deg); }
+
+  100% {
+    transform: rotateX(-90deg); } }
+
+.flip-clock-wrapper ul li.flip-clock-active {
+  z-index: 3; }
+
+/* SHADOW */
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }
+
+/*DOWN*/
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.2s linear both; }
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+
+/*--------------------------------
+
+Menu Stylesheet
+
+----------------------------------*/
+
+@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative
+}
+
+.csstransforms .cn-wrapper {
+  background-color:hsla(0, 88%, 64%, 1);
+  box-shadow: 1px 1px 6px #000;
+  font-size: 1em;
+  width: 26em;
+  height: 26em;  
+  position: fixed;
+  z-index: 10;
+  bottom: 0%;
+  right: -2%;
+  border-radius: 50%;
+  margin-left: -13em;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  transform: scale(0.1);
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.csstransforms .opened-nav {
+  border-radius: 50%;
+  pointer-events: auto;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.cn-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 2;
+}
+
+.cn-overlay.on-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cn-button {
+  position:fixed;
+  border: none;
+  background: none;
+  color: #f06060;
+  text-align: center;
+  font-size: 1.8em;
+  height: 3.5em;
+  width: 3.5em;
+  background-color: #fff;
+  position: fixed;
+  right: 9.5%;
+  margin-left: -1.75em;
+  bottom: 24%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.cn-button:hover,
+.cn-button:active,
+.cn-button:focus {
+  color: #aa1010;
+}
+
+.csstransforms .cn-wrapper li {
+  position: absolute;
+  font-size: 1.5em;
+  width: 10em;
+  height: 10em;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  margin-top: -1.3em;
+  margin-left: -10em;
+  -webkit-transition: border .3s ease;
+  -moz-transition: border .3s ease;
+  transition: border .3s ease;
+}
+
+.csstransforms .cn-wrapper li a {
+  display: block;
+  font-size: 1.18em;
+  height: 14.5em;
+  width: 14.5em;
+  position: absolute;
+  bottom: -7.25em;
+  right: -7.25em;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1.8em;
+  text-align: center;
+  -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+  -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
+  -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
+  transform: skew(-50deg) rotate(-70deg) scale(1);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity 0.3s, color 0.3s;
+  -moz-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.csstransforms .cn-wrapper li a span {
+  font-size: 1.1em;
+  opacity: 0.7;
+}
+
+/* for a central angle x, the list items must be skewed by 90-x degrees
+in our case x=40deg so skew angle is 50deg
+items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
+
+.csstransforms .cn-wrapper li:first-child {
+  -webkit-transform: rotate(0deg) skew(50deg);
+  -ms-transform: rotate(0deg) skew(50deg);
+  -moz-transform: rotate(0deg) skew(50deg);
+  transform: rotate(0deg) skew(50deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(1) a:hover:before, 
+.csstransforms .cn-wrapper li:nth-child(1) a:active:before, 
+.csstransforms .cn-wrapper li:nth-child(1) a:focus:before {
+  content: "HOME";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -2.5rem;
+  text-transform: uppercase;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 60%;
+  color: #292929;
+}
+
+
+
+.csstransforms .cn-wrapper li:nth-child(2) {
+  -webkit-transform: rotate(45deg) skew(50deg);
+  -ms-transform: rotate(45deg) skew(50deg);
+  -moz-transform: rotate(45deg) skew(50deg);
+  transform: rotate(45deg) skew(50deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(2) a:hover:before, 
+.csstransforms .cn-wrapper li:nth-child(2) a:active:before, 
+.csstransforms .cn-wrapper li:nth-child(2) a:focus:before {
+  content: "about";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -2.5rem;
+  text-transform: uppercase;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 60%;
+  color: #292929;
+}
+
+.csstransforms .cn-wrapper li:nth-child(3) {
+  -webkit-transform: rotate(90deg) skew(50deg);
+  -ms-transform: rotate(90deg) skew(50deg);
+  -moz-transform: rotate(90deg) skew(50deg);
+  transform: rotate(90deg) skew(50deg)
+}
+
+.csstransforms .cn-wrapper li:nth-child(3) a:hover:before, 
+.csstransforms .cn-wrapper li:nth-child(3) a:active:before, 
+.csstransforms .cn-wrapper li:nth-child(3) a:focus:before {
+  content: "event";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -2.5rem;
+  text-transform: uppercase;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 60%;
+  color: #292929;
+}
+
+
+.csstransforms .cn-wrapper li:nth-child(4) {
+  -webkit-transform: rotate(135deg) skew(50deg);
+  -ms-transform: rotate(135deg) skew(50deg);
+  -moz-transform: rotate(135deg) skew(50deg);
+  transform: rotate(135deg) skew(50deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(4) a:hover:before, 
+.csstransforms .cn-wrapper li:nth-child(4) a:active:before, 
+.csstransforms .cn-wrapper li:nth-child(4) a:focus:before {
+  content: "proshow";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -2.5rem;
+  text-transform: uppercase;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 60%;
+  color: #292929;
+}
+
+
+.csstransforms .cn-wrapper li:nth-child(5) {
+  -webkit-transform: rotate(180deg) skew(50deg);
+  -ms-transform: rotate(180deg) skew(50deg);
+  -moz-transform: rotate(180deg) skew(50deg);
+  transform: rotate(180deg) skew(50deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(5) a:hover:before, 
+.csstransforms .cn-wrapper li:nth-child(5) a:active:before, 
+.csstransforms .cn-wrapper li:nth-child(5) a:focus:before {
+  content: "gallery";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -2.5rem;
+  text-transform: uppercase;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 60%;
+  color: #292929;
+}
+
+
+.csstransforms .cn-wrapper li:nth-child(6) {
+  -webkit-transform: rotate(225deg) skew(50deg);
+  -ms-transform: rotate(225deg) skew(50deg);
+  -moz-transform: rotate(225deg) skew(50deg);
+  transform: rotate(225deg) skew(50deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(6) a:hover:before, 
+.csstransforms .cn-wrapper li:nth-child(6) a:active:before, 
+.csstransforms .cn-wrapper li:nth-child(6) a:focus:before {
+  content: "sponsor";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -2.5rem;
+  text-transform: uppercase;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 60%;
+  color: #292929;
+}
+
+
+.csstransforms .cn-wrapper li:nth-child(7) {
+  -webkit-transform: rotate(270deg) skew(50deg);
+  -ms-transform: rotate(270deg) skew(50deg);
+  -moz-transform: rotate(270deg) skew(50deg);
+  transform: rotate(270deg) skew(50deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(7) a:hover:before, 
+.csstransforms .cn-wrapper li:nth-child(7) a:active:before, 
+.csstransforms .cn-wrapper li:nth-child(7) a:focus:before {
+  content: "registration";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -2.5rem;
+  text-transform: uppercase;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 60%;
+  color: #292929;
+}
+
+
+.csstransforms .cn-wrapper li:nth-child(8) {
+  -webkit-transform: rotate(315deg) skew(50deg);
+  -ms-transform: rotate(315deg) skew(50deg);
+  -moz-transform: rotate(315deg) skew(50deg);
+  transform: rotate(315deg) skew(50deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(8) a:hover:before, 
+.csstransforms .cn-wrapper li:nth-child(8) a:active:before, 
+.csstransforms .cn-wrapper li:nth-child(8) a:focus:before {
+  content: "contact";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+ top: -2.5rem;
+  text-transform: uppercase;
+  font-family: Play;
+  font-weight: 700;
+  font-size: 60%;
+  color: #292929;
+}
+
+
+.csstransforms .cn-wrapper li:nth-child(n) a {
+  background-color: #a11313;
+  background-color: hsla(0, 88%, 65%, 1);
+
+}
+
+
+
+/* active style 
+.csstransforms .cn-wrapper li.active a {
+  background-color: #b31515;
+  background-color: hsla(0, 88%, 70%, 1);
+}
+
+
+/* hover style */
+.csstransforms .cn-wrapper li:not(.active) a:hover,
+.csstransforms .cn-wrapper li:not(.active) a:active,
+.csstransforms .cn-wrapper li:not(.active) a:focus {
+  background-color: #292929;
+}
+/*.csstransforms .cn-wrapper li:not(.active) a:focus
+{
+    position:fixed;
+}*/
+
+.menu-text {
+  position:absolute;
+  left:25%;
+  display:none;
+}
+
+
+ 
+
+/* fallback */
+.no-csstransforms .cn-button {
+  display: none;
+}
+
+.no-csstransforms .cn-wrapper li {
+  position: static;
+  float: left;
+  font-size: 1em;
+  height: 5em;
+  width: 5em;
+  background-color: #eee;
+  text-align: center;
+  line-height: 5em;
+}
+
+.no-csstransforms .cn-wrapper li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3em;
+  border-right: 1px solid #ddd;
+}
+
+.no-csstransforms .cn-wrapper li a:last-child {
+  border: none;
+}
+
+.no-csstransforms .cn-wrapper li a:hover,
+.no-csstransforms .cn-wrapper li a:active
+/*.no-csstransforms .cn-wrapper li a:focus */{
+  background-color: white;
+}
+
+/*.no-csstransforms .cn-wrapper li.active a {
+  background-color: #6F325C;
+  color: #fff;
+}*/
+
+.no-csstransforms .cn-wrapper {
+  font-size: 1em;
+  height: 5em;
+  width: 25.15em;
+  bottom: 0;
+  margin-left: -12.5em;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width:480px) {
+  .csstransforms .cn-wrapper {
+    font-size: .68em;
+  }
+
+  .cn-button {
+    font-size: 1em;
+  }
+
+  .csstransforms .cn-wrapper li {
+    font-size: 1.52em;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .no-csstransforms .cn-wrapper {
+    width: 15.15px;
+    margin-left: -7.5em;
+  }
+
+  .no-csstransforms .cn-wrapper li {
+    height: 3em;
+    width: 3em;
+  }
+}
+
+/* -------------------------------- 
+
+Patterns - reusable parts of our design
+
+-------------------------------- */
+.cd-btn {
+  position: absolute;
+  right: 14%;
+  top:7%;
+  display: inline-block;
+  padding: 1.4em 1.6em;
+  margin-bottom: 2em;
+  border-radius: 50em;
+  background-color: #283040;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.no-touch .cd-btn:hover {
+  background-color: #323c50;
+}
+.cd-about .cd-btn {
+  background-color: #4089a6;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+body::after, body::before {
+  /* these are the 2 half blocks which cover the content once the animation is triggered */
+  content: '';
+  height: 50vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: -webkit-transform 0.4s 0.4s;
+  -moz-transition: -moz-transform 0.4s 0.4s;
+  transition: transform 0.4s 0.4s;
+}
+body::before {
+  top: 0;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+body::after {
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+body.page-is-changing::after, body.page-is-changing::before {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.4s 0s;
+  -moz-transition: -moz-transform 0.4s 0s;
+  transition: transform 0.4s 0s;
+}
+
+main {
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+}
+main .cd-main-content {
+  position: relative;
+  height: calc(100vh - 20px);
+  width:76%;
+}
+main .cd-main-content > div {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+main .cd-main-content::after, main .cd-main-content::before {
+  /* these are the 2 gradient overlay at the top and bottom of the .cd-main-content - to indicate that you can scroll */
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 50px;
+  width: 100%;
+}
+main .cd-main-content::before {
+  top: 0;
+}
+main .cd-main-content::after {
+  bottom: 0;
+}
+main .cd-main-content.cd-index {
+  /* .cd-main-content basic style - index page */
+  background-color: #4089a6;
+  /* vertically center its content */
+  display: table;
+  /*width: 100%;*/
+}
+main .cd-main-content.cd-index > div {
+  /* vertically center the content inside the .cd-index */
+  display: table-cell;
+  vertical-align: middle;
+}
+main .cd-main-content.cd-index::after {
+  background-color: rgba(64, 137, 166, 0);
+  background-image: -webkit-linear-gradient(bottom, #4089a6, rgba(64, 137, 166, 0));
+  background-image: linear-gradient(to top,#4089a6, rgba(64, 137, 166, 0));
+}
+main .cd-main-content.cd-index::before {
+  background-color: rgba(64, 137, 166, 0);
+  background-image: -webkit-linear-gradient(top, #4089a6, rgba(64, 137, 166, 0));
+  background-image: linear-gradient(to bottom,#4089a6, rgba(64, 137, 166, 0));
+}
+main .cd-main-content.cd-about {
+  /* .cd-main-content basic style - about page */
+  background-image:url('../image/divesh2.jpg');
+  background-size:cover;
+  color:#fff;
+}
+
+main .cd-main-content.cd-contact {
+  /* .cd-main-content basic style - about page */
+  background-image:url('../image/divesh2.jpg');
+  background-size:cover;
+  color:#fff;
+}
+
+.home-about-content {
+  margin: 7% 5% 0% 45%;
+  text-align: justify;
+  color:#fff;
+}
+
+.home-about-content p {
+  line-height: 1.5;
+  font-size:1.6rem;
+  color:#fff;
+}
+
+.home-contact-content {
+  margin: 7% 5% 0% 45%;
+  text-align: justify;
+  color:#fff;
+}
+
+.home-contact-content p {
+  line-height: 1.5;
+  font-size:1.6rem;
+  color:#fff;
+}
+
+
+main .cd-main-content.cd-about::after {
+  background-color: rgba(40, 48, 64, 0);
+  background-image: -webkit-linear-gradient(bottom, #283040, rgba(40, 48, 64, 0));
+  background-image: linear-gradient(to top,#283040, rgba(40, 48, 64, 0));
+}
+main .cd-main-content.cd-about::before {
+  background-color: rgba(40, 48, 64, 0);
+  background-image: -webkit-linear-gradient(top, #283040, rgba(40, 48, 64, 0));
+  background-image: linear-gradient(to bottom,#283040, rgba(40, 48, 64, 0));
+}
+main p {
+  width: 90%;
+  max-width: 768px;
+  margin: 3em auto;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #535966;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    padding: 20px;
+  }
+  main .cd-main-content {
+    height: calc(100vh - 40px);
+    width:76%;
+  }
+  main.cd-index > div {
+    padding-top: 200px;
+  }
+  main.cd-index > div {
+    padding-top: 50px;
+  }
+  main p {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+
+.cd-cover-layer {
+  /* layer that covers the content when the animation is triggered */
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  opacity: 0;
+  visibility: hidden;
+  background-color: #4089a6;
+  -webkit-transition: opacity 0.4s 0.4s, visibility 0s 0.8s;
+  -moz-transition: opacity 0.4s 0.4s, visibility 0s 0.8s;
+  transition: opacity 0.4s 0.4s, visibility 0s 0.8s;
+}
+.cd-about .cd-cover-layer {
+  background-color: #283040;
+}
+.page-is-changing .cd-cover-layer {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-cover-layer {
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+  }
+}
+
+.cd-loading-bar {
+  /* this is the loding bar - visible while switching from one page to the following one */
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  width: 90%;
+  background-color: #4089a6;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.4s, -webkit-transform 0.4s 0s ease-in;
+  -moz-transition: visibility 0s 0.4s, -moz-transform 0.4s 0s ease-in;
+  transition: visibility 0s 0.4s, transform 0.4s 0s ease-in;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.cd-about .cd-loading-bar {
+  background-color: #283040;
+}
+.cd-about .cd-loading-bar::before {
+  background-color: #4089a6;
+}
+.cd-loading-bar::before {
+  /* this is the progress bar inside the loading bar */
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #283040;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+.page-is-changing .cd-loading-bar {
+  visibility: visible;
+  -webkit-transform: translateX(-50%) translateY(-50%) scaleX(0.3);
+  -moz-transform: translateX(-50%) translateY(-50%) scaleX(0.3);
+  -ms-transform: translateX(-50%) translateY(-50%) scaleX(0.3);
+  -o-transform: translateX(-50%) translateY(-50%) scaleX(0.3);
+  transform: translateX(-50%) translateY(-50%) scaleX(0.3);
+  -webkit-transition: visibility 0s 0.3s, -webkit-transform 0.4s 0.4s;
+  -moz-transition: visibility 0s 0.3s, -moz-transform 0.4s 0.4s;
+  transition: visibility 0s 0.3s, transform 0.4s 0.4s;
+}
+.page-is-changing .cd-loading-bar::before {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: -webkit-transform 0.8s 0.8s ease-in;
+  -moz-transition: -moz-transform 0.8s 0.8s ease-in;
+  transition: transform 0.8s 0.8s ease-in;
+}
+@media only screen and (min-width: 768px) {
+  .cd-loading-bar {
+    width: calc(100% - 40px);
+  }
 }
