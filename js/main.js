@@ -84,4 +84,22 @@ jQuery(document).ready(function(event){
   function transitionsSupported() {
     return $('html').hasClass('csstransitions');
   }
+  /*--- Contact Buttons ---*/
+  
+  $(".contactlink").hide();
+  
+  $(".notcontact").click(function() {
+	  $(".contactlink").hide("fast");
+  });
+  
+  $("#contactbutton").click(function() {
+	  $(".contactlink").show("fast");
+  });
+  
+	$(".contactlink img").hover(function() {
+		$(this).attr("src","image/clink1.png");
+	},function() {
+		$(this).attr("src","image/clink.png");
+	});
+  /*-----------------------*/
 });

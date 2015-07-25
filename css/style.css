@@ -551,6 +551,8 @@ Menu Stylesheet
 
 .cn-button {
   position:fixed;
+  top:66.5%;
+  left:89%;
   border: none;
   background: none;
   color: #f06060;
@@ -1082,7 +1084,7 @@ main .cd-main-content.cd-about {
 
 main .cd-main-content.cd-contact {
   /* .cd-main-content basic style - about page */
-  background-image:url('../image/divesh2.jpg');
+/*  background-image:url('../image/divesh2.jpg'); */
   background-size:cover;
   color:#fff;
 }
@@ -1286,3 +1288,33 @@ main p {
 .clock{
   z-index:102;
 }
+
+/* Contact Link */
+.contactlink {
+	padding:.2%;
+	position:absolute;
+	left:83%;
+	top:30%;
+	height:15%;
+	width:15%;
+	z-index:202;
+}
+
+.contactlink div {
+	display:inline-block;
+	height:45%;
+	width:30%;
+}
+
+.contactlink img {
+	height:75%;
+	width:100%;
+}
+
+.contactlink span {
+	color:white;
+	font-family:"Comic Sans MS";
+	font-size:13px;
+}
+
+/*--------------*/
