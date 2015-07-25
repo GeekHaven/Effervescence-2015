@@ -1316,5 +1316,9 @@ main p {
 	font-family:"Comic Sans MS";
 	font-size:13px;
 }
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none
+}
 
 /*--------------*/
