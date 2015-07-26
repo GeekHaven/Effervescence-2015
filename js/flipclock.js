@@ -2465,8 +2465,8 @@ var FlipClock;
 		'months'  : 'Months',
 		'days'    : 'Days',
 		'hours'   : 'Hours',
-		'minutes' : 'Minutes',
-		'seconds' : 'Seconds'	
+		'minutes' : 'Min',
+		'seconds' : 'Sec'	
 
 	};
 	

@@ -99,7 +99,7 @@ h1 {
   position: absolute;
   width: 100%;
   margin: 1em;
-  transform:translateX(47%) translateY(28%) scale(0.47);
+  transform:translateX(47%) translateY(28%) scale(0.37);
 }
 
 .flip-clock-wrapper:before,
@@ -249,8 +249,9 @@ h1 {
 .flip-clock-divider .flip-clock-label {
   position: absolute;
   top: -1.5em;
-  right: -86px;
-  color: black;
+  right: -110px;
+  color: #fff;
+  font-size:3.3em;
   text-shadow: none; }
 
 .flip-clock-divider.minutes .flip-clock-label {
@@ -505,7 +506,7 @@ Menu Stylesheet
   position: fixed;
   z-index: 102;
   bottom: 0%;
-  right: -2%;
+  right: -3.2%;
   border-radius: 50%;
   margin-left: -13em;
   -webkit-transform: scale(0.1);
@@ -551,8 +552,7 @@ Menu Stylesheet
 
 .cn-button {
   position:fixed;
-  top:66.5%;
-  left:89%;
+  top:65.5%;
   border: none;
   background: none;
   color: #f06060;
@@ -562,7 +562,7 @@ Menu Stylesheet
   width: 3.5em;
   background-color: #fff;
   position: fixed;
-  right: 9.5%;
+  right: 6.8%;
   margin-left: -1.75em;
   bottom: 24%;
   border-radius: 50%;
