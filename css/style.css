@@ -1156,7 +1156,7 @@ main p {
 .cd-cover-layer {
   /* layer that covers the content when the animation is triggered */
   position: fixed;
-  left: 50%;
+  left: 40%;
   top: 50%;
   bottom: auto;
   right: auto;
@@ -1187,7 +1187,7 @@ main p {
 @media only screen and (min-width: 768px) {
   .cd-cover-layer {
     height: calc(100% - 40px);
-    width: calc(100% - 40px);
+    width: calc(100% - 240px);
   }
 }
 
@@ -1195,7 +1195,7 @@ main p {
   /* this is the loding bar - visible while switching from one page to the following one */
   position: fixed;
   z-index: 2;
-  left: 50%;
+  left: 40%;
   top: 50%;
   height: 2px;
   width: 90%;
@@ -1275,7 +1275,7 @@ main p {
 }
 @media only screen and (min-width: 768px) {
   .cd-loading-bar {
-    width: calc(100% - 40px);
+    width: calc(100% - 240px);
   }
 }
 #tv-image{
