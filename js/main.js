@@ -1,11 +1,14 @@
-var section = $('<div class="cd-main-content cd-index"></div>');
+(function($) {
+  var section = $('<div class="cd-main-content cd-index"></div>');
     //var section = $('<div id="'+url.replace('#','')+'"></div>');
     //console.log(section);
 section.load('index.html .cd-index > *', function(event){
     // load new content and replace <main> content with the new one
-    console.log(section);
+    //console.log(section);
     $('#main').html(section);
 });
+}(jQuery));
+(function($){
 jQuery(document).ready(function(event){
   var isAnimating = false,
     firstLoad = false;
@@ -57,7 +60,7 @@ jQuery(document).ready(function(event){
   	//console.log(section);
   	section.load('index.html .'+newSection+'> *', function(event){
       // load new content and replace <main> content with the new one
-      console.log(section);
+      //console.log(section);
       $('#main').html(section);
       //if browser doesn't support CSS transitions - dont wait for the end of transitions
       var delay = ( transitionsSupported() ) ? 1200 : 0;
@@ -103,3 +106,4 @@ jQuery(document).ready(function(event){
 	});
   /*-----------------------*/
 });
+}(jQuery));

@@ -7,16 +7,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="css/skin.css">
-    <link rel="stylesheet" type="text/css" href="css/fs_gllaery.css">
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- CSS reset -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/fs_gllaery.js"></script>
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  	
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->	
 	<title>Effervescence 2k15</title>
 </head>
 <body>
@@ -26,26 +22,7 @@
 	<!--countdown-->
 	<div class="clock" style="margin:2em;"></div>
 		
-	<script type="text/javascript">
-		var clock;
-
-		$(document).ready(function() {
-
-			// Grab the current date
-			var currentDate = new Date();
-
-			// Set some date in the past. In this case, it's always been since Jan 1
-			var effeDate  = new Date("2015-10-15");
-
-			// Calculate the difference in seconds between the future and current date
-			var diff = effeDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
-			// Instantiate a coutdown FlipClock
-			clock = $('.clock').FlipClock(diff, {
-				clockFace: 'DailyCounter'
-			});
-		});
-	</script>
+	
 	<!--/countdown-->
 
 	<!--menu starts-->
@@ -54,51 +31,20 @@
 		<button class="cn-button">MENU</button>
 		<div class="cn-wrapper opened-nav" id="cn-wrapper">
 		    <ul>
-		      <li><a href="#index" data-type="page-transition" class="notcontact"><span class="icon-home "></span></a></li>
-		      <li><a href="#about" data-type="page-transition" class="notcontact"><span class="icon-user"></span></a></li>
-		      <li><a href="#events" data-type="page-transition" class="notcontact"><span class="icon-headphones"></span></a></li>
-		      <li><a href="#proshow" data-type="page-transition" class="notcontact"><span class="icon-music"></span></a></li>
-		      <li><a href="#gallery" data-type="page-transition" class="notcontact"><span class="icon-camera"></span></a></li>
-		      <li><a href="#sponsor" data-type="page-transition" class="notcontact"><span class="icon-money"></span></a></li>
-		      <li><a href="#registration" data-type="page-transition" class="notcontact"><span class="icon-lock"></span></a></li>
-		      <li><a href="#contact" data-type="page-transition" id="contactbutton"><span class="icon-phone"></span></a></li>
+		      <li><a href="#index" data-type="page-transition"><span class="icon-home "></span></a></li>
+		      <li><a href="#about" data-type="page-transition"><span class="icon-user"></span></a></li>
+		      <li><a href="#events" data-type="page-transition"><span class="icon-headphones"></span></a></li>
+		      <li><a href="#proshow" data-type="page-transition"><span class="icon-music"></span></a></li>
+		      <li><a href="#gallery" data-type="page-transition"><span class="icon-camera"></span></a></li>
+		      <li><a href="#sponsor" data-type="page-transition"><span class="icon-money"></span></a></li>
+		      <li><a href="#registration" data-type="page-transition"><span class="icon-lock"></span></a></li>
+		      <li><a href="#contact" data-type="page-transition"><span class="icon-phone"></span></a></li>
 		     </ul>
 		</div>
 		<div id="cn-overlay" class="cn-overlay on-overplay"></div>
 		<!-- End Nav Structure -->
 	</div>
-
-  <!-- Contact Links 
-  <div class="contactlink">
-  	<div id="clink1">
-    	<img src="image/clink.png">
-        <span>Effe</span>
-    </div>
-  	<div id="clink2">
-    	<img src="image/clink.png">
-        <span>Effe</span>
-    </div>
-  	<div id="clink3">
-    	<img src="image/clink.png">
-        <span>Effe</span>
-    </div>
-  	<div id="clink4">
-    	<img src="image/clink.png">
-        <span>Effe</span>
-    </div>
-  	<div id="clink5">
-    	<img src="image/clink.png">
-        <span>Effe</span>
-    </div>
-  	<div id="clink6">
-    	<img src="image/clink.png">
-        <span>Effe</span>
-    </div>
- 
-  </div>
-  <!------------------->
-
-	<!-- menu ends-->
+  	<!-- menu ends-->
 	
 	<!-- page view section -->
 	<div id="main">
@@ -107,8 +53,6 @@
 		<div class="cd-index cd-main-content">
 			<div>
 				<h1>HOME PAGE</h1>
-
-				
 			</div>
 		</div>
 
@@ -146,47 +90,54 @@
 
 		<!--Gallery Page Section-->
 		<div class="cd-gallery cd-main-content">
-			<div>
-				<div class="content-for-gallery">
-					<!--<h2>Page Under Construction</h2>-->
-					<div class="fullscreen_block"></div>    
-				    <script>
-						gallery_set = [	//Gallery Data
-							{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood1', fit : 'cover', title : "bollywood1", description: "be ready to get filmy this effe"},
-							{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg', alt : 'bollywood2', fit : 'cover', title : "bollywood2", description: "be ready to get filmy this effe"},
-							{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg', alt : 'bollywood3', fit : 'cover', title : "bollywood3", description: "be ready to get filmy this effe"},
-							{image : 'image/frame1done.png', thmb : 'image/theme44.jpg', alt : 'bollywood4', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/frame2done.png', thmb : 'image/theme55.jpg', alt : 'bollywood5', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/frame3done.png', thmb : 'image/theme66.jpg', alt : 'bollywood6', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/home_3.jpg', thmb : 'image/home_33.jpg', alt : 'bollywood7', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/home_2.jpg', thmb : 'image/home_22.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
+			
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="overflow:hidden;">
+  <!-- Indicators -->
+				  <ol class="carousel-indicators" >
+  					  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					  <li data-target="#myCarousel" data-slide-to="1"></li>
+  					  <li data-target="#myCarousel" data-slide-to="2"></li>
+  					  <li data-target="#myCarousel" data-slide-to="3"></li>
+ 				  </ol>
 
-							{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/frame1done.png', thmb : 'image/theme44.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/frame2done.png', thmb : 'image/theme55.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/frame3done.png', thmb : 'image/theme66.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/home_3.jpg', thmb : 'image/home_33.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/home_2.jpg', thmb : 'image/home_22.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"},
-							{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood', fit : 'cover', title : "be ready to get filmy this effe"}
-						];
-						$('.content-for-gallery').fs_gallery({
-							fx : 'fade', /*fade, zoom, slide_left, slide_right, slide_top, slide_bottom*/
-							slide_time : 3300, /*This time must be < then time in css*/
-							slides : gallery_set
-						});
-					</script>
-					
+  <!-- Wrapper for slides -->
+ 				 	<div class="carousel-inner" role="listbox">
+   					 <div class="item active">
+  					    <img src="image/teams.jpg" alt="Chania">
+  					    
+   					 </div>
+
+   					 <div class="item">
+     					<img src="image/teams.jpg" alt="Chania">
+     					 
+  					  </div>
+
+   					 <div class="item">
+    					<img src="image/teams.jpg" alt="Flower">
+    					  
+   					 </div>
+
+  					  <div class="item">
+   						   <img src="image/teams.jpg" alt="Flower">
+   						   
+  					  </div>
+  					</div>
+
+  <!-- Left and right controls -->
+  					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+   					 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+   					 <span class="sr-only">Previous</span>
+ 					 </a>
+ 					 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+   						 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    					<span class="sr-only">Next</span>
+ 				 	</a>
 				</div>
-			</div>
+			
 		</div>
 
 		<!--Sponsor Page Section-->
-		<div class="cd-sponsor cd-main-content">
+		<div class="cd-sponsor cd-main-content" >
 			<div>
 				<div>
 					<h2>Page Under Construction</h2>
@@ -206,64 +157,26 @@
 		</div>
 
 		<!-- Contact Page Section-->
-		<div class="cd-contact cd-main-content">
-			
-				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="overflow:hidden;">
-  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-  					  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					  <li data-target="#myCarousel" data-slide-to="1"></li>
-  					  <li data-target="#myCarousel" data-slide-to="2"></li>
-  					  <li data-target="#myCarousel" data-slide-to="3"></li>
- 				  </ol>
-
-  <!-- Wrapper for slides -->
- 				 	<div class="carousel-inner" role="listbox">
-   					 <div class="item active">
-  					    <img src="image/teams.jpg" alt="Chania">
-  					    <div class="carousel-caption">
-         					 <h3>Team Effe</h3>
-         					 <p style="color:white;">Behind every succesfull Evervescence , there is a very hard working Team Effe .</p>
-       					</div>
-   					 </div>
-
-   					 <div class="item">
-     					 <img src="image/teams.jpg" alt="Chania">
-     					 <div class="carousel-caption">
-         					 <h3>Team Effe</h3>
-         					 <p style="color:white;">Behind every succesfull Evervescence , there is a very hard working Team Effe .</p>
-       					</div>
-  					  </div>
-
-   					 <div class="item">
-    					  <img src="image/teams.jpg" alt="Flower">
-    					  <div class="carousel-caption">
-         					 <h3>Team Effe</h3>
-         					 <p style="color:white;">Behind every succesfull Evervescence , there is a very hard working Team Effe .</p>
-       					</div>
-   					 </div>
-
-  					  <div class="item">
-   						   <img src="image/teams.jpg" alt="Flower">
-   						   <div class="carousel-caption">
-         					 <h3>Team Effe</h3>
-         					 <p style="color:white;">Behind every succesfull Evervescence , there is a very hard working Team Effe .</p>
-       					</div>
-  					  </div>
-  					</div>
-
-  <!-- Left and right controls -->
-  					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-   					 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-   					 <span class="sr-only">Previous</span>
- 					 </a>
- 					 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-   						 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    					<span class="sr-only">Next</span>
- 				 	</a>
+		<div class="cd-contact cd-main-content" style="overflow:auto;">
+			<div>
+				<div id="body">
+					<div id="fullpage">
+						<div class="section " id="section0">
+							<h1>Contact 1</h1>
+							<p>this is the contact</p>
+							
+						</div>
+						<div class="section" id="section1">					
+							<h1>Contact 2</h1>
+							<p>this is the contact</p>					
+						</div>
+						<div class="section" id="section2">
+							<h1>Contact 3</h1>
+							<p>this is the contact</p>
+						</div>
+					</div>
 				</div>
-
-
+			</div>
   		</div>
 	</div>
 	<!-- page view section ends-->
@@ -271,9 +184,30 @@
 
 <div class="cd-cover-layer"></div>
 <div class="cd-loading-bar"></div>
-<script src="js/jquery-2.1.1.js"></script>
-<script type="text/javascript" src="js/theme.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<script src="js/main.js"></script> <!-- Resource jQuery-->
 <script src="js/flipclock.js"></script> <!-- Flipclock -->
+<script type="text/javascript">
+		var clock;
+
+		$(document).ready(function() {
+
+			// Grab the current date
+			var currentDate = new Date();
+
+			// Set some date in the past. In this case, it's always been since Jan 1
+			var effeDate  = new Date("2015-10-15");
+
+			// Calculate the difference in seconds between the future and current date
+			var diff = effeDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+			// Instantiate a coutdown FlipClock
+			clock = $('.clock').FlipClock(diff, {
+				clockFace: 'DailyCounter'
+			});
+		});
+	</script>
+
+
 </body>
 </html>

@@ -2780,3 +2780,4 @@ var FlipClock;
 	FlipClock.Lang['chinese'] = FlipClock.Lang.Chinese;
 
 }(jQuery));
+
