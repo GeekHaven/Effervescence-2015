@@ -1321,4 +1321,30 @@ main p {
     background-image: none
 }
 
+.contact-every{
+      width:200px;
+      height:250px;
+      float:left;
+      margin-left: 5%;
+    }
+    
+    .contact-image{
+      width:100%;
+      height:80%;
+      border-radius: 50%;
+      -webkit-box-shadow: 12px 15px 5px -1px rgba(0,0,0,0.81);
+      -moz-box-shadow: 12px 15px 5px -1px rgba(0,0,0,0.81);
+      box-shadow: 12px 15px 5px -1px rgba(0,0,0,0.81);
+    }
+    .contact-text{
+      margin-top:5%;
+      width:100%;
+      height:20%;
+      text-align: center;
+      background-color: #2E2E2E;
+    }
+    .contact-section{
+      width:80%;
+      margin-left: 20%;
+    }
 /*--------------*/
