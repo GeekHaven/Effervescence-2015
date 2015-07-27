@@ -1350,4 +1350,18 @@ main p {
       width:80%;
       margin-left: 20%;
     }
-/*--------------*/
+	
+/****************************************
+	social links
+****************************************/
+.social_links{
+	float:left;
+	margin-top:115px;
+	position:absolute;
+	margin-left:9.3%;
+}
+.icon{
+	width:75px;
+	height:75px;
+	margin-right:3px;
+}
