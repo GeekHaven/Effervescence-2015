@@ -552,19 +552,18 @@ Menu Stylesheet
 
 .cn-button {
   position:fixed;
-  top:65.5%;
   border: none;
   background: none;
   color: #f06060;
   text-align: center;
   font-size: 1.8em;
-  height: 3.5em;
-  width: 3.5em;
+  height: 5.5em;
+  width: 5.5em;
   background-color: #fff;
   position: fixed;
-  right: 6.8%;
+  right: 30%;
   margin-left: -1.75em;
-  bottom: 24%;
+  bottom: 31%;
   border-radius: 50%;
   cursor: pointer;
   z-index: 103;
