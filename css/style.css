@@ -1371,3 +1371,10 @@ main p {
 	height:52px;
 	margin-right:16.8px;
 }
+.pageunderconstruction-heading{
+  color:#81BEF7;
+  margin-top:20%;
+}
+.pageunderconstruction-image{
+  margin-top:10%;margin-left:-30%;
+}
