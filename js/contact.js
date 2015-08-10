@@ -2,12 +2,6 @@ $(window).ready(function() {
 	$('section').css('width', window.innerWidth);
 });
 
-$(function() {
-	$(window).resize(function() {
-		$('section').css('width', window.innerWidth);
-	});
-});
-
 $(function(){
 	$('a.smoothScroll').bind('click',function(event){
 		var $anchor=$(this); 
