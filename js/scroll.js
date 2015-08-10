@@ -1,6 +1,4 @@
-$("document").ready(function() {
-	slide();
-});
+
 
 function slide() {
 	$("html, body").mousewheel(function(e, delta) {
