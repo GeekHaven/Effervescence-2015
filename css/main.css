@@ -70,7 +70,7 @@
 	position:absolute;
 	top:100%;
 	color:white;
-	font-size:2em;
+	font-size:1.5em;
 }
 
 #cbackhide {
@@ -85,8 +85,8 @@
 
 #cvalue {
 	position:absolute;
-	top:30%;
-	left:35%;
+	top:25%;
+	left:27%;
 	color:white;
 	font-size:3em;
 }
@@ -123,13 +123,44 @@
 	height:55%;
 	width:30%;
 	border-radius:50%;
-	background: -webkit-radial-gradient(rgba(29,31,32,0) 5%, rgba(29,31,32,1) 78%); /*Safari 5.1-6*/
-	background: -o-radial-gradient(rgba(29,31,32,0) 5%,rgba(29,31,32,1) 78%); /*Opera 11.1-12*/
-	background: -moz-radial-gradient(rgba(29,31,32,0) 5%,rgba(29,31,32,1) 78%); /*Fx 3.6-15*/
-	background: radial-gradient(rgba(29,31,32,0) 5%, rgba(29,31,32,1) 78%); /*Standard*/
+	background: -webkit-radial-gradient(rgba(29,31,32,0) 5%, rgba(29,31,32,1) 68%); /*Safari 5.1-6*/
+	background: -o-radial-gradient(rgba(29,31,32,0) 5%,rgba(29,31,32,1) 68%); /*Opera 11.1-12*/
+	background: -moz-radial-gradient(rgba(29,31,32,0) 5%,rgba(29,31,32,1) 68%); /*Fx 3.6-15*/
+	background: radial-gradient(rgba(29,31,32,0) 5%, rgba(29,31,32,1) 68%); /*Standard*/
 	border-radius: 50%;
 }
 /* Home Back Ends */
+
+/* Sponsor Box */
+
+.sponsorbox {
+	position:absolute;
+	top:75%;
+	left:3%;
+	height:25%;
+	width:16%;
+	opacity:1;
+}
+
+#backbox {
+	position:absolute;
+	height:100%;
+	width:100%;
+	border-radius:10%;
+	z-index:1;
+}
+
+#sponsors {
+	position:absolute;
+	left:16%;
+	top:35%;
+	height:41.5%;
+	width:50.5%;
+	border-radius:25%;
+	z-index:2;
+}
+
+/* Sponsor Box Ends */
 
 body,html {
 	margin:0;
@@ -171,6 +202,7 @@ section p{
 	position:absolute;
 	top:30%;
 	left:20%;
+	width: 56%;
 }
 
 .slide2 #head {
@@ -178,7 +210,7 @@ section p{
 	top:3%;
 	left:74%;
 	color:white;
-	font-size:5em;
+	font-size:4em;
 }
 
 .slide2 #content {
@@ -186,7 +218,7 @@ section p{
 	top:15%;
 	left:60%;
 	color:white;
-	font-size:1.5em;
+	font-size:1.2em;
 }
 
 .sociallinks {
@@ -195,7 +227,17 @@ section p{
 	left:2%;
 	height:40%;
 	width:5%;
-	background-color:green;
+}
+
+.sociallinks a{
+	margin:0;
+	width:100%;
+	height:25%;
+}
+
+.sociallinks #icon{
+	height:24%;
+	width:100%;
 }
 
 .subscribe {
@@ -207,12 +249,11 @@ section p{
 	background-color:blue;
 }
 
-.map {
+#googleMap {
 	position:absolute;
 	margin:0;
 	top:15%;
 	left:48%;
 	height:80%;
 	width:50%;
-	background-color:red;
 }

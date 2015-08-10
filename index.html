@@ -9,13 +9,13 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
 </head>
 
 <body>
-	
+
 	<!-- Menu -->
 	<div style="position:fixed;z-index:2;">
 		<div id="box">
@@ -23,12 +23,12 @@
 			<span id="text1" style="position:absolute;margin-left:-250px;margin-top:-180px;"><a href="#" >Home</a></span>
 		
 			<span id="text2" style="position:absolute;margin-left:-250px;margin-top:-150px;"><a href="#" >Events</a></span>
-	
-			<span id="text3" style="position:absolute;margin-left:-250px;margin-top:-120px;"><a href="#" >Sponsors</a></span>
-			<span id="text4" style="position:absolute;margin-left:-250px;margin-top:-90px;"><a href="#" >Contact Us</a></span>
-			<span id="text5" style="position:absolute;margin-left:-250px;margin-top:-60px;"><a href="#" >Schedule</a></span>
-			<span id="text6" style="position:absolute;margin-left:-250px;margin-top:-30px;"><a href="#" >Registration</a></span>
-	
+
+			<span id="text3" style="position:absolute;margin-left:-250px;margin-top:-120px;"><a href="sponsors.html" >Sponsors</a></span>
+			<span id="text4" style="position:absolute;margin-left:-250px;margin-top:-90px;"><a href="">Registration</a></span>
+			<span id="text5" style="position:absolute;margin-left:-250px;margin-top:-60px;"><a href="gallery.html" >Gallery</a></span>
+			<span id="text6" style="position:absolute;margin-left:-250px;margin-top:-30px;"><a href="contact.html" >Contact Us</a></span>
+			
 		</div>
 		<div id="menu-text">
 			<span style="position:absolute;margin-top:5px;">
@@ -38,11 +38,11 @@
 		</div>
 	</div>
 	<!-- Menu Ends -->
-	
+		
 	<section class="slide1">
         <div class="scope"></div>
         <div class="scopeFade"></div>
-        
+        <img id="logo" src="image/logo.png">
         
         
         <!-- Counter -->
@@ -89,7 +89,7 @@
     	</div>
         <!-- Sponsor Box Ends -->
 
-        <img id="logo" src="image/logo.png">
+<!--        <img id="logo" src="image/logo.jpg"> -->
     </section>
 	<section class="slide2">
     	<img id="back" src="image/divesh2.jpg">
@@ -101,16 +101,13 @@
 	<section class="slide3">
     	<img id="back" src="image/crowd.jpg">
         <div class="sociallinks">
-<!--            <a href="https://www.facebook.com/effervescence.iiita?fref=ts" id="icon">facebook</a>
-            <a href="https://www.youtube.com/user/effervescenceMM13" id="icon">twitter</a>
-            <a href="https://www.youtube.com/user/effervescenceMM13" id="icon">youtube</a>
-            <a href="https://www.iiita.ac.in" id="icon">effervescence</a></div> -->
+            <a href="https://www.facebook.com/effervescence.iiita?fref=ts"><img id="icon" src="image/facebook.png"></a>
+            <a href="https://www.youtube.com/user/effervescenceMM13"><img id="icon" src="image/twitter.png"></a>
+            <a href="https://www.youtube.com/user/effervescenceMM13"><img id="icon" src="image/youtube.png"></a>
+            <a href="https://www.iiita.ac.in"><img id="icon" src="image/effe.png"></a></div>
         </div>
-        <div class="subscribe">
-        </div>
-        <div class="map">
-        	<div id="mapcanvas"></div>
-        </div>
+        
+		<div id="googleMap"></div>    
     </section>
 
 </body>
