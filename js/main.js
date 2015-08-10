@@ -1,6 +1,6 @@
 $("document").ready(function() {
 	slide();
-	homeback();
+	//homeback();
 	setInterval(counter,1000);
 	setInterval(function() {
 		sponsorbox();
