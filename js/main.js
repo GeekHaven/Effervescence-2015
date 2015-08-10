@@ -11,10 +11,10 @@ $("document").ready(function() {
 
 function slide() {
 	$("html, body").mousewheel(function(e, delta) {
-//	  	this.scrollLeft -= (delta * 30);
-		maxscroll = $(".slide2").position().left; 
-		left = $("body").scrollLeft();
+	  	this.scrollLeft -= (delta * 30);
 		e.preventDefault();
+/*		maxscroll = $(".slide2").position().left; 
+		left = $("body").scrollLeft();
 		if(e.originalEvent.wheelDelta==120) {
 			con = left-maxscroll;
 			$(this).animate({scrollLeft:con},{duration:1000});
@@ -35,7 +35,7 @@ function slide() {
 		if(e.which==39) {
 			con = left+maxscroll;
 			$(this).animate({scrollLeft:con},{duration:1000});
-		}
+		} */
 	});
 }
 
@@ -163,7 +163,7 @@ function sponsorbox() {
 			x = 1;
 		$(".sponsorbox").animate({top:'75%'},{duration:"100", easing:"swing" ,queue:false});
 		$(".sponsorbox").fadeTo("300",1);
-		$("#sponsors").attr('src',"image/sponsor/" + x + ".png");
+		$("#sponsors").attr('src',"image/sponsortv/" + x + ".png");
 		x++;
 	});
 }

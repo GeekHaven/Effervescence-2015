@@ -5,8 +5,8 @@ $("document").ready(function() {
 function slide() {
 	$("html, body").mousewheel(function(e, delta) {
 		maxscroll = $(".sizeblock").position().left; 
-		left = $("body").scrollLeft();
 		e.preventDefault();
+/*		left = $("body").scrollLeft();
 		if(e.originalEvent.wheelDelta==120) {
 			con = left-maxscroll;
 			$(this).animate({scrollLeft:con},{duration:1000});
@@ -27,6 +27,6 @@ function slide() {
 		if(e.which==39) {
 			con = left+maxscroll;
 			$(this).animate({scrollLeft:con},{duration:1000});
-		}
+		} */
 	});
 }
