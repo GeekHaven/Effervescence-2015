@@ -1,451 +1,117 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Effervescence 2k15</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" type="text/css" href="css/skin.css">
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style1.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->	
-	<title>Effervescence 2k15</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 </head>
+
 <body>
-	<img src="image/oie_transparent (1).png" id="tv-image">
-<main>
-
-	<!--countdown-->
-	<div class="clock" style="margin:2em;"></div>
-		
 	
-	<!--/countdown-->
-
-	<!--menu starts-->
-	<div class="component">
-		<!-- Start Nav Structure -->
+	<!-- Menu -->
+	<div style="position:fixed;z-index:2;">
+		<div id="box">
+			<span style="color:white;margin-left:10%;">EFFERVESCENCE - MM15</span>
+			<span id="text1" style="position:absolute;margin-left:-250px;margin-top:-180px;"><a href="#" >Home</a></span>
 		
-		<div class="cn-wrapper opened-nav" id="cn-wrapper">
-			<button class="cn-button">MENU</button>
-			<ul>
-		      <li><a href="#index" data-type="page-transition"><span class="icon-home "></span></a></li>
-		      <li><a href="#about" data-type="page-transition"><span class="icon-user"></span></a></li>
-		      <li><a href="#events" data-type="page-transition"><span class="icon-headphones"></span></a></li>
-		      <li><a href="#proshow" data-type="page-transition"><span class="icon-music"></span></a></li>
-		      <li><a href="#gallery" data-type="page-transition"><span class="icon-camera"></span></a></li>
-		      <li><a href="#sponsor" data-type="page-transition"><span class="icon-money"></span></a></li>
-		      <li><a href="#registration" data-type="page-transition"><span class="icon-lock"></span></a></li>
-		      <li><a href="#contact" data-type="page-transition"><span class="icon-phone"></span></a></li>
-		     </ul>
-		     
-		</div>
-		<div id="cn-overlay" class="cn-overlay on-overplay"></div>
-		<!-- End Nav Structure -->
-	</div>
-  	<!-- menu ends-->
+			<span id="text2" style="position:absolute;margin-left:-250px;margin-top:-150px;"><a href="#" >Events</a></span>
 	
-	<!-- page view section -->
-	<div id="main">
-
-		<!--Home Page Section-->
-		<div class="cd-index cd-main-content">
-				<img src="image/mainimage.jpg" style="position:absolute;height:100%;width:100%;z-index:1;opacity:0.5;">
-				<video style="object-fit:inherit;" width="100%" height="100%" autoplay muted loop>
-  					<source src="image/final.mp4" type="video/mp4">
- 					Your browser does not support the video tag.
-				</video>
-			
+			<span id="text3" style="position:absolute;margin-left:-250px;margin-top:-120px;"><a href="#" >Sponsors</a></span>
+			<span id="text4" style="position:absolute;margin-left:-250px;margin-top:-90px;"><a href="#" >Contact Us</a></span>
+			<span id="text5" style="position:absolute;margin-left:-250px;margin-top:-60px;"><a href="#" >Schedule</a></span>
+			<span id="text6" style="position:absolute;margin-left:-250px;margin-top:-30px;"><a href="#" >Registration</a></span>
+	
 		</div>
-
-		<!--About Page Section-->
-		<div class="cd-about cd-main-content">
-			<div>
-				<div class="map&link">
-					<div id="googleMap">
-					<iframe marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=iiit+allahabad&amp;ie=UTF8&amp;hq=iiit+allahabad&amp;ll=25.429901,81.772214&amp;spn=0.006295,0.00954&amp;t=h&amp;output=embed" scrolling="no" frameborder="0" height="300" width="350"></iframe>
-					</div>
-					<div class="social_links" >
-						<a href="https://www.facebook.com/effervescence.iiita?fref=ts" ><img src="image/facebook.png" class="icon" /></a>
-						<a href="https://www.youtube.com/user/effervescenceMM13"><img src="image/twitter.png" class="icon"/></a>
-						<a href="https://www.youtube.com/user/effervescenceMM13"><img src="image/youtube.png" class="icon"/></a>
-						<a href="https://www.iiita.ac.in"><img src="image/effesocial.png" class="icon"/></a>
-					</div>
-				</div>
-				<div class="home-about-content">
-					<h2>About Us</h2>
-					<p>
-						EFFERVESCENCE - THE CULTURAL FEST OF IIITA.<br>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-					</p>
-					<div class="subscribe">
-					<form action="action_page.php">
-					<img src="image/msg.png" style="height:37px; width:45px"/><input type="text" name="email" value="example@gmail.com">
-					<br><input type="submit" value="SUBSCRIBE" id="subsc">
-					</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!--Events Page Section-->
-		<div class="cd-events cd-main-content">
-			<div>
-				<div>
-					<h2 class="pageunderconstruction-heading">Page Under Construction</h2>
-					<img src="image/pageunderconstruction.png" class="pageunderconstruction-image">
-					
-				</div>
-			</div>
-		</div>
-
-		<!--proshows Page Section-->
-		<div class="cd-proshow cd-main-content">
-			<div>
-				<div>
-					<h2 class="pageunderconstruction-heading">Page Under Construction</h2>
-					<img src="image/pageunderconstruction.png" class="pageunderconstruction-image">
-					
-				</div>
-			</div>
-		</div>
-
-		<!--Gallery Page Section-->
-		<div class="cd-gallery cd-main-content">
-			
-				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="overflow:hidden;">
-  <!-- Indicators -->
-				  <ol class="carousel-indicators" >
-  					  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					  <li data-target="#myCarousel" data-slide-to="1"></li>
-  					  <li data-target="#myCarousel" data-slide-to="2"></li>
-  					  <li data-target="#myCarousel" data-slide-to="3"></li>
- 				  </ol>
-
-  <!-- Wrapper for slides -->
- 				 	<div class="carousel-inner" role="listbox">
-   					 <div class="item active">
-  					    <img src="image/teams.jpg" alt="Chania">
-  					    
-   					 </div>
-
-   					 <div class="item">
-     					<img src="image/teams.jpg" alt="Chania">
-     					 
-  					  </div>
-
-   					 <div class="item">
-    					<img src="image/teams.jpg" alt="Flower">
-    					  
-   					 </div>
-
-  					  <div class="item">
-   						   <img src="image/teams.jpg" alt="Flower">
-   						   
-  					  </div>
-  					</div>
-
-  <!-- Left and right controls -->
-  					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-   					 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-   					 <span class="sr-only">Previous</span>
- 					 </a>
- 					 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-   						 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    					<span class="sr-only">Next</span>
- 				 	</a>
-				</div>
-			
-		</div>
-
-		<!--Sponsor Page Section-->
-		<div class="cd-sponsor cd-main-content" >
-			<div style="background:url('image/newsponsors.jpg') fixed;background-size:cover;">
-				<div class="container">
-					<div style="margin-left:10%;width:80%;color:white;font-size:20px;">
-		
-						<div style="margin-top:20%;width:100%;">	
-							<div class="contact-every">
-								<div class="contact-image" style="background:url('image/hqdefault.jpg') no-repeat;background-size:100% 100%;">
-								</div>
-								<div class="contact-text">
-									Bob Marley<br>9999999999
-								</div>
-							</div>
-							<div class="contact-every">
-								<div class="contact-image" style="background:url('image/hqdefault.jpg') no-repeat;background-size:100% 100%;">
-								</div>
-								<div class="contact-text">
-									Bob Marley<br>9999999999
-								</div>
-							</div>
-							<div class="contact-every">
-								<div class="contact-image" style="background:url('image/hqdefault.jpg') no-repeat;background-size:100% 100%;">
-								</div>
-								<div class="contact-text">
-									Bob Marley<br>9999999999
-								</div>
-							</div>
-						</div>
-						<br>
-						<div style="margin-top:80%;">	
-							<div class="contact-every">
-								<div class="contact-image" style="background:url('image/hqdefault.jpg') no-repeat;background-size:100% 100%;">
-								</div>
-								<div class="contact-text">
-									Bob Marley<br>9999999999
-								</div>
-							</div>
-							<div class="contact-every">
-								<div class="contact-image" style="background:url('image/hqdefault.jpg') no-repeat;background-size:100% 100%;">
-								</div>
-								<div class="contact-text">
-									Bob Marley<br>9999999999
-								</div>
-							</div>
-							<div class="contact-every">
-								<div class="contact-image" style="background:url('image/hqdefault.jpg') no-repeat;background-size:100% 100%;">
-								</div>
-								<div class="contact-text">
-									Bob Marley<br>9999999999
-								</div>
-							</div>
-						</div>
-		
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!--Registration Page Section-->
-		<div class="cd-registration cd-main-content">
-			<div style="background:url('image/form.jpg') fixed;background-size:cover;">
-
-			<div>
-				<div>
-					<div class="page-container">
-						<h1>registration form</h1>
-						<form class="contact-us" action="" method="post">
-						<input type="text" name="name" class="name" placeholder="enroll no...">
-						<input type="text" name="email" class="email" placeholder="name...">
-						<input type="text" name="subject" class="subject" placeholder="email id...">
-						<input type="text" name="subject" class="subject" placeholder="password...">
-						<button type="submit">register</button>
-						<button type="submit">login</button>
-						</form>
-					</div>
-					
-				</div>
-			</div>	
-			</div>
-		</div>
-
-		<!-- Contact Page Section-->
-		<div class="cd-contact cd-main-content" style="overflow:auto;">
-			<div style="background:url('image/newcontact.jpg') fixed;background-size:cover;">
-				<div class="container">
-						<section class="main">
-						<ul class="ch-grid">
-							<div class="color_comb">FEST-COORDINATORS</div>
-							<li>
-								<div class="ch-item">				
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-1"></div>
-											<div class="ch-info-back">
-												<h2 style="font-size:15px">SHOBHIT SHARMA</h2>
-												<p>iit2013204@iiita.ac.in<a href="https://www.facebook.com/shobhit.mufc/about">464156432115</a></p>
-											</div>	
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-2"></div>
-										<div class="ch-info-back">
-											<h2 style="font-size:15px">MAYANK VIJAY</h2>
-											<p>iit2013127@iiita<a href="https://www.facebook.com/mayank.vijay.79/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<div class="color_comb">EVENT QUERIES</div>
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-3"></div>
-										<div class="ch-info-back" >
-											<h2 id="lname">RISHABH MALHOTRA</h2>
-											<p>iec2013095@iiita<a href="https://www.facebook.com/rishabh.malhotra.5477/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-4"></div>
-										<div class="ch-info-back">
-											<h2>ARUSHI GOEL</h2>
-											<p>iec2013078@iiita.ac.in<a href="https://www.facebook.com/arushi.goel.12/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<div class="color_comb">SPONSORSHIP</div> 
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-5"></div>
-										<div class="ch-info-back">
-											<h2>ADRISH BANERJEE</h2>
-											<p>irm2013014@iiita.ac.in<a href="https://www.facebook.com/adrish.banerjee1/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<div class="color_comb">PUBLIC RELATIONS</div> 
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-7"></div>
-										<div class="ch-info-back">
-											<h2>GAUTHAM ANAND</h2>
-											<p>iec2013100@iiita.ac.in<a href="https://www.facebook.com/gautham.anand.395/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<div class="color_comb">REGISTRATION</div> 
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-7"></div>
-										<div class="ch-info-back">
-											<h2>REGISTRATION</h2>
-											<p>ABCD<a href="https://www.facebook.com/anurag.dorado/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-8"></div>
-										<div class="ch-info-back">
-											<h2>REGISTRATION</h2>
-											<p>ABCD<a href="https://www.facebook.com/anurag.dorado/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<div class="color_comb">CULTURAL SOCIETY</div> 
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-7"></div>
-										<div class="ch-info-back">
-											<h2>CULTURAL SOCIETY</h2>
-											<p>ABCD<a href="https://www.facebook.com/anurag.dorado/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ch-item">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-8"></div>
-										<div class="ch-info-back">
-											<h2>CULTURAL SOCIETY</h2>
-											<p>ABCD<a href="https://www.facebook.com/anurag.dorado/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<div class="color_comb">WEB-DESIGNERS</div> 
-							<li>
-								<div class="ch-item1">
-									<div class="ch-info" id="web_d">
-										<div class="ch-info-front ch-img-7"></div>
-										<div class="ch-info-back">
-											<h2 id="lname">ABHISHEK DEORA</h2>
-											<p>iit2014141@iiita.ac.in<a href="https://www.facebook.com/abhishek.deora.5/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ch-item1" >
-									<div class="ch-info" id="web_d">
-										<div class="ch-info-front ch-img-8"></div>
-										<div class="ch-info-back">
-											<h2 id="lname">ADITYA KUMAWAT</h2>
-											<p>icm2014001@iiita.ac.in<a href="https://www.facebook.com/aditya.19496/about">7704914402</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							
-							<li>
-								<div class="ch-item1" >
-									<div class="ch-info" id="web_d">
-										<div class="ch-info-front ch-img-8"></div>
-										<div class="ch-info-back">
-											<h2 id="lname">MADHURI SONI</h2>
-											<p>iit2014139@iiita.ac.in<a href="https://www.facebook.com/profile.php?id=100007875288966&sk=about">9454070531</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ch-item1">
-									<div class="ch-info" id="web_d">
-										<div class="ch-info-front ch-img-8"></div>
-										<div class="ch-info-back">
-											<h2 id="lname">ASIF KHURSHEED</h2>
-											<p>iit2014029@iiita.ac.in<a href="https://www.facebook.com/asifkhursheed70/about">2122551551551</a></p>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-						</section>
-				</div>
-			</div>
+		<div id="menu-text">
+			<span style="position:absolute;margin-top:5px;">
+			<span id="menu-text-menu">MENU</span> <span style="font-size:12px;margin-left:20px;"><i>motion pictures</i></span>
+			<img id="arrow" src="image/menu_arr.png" style="margin-left:80px;">
+			</span>
 		</div>
 	</div>
-	<!-- page view section ends-->
-</main>
+	<!-- Menu Ends -->
+	
+	<section class="slide1">
+        <div class="scope"></div>
+        <div class="scopeFade"></div>
+        
+        
+        
+        <!-- Counter -->
+		<div class="counter">
+        	<div class="days">
+				<div id="cback">
+                <hr id="cline">
+                <div id="cbackhide"></div>
+                <p id="cvalue"></p>
+                <p id="ctext">Days</p>
+                </div>
+            </div>
+        	<div class="hours">
+				<div id="cback">
+                <hr id="cline">
+                <div id="cbackhide"></div>
+                <p id="cvalue"></p>
+                <p id="ctext">Hours</p>
+                </div>
+            </div>
+        	<div class="minutes">
+				<div id="cback">
+                <hr id="cline">
+                <div id="cbackhide"></div>
+                <p id="cvalue"></p>
+                <p id="ctext">Minutes</p>
+                </div>
+            </div>
+        	<div class="seconds">
+				<div id="cback">
+                <hr id="cline">
+                <div id="cbackhide"></div>
+                <p id="cvalue"></p>
+                <p id="ctext">Seconds</p>
+                </div>
+            </div>
+		</div>
+		<!-- Counter Ends -->
 
-<div class="cd-cover-layer"></div>
-<div class="cd-loading-bar"></div>
+        <!-- Sponsor Box -->
+       	<div class="sponsorbox">
+	    	<img src="image/sponsor/backbox.png" id="backbox">
+        	<img src="image/sponsor/1.png" id="sponsors">
+    	</div>
+        <!-- Sponsor Box Ends -->
 
-<script src="js/main.js"></script> <!-- Resource jQuery-->
-<script src="js/flipclock.js"></script> <!-- Flipclock -->
-<script type="text/javascript">
-		var clock;
-
-		$(document).ready(function() {
-
-			// Grab the current date
-			var currentDate = new Date();
-
-			// Set some date in the past. In this case, it's always been since Jan 1
-			var effeDate  = new Date("2015-10-15");
-
-			// Calculate the difference in seconds between the future and current date
-			var diff = effeDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
-			// Instantiate a coutdown FlipClock
-			clock = $('.clock').FlipClock(diff, {
-				clockFace: 'DailyCounter'
-			});
-		});
-	</script>
-
+        <img id="logo" src="image/logo.png">
+    </section>
+	<section class="slide2">
+    	<img id="back" src="image/divesh2.jpg">
+        <p id="head">About Us</p>
+        <p id="content">
+        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,afag
+        </p>
+    </section>
+	<section class="slide3">
+    	<img id="back" src="image/crowd.jpg">
+        <div class="sociallinks">
+<!--            <a href="https://www.facebook.com/effervescence.iiita?fref=ts" id="icon">facebook</a>
+            <a href="https://www.youtube.com/user/effervescenceMM13" id="icon">twitter</a>
+            <a href="https://www.youtube.com/user/effervescenceMM13" id="icon">youtube</a>
+            <a href="https://www.iiita.ac.in" id="icon">effervescence</a></div> -->
+        </div>
+        <div class="subscribe">
+        </div>
+        <div class="map">
+        	<div id="mapcanvas"></div>
+        </div>
+    </section>
 
 </body>
 </html>

@@ -9,43 +9,10 @@ header,
 .fullscreen_layout header {
 	background:#2a282f;	
 }
-::selection {background:#ff5474;}
-::-moz-selection {background:#ff5474;}
-
-.highlighted_colored,
-.widget_nav_menu ul li a:hover,
-.widget_archive ul li a:hover,
-.widget_pages ul li a:hover,
-.widget_categories ul li a:hover,
-.widget_recent_entries ul li a:hover,
-blockquote.type1:before,
-.shortcode_accordion_item_title:hover, 
-.shortcode_toggles_item_title:hover,
-.feedback_form .feedback_go:hover, 
-.feedback_form .feedback_reset:hover,
-#commentform #reset:hover,
-#commentform #submit:hover,
-.btn_login:hover,
-.module_iconboxes:hover,
-.carousel_fadder,
-.gallery_fadder,
-.shortcode_promoblock .promo_button_block a,
-.shortcode_tab_item_title:hover,
-.skills_list li .skill_div,
-.price_item.most_popular .price_item_title,
-.price_item .price_item_btn a:hover,
-.price_item.most_popular .price_item_btn a,
-.shortcode_button.btn_type4,
-.pagerblock li a:hover,
-.widget_tag_cloud a:hover,
-.fs_thmb_viewport .fs_thmb_list li .fs_thmb_fadder,
-.fs_grid_module .grid_gallery-item .item_hover-img .item_hover-fadder {
-	background-color:#ff5474;
-}
 .glass_header header,
-.fs_title_wrapper {
+/*.fs_title_wrapper {
 	background:rgba(42,40,47,0.9);
-}
+}*/
 
 footer,
 .fs_gallery_container {
@@ -76,10 +43,10 @@ header ul.menu > li > a {
 	background:#46434e;
 }
 
-.fs_title_wrapper h1,
+/*.fs_title_wrapper h1,
 .fs_title_wrapper h6 {
 	color:#f5f5f5;
-}
+}*/
 
 footer .copyright {
 	color:#cdcbd3;
@@ -102,7 +69,7 @@ footer .copyright {
 }
 .fullscreen_block,
 .image_background {
-	background-color:#4f4d57!important;
+	background-color:white!important;
 }
 
 .fullscreen_block .filter_block {

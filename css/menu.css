@@ -1,0 +1,51 @@
+a:link{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+}
+a:visited{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+}
+a:active{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+}
+a:hover{
+	color:red;
+	text-decoration: none;
+	font-size: 20px;
+}
+#menu-text{
+	border-top:3px dashed #868A08;
+	width:300px;
+	height:40px;
+	background-color:black;
+	opacity:0.8;
+	color:white;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#menu-text-menu{
+	font-size:20px;
+	margin-left: 20px;
+}
+#menu-text:hover >span> #menu-text-menu{
+	color:red;
+}
+#box{
+	background:black;height:0px;width:300px;opacity:0.8;font-family: 'Orbitron', sans-serif;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#nav-contact{
+	position:fixed;
+	color:white;
+	background-color:black;
+	height:100%;
+	width:20%;
+	z-index:1;
+
+}

@@ -1,0 +1,91 @@
+<html>
+<head>
+    
+
+    <title>gallery</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="css/skin.css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	
+	
+		
+        
+    <!--[if IE 8 ]>
+    <link rel="stylesheet" type="text/css" href="css/ie_css.css">
+    <script>
+        var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+        for (var i = 0; i < e.length; i++) {
+            document.createElement(e[i]);
+        }		
+    </script>
+    <![endif]-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fs_gllaery.css">
+	<script type="text/javascript" src="js/fs_gllaery.js"></script>
+	
+</head>
+
+<body style="background-color: rgba(0, 0, 0, 0.77);">
+<div class="fullscreen_layout">	
+<!--		menu begins		-->
+	<div style="position:fixed;z-index:2;">
+		<div id="box">
+			<span style="color:white;margin-left:10%;">EFFERVESCENCE - MM15</span>
+			<span id="text1" style="position:absolute;margin-left:-250px;margin-top:-180px;"><a href="#" >Home</a></span>
+		
+			<span id="text2" style="position:absolute;margin-left:-250px;margin-top:-150px;"><a href="#" >Events</a></span>
+
+			<span id="text3" style="position:absolute;margin-left:-250px;margin-top:-120px;"><a href="#" >Sponsors</a></span>
+			<span id="text4" style="position:absolute;margin-left:-250px;margin-top:-90px;"><a href="#" >Contact Us</a></span>
+			<span id="text5" style="position:absolute;margin-left:-250px;margin-top:-60px;"><a href="#" >Schedule</a></span>
+			<span id="text6" style="position:absolute;margin-left:-250px;margin-top:-30px;"><a href="#" >Registration</a></span>
+
+		</div>
+		<div id="menu-text">
+			<span style="position:absolute;margin-top:5px;">
+			<span id="menu-text-menu">MENU</span> <span style="font-size:12px;margin-left:20px;"><i>motion pictures</i></span>
+			<img id="arrow" src="image/menu_arr.png" style="margin-left:80px;">
+			</span>
+		</div>
+	</div>
+<!--		menu ends		-->
+<div class="fullscreen_layout">	
+    
+    <div class="fullscreen_block"></div>   	
+    <script>
+		gallery_set = [	//Gallery Data
+			{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood1'},
+			{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg', alt : 'bollywood2'},
+			{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg', alt : 'bollywood3'},
+			{image : 'image/frame1done.png', thmb : 'image/theme44.jpg', alt : 'bollywood4'},
+			{image : 'image/frame2done.png', thmb : 'image/theme55.jpg', alt : 'bollywood5'},
+			{image : 'image/frame3done.png', thmb : 'image/theme66.jpg', alt : 'bollywood6'},
+			{image : 'image/home_3.jpg', thmb : 'image/home_33.jpg', alt : 'bollywood7'},
+			{image : 'image/home_2.jpg', thmb : 'image/home_22.jpg', alt : 'bollywood'},
+			{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg', alt : 'bollywood'},
+			{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg', alt : 'bollywood'},
+
+			{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg', alt : 'bollywood'},
+			{image : 'image/frame1done.png', thmb : 'image/theme44.jpg', alt : 'bollywood'},
+			{image : 'image/frame2done.png', thmb : 'image/theme55.jpg', alt : 'bollywood'},
+			{image : 'image/frame3done.png', thmb : 'image/theme66.jpg', alt : 'bollywood'},
+			{image : 'image/home_3.jpg', thmb : 'image/home_33.jpg', alt : 'bollywood', fit : 'cover'},
+			{image : 'image/home_2.jpg', thmb : 'image/home_22.jpg'},
+			{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg'},
+			{image : 'image/theme2.jpg', thmb : 'image/theme22.jpg'},
+			{image : 'image/theme3.jpg', thmb : 'image/theme33.jpg'},
+			{image : 'image/theme1.jpg', thmb : 'image/theme11.jpg'}
+		];
+		$('body').fs_gallery({
+			fx : 'fade',
+			slide_time : 3300, 
+			slides : gallery_set
+		});
+	</script>
+    
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+</div>    
+</body>
+</html>
