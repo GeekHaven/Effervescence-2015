@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>jQuery.scrollTo</title>
+		<meta name="robots" content="index,follow" />
+	<link type="text/css" rel="stylesheet" href="strip.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.scrollTo.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function( $ ){
+			/**
+			 * Demo binding and preparation, no need to read this part
+			 */
+				//borrowed from jQuery easing plugin
+				//http://gsgd.co.uk/sandbox/jquery.easing.php
+				$.easing.elasout = function(x, t, b, c, d) {
+					var s=1.70158;var p=0;var a=c;
+					if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+					if (a < Math.abs(c)) { a=c; var s=p/4; }
+					else var s = p/(2*Math.PI) * Math.asin (c/a);
+					return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
+				};
+				
+				
+			
+			// This one is important, many browsers don't reset scroll on refreshes
+			// Reset all scrollable panes to (0,0)
+			$('div.pane').scrollTo(0);
+			// Reset the screen to (0,0)
+			$.scrollTo(0);
+			
+			// TOC, shows how to scroll the whole window
+			
+			
+			// Target examples bindings
+			var $target = $('#pane-target');
+			$('#target-examples a').click(function() {
+				$target.stop(true);
+			});
+
+			
+			$('#dom-element1').click(function() {
+				$target.scrollTo(document.getElementById('one'), 800);
+			});
+			$('#dom-element2').click(function() {
+				$target.scrollTo(document.getElementById('two'), 800);
+			});
+			$('#dom-element3').click(function() {
+				$target.scrollTo(document.getElementById('three'), 800);
+			});
+			$('#dom-element4').click(function() {
+				$target.scrollTo(document.getElementById('four'), 800);
+			});
+			$('#dom-element5').click(function() {
+				$target.scrollTo(document.getElementById('five'), 800);
+			});
+			$('#dom-element6').click(function() {
+				$target.scrollTo(document.getElementById('six'), 800);
+			});
+
+
+			var $target1 = $('#pane-target1');
+			$('#target-examples1 a').click(function() {
+				$target1.stop(true);
+			});
+
+			
+			$('#dom-element11').click(function() {
+				$target1.scrollTo(document.getElementById('one1'), 800);
+			});
+			$('#dom-element21').click(function() {
+				$target1.scrollTo(document.getElementById('two1'), 800);
+			});
+			$('#dom-element31').click(function() {
+				$target1.scrollTo(document.getElementById('three1'), 800);
+			});
+			$('#dom-element41').click(function() {
+				$target1.scrollTo(document.getElementById('four1'), 800);
+			});
+			$('#dom-element51').click(function() {
+				$target1.scrollTo(document.getElementById('five1'), 800);
+			});
+			$('#dom-element61').click(function() {
+				$target1.scrollTo(document.getElementById('six1'), 800);
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	
+	
+	
+	
+	<div id="target-examples" class="section ">
+		
+		<ul class="links nav pagination">
+			<li><a id="dom-element1" href="#">DOM Element</a></li>
+			<li><a id="dom-element2" href="#">DOM Element</a></li>
+			<li><a id="dom-element3" href="#">DOM Element</a></li>
+			<li><a id="dom-element4" href="#">DOM Element</a></li>
+			<li><a id="dom-element5" href="#">DOM Element</a></li>
+			<li><a id="dom-element6" href="#">DOM Element</a></li>
+		</ul>
+		
+		<div id="pane-target" class="pane">
+			<ul class="elements" style="width:12000px;list-style-type: none;">
+				<li id="one">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="two">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="three">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="four">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="five">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="six">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="target-examples1" class="section ">
+		
+		<ul class="links nav pagination">
+			<li><a id="dom-element11" href="#">DOM Element</a></li>
+			<li><a id="dom-element21" href="#">DOM Element</a></li>
+			<li><a id="dom-element31" href="#">DOM Element</a></li>
+			<li><a id="dom-element41" href="#">DOM Element</a></li>
+			<li><a id="dom-element51" href="#">DOM Element</a></li>
+			<li><a id="dom-element61" href="#">DOM Element</a></li>
+		</ul>
+		
+		<div id="pane-target1" class="pane">
+			<ul class="elements" style="width:12000px;list-style-type: none;">
+				<li id="one1">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="two1">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="three1">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="four1">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="five1">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+				<li id="six1">
+							<div class="every121 sectionabc">
+            					<div class="imgcontainer121" style="padding-left:0px;">
+                					<img src="music.jpg" class="image121">
+					            </div>
+        					    <div class=" textcontainer121">
+            				    <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+            				    <span class="content121">
+           	    	 		    <h3>Event 1</h3>
+                				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 	the industry's standard dummy text ever since the 1500s..
+                				</span>
+            					</div>
+        					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Events</title>
+	<meta name="description" content="Content Timeline HTML5/jQuery plugin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<link rel="stylesheet" href="css/transition-animations.css"/>
+    <link rel="stylesheet" href="css/demo-single-page.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/js111.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+	<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style>
+    .container{
+        width:210px;
+    }
+    .selectors{
+        margin-left: 23%;
+    }
+    .oyeso
+    {
+        margin-top:20%;
+        margin-left:30%;
+        font-size:20px;color:#F7D358;
+       }
+
+    .oyesokebahar{
+        -webkit-box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
+-moz-box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
+box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
+
+        height: 100%;
+        width: 25%;
+        
+    }
+    .social-buttons-121{
+        position:absolute;margin-top:47%;margin-left:2%;z-index:10;
+    }
+    #music-data-15{
+        display:block;
+        margin-left:30%;
+    }
+    #music-data-16{
+        display: none;
+        margin-left:30%;
+    }
+    #music-data-17
+    {
+        display: none;
+        margin-left:30%;
+    }
+    #music-data-18{
+        display: none;
+        margin-left:30%;
+    }
+    #informals-data-15{
+        display:block;
+        margin-left:30%;
+    }
+    #informals-data-16{
+        display: none;
+        margin-left:30%;
+    }
+    #informals-data-17
+    {
+        display: none;
+        margin-left:30%;
+    }
+    #informals-data-18{
+        display: none;
+        margin-left:30%;
+    }
+    #litandd-data-15{
+        display:block;
+        margin-left:30%;
+    }
+    #litandd-data-16{
+        display: none;
+        margin-left:30%;
+    }
+    #litandd-data-17
+    {
+        display: none;
+        margin-left:30%;
+    }
+    #litandd-data-18{
+        display: none;
+        margin-left:30%;
+    }
+    .firstdate{
+        font-size:40px;
+        color:#FA8258;
+    }
+    .seconddate{
+        font-size:20px;
+    }
+    .thirddate{
+        font-size:20px;
+    }
+    .fourthdate{
+        font-size:20px;
+    }
+    .dates-events{
+        margin-left:43%;
+    }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#music-date-15').click(function(){
+                $('#music-data-15').css({'display':'block'});
+                $('#music-data-16').css({'display':'none'});
+                $('#music-data-17').css({'display':'none'});
+                $('#music-data-18').css({'display':'none'});
+                $('#music-date-15').css({'font-size':'40px','color':'#FA8258'});
+                $('#music-date-16').css({'font-size':'20px','color':'white'});
+                $('#music-date-17').css({'font-size':'20px','color':'white'});
+                $('#music-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#music-date-16').click(function(){
+                $('#music-data-16').css({'display':'block'});
+                $('#music-data-15').css({'display':'none'});
+                $('#music-data-17').css({'display':'none'});
+                $('#music-data-18').css({'display':'none'});
+                $('#music-date-15').css({'font-size':'20px','color':'white'});
+                $('#music-date-16').css({'font-size':'40px','color':'#FA8258'});
+                $('#music-date-17').css({'font-size':'20px','color':'white'});
+                $('#music-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#music-date-17').click(function(){
+                $('#music-data-17').css({'display':'block'});
+                $('#music-data-15').css({'display':'none'});
+                $('#music-data-16').css({'display':'none'});
+                $('#music-data-18').css({'display':'none'});
+                $('#music-date-15').css({'font-size':'20px','color':'white'});
+                $('#music-date-16').css({'font-size':'20px','color':'white'});
+                $('#music-date-17').css({'font-size':'40px','color':'#FA8258'});
+                $('#music-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#music-date-18').click(function(){
+                $('#music-data-18').css({'display':'block'});
+                $('#music-data-15').css({'display':'none'});
+                $('#music-data-16').css({'display':'none'});
+                $('#music-data-17').css({'display':'none'});
+                $('#music-date-15').css({'font-size':'20px','color':'white'});
+                $('#music-date-16').css({'font-size':'20px','color':'white'});
+                $('#music-date-17').css({'font-size':'20px','color':'white'});
+                $('#music-date-18').css({'font-size':'40px','color':'#FA8258'});
+            });
+            $('#informals-date-15').click(function(){
+                $('#informals-data-15').css({'display':'block'});
+                $('#informals-data-16').css({'display':'none'});
+                $('#informals-data-17').css({'display':'none'});
+                $('#informals-data-18').css({'display':'none'});
+                $('#informals-date-15').css({'font-size':'40px','color':'#FA8258'});
+                $('#informals-date-16').css({'font-size':'20px','color':'white'});
+                $('#informals-date-17').css({'font-size':'20px','color':'white'});
+                $('#informals-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#informals-date-16').click(function(){
+                $('#informals-data-16').css({'display':'block'});
+                $('#informals-data-15').css({'display':'none'});
+                $('#informals-data-17').css({'display':'none'});
+                $('#informals-data-18').css({'display':'none'});
+                $('#informals-date-15').css({'font-size':'20px','color':'white'});
+                $('#informals-date-16').css({'font-size':'40px','color':'#FA8258'});
+                $('#informals-date-17').css({'font-size':'20px','color':'white'});
+                $('#informals-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#informals-date-17').click(function(){
+                $('#informals-data-17').css({'display':'block'});
+                $('#informals-data-15').css({'display':'none'});
+                $('#informals-data-16').css({'display':'none'});
+                $('#informals-data-18').css({'display':'none'});
+                $('#informals-date-15').css({'font-size':'20px','color':'white'});
+                $('#informals-date-16').css({'font-size':'20px','color':'white'});
+                $('#informals-date-17').css({'font-size':'40px','color':'#FA8258'});
+                $('#informals-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#informals-date-18').click(function(){
+                $('#informals-data-18').css({'display':'block'});
+                $('#informals-data-15').css({'display':'none'});
+                $('#informals-data-16').css({'display':'none'});
+                $('#informals-data-17').css({'display':'none'});
+                $('#informals-date-15').css({'font-size':'20px','color':'white'});
+                $('#informals-date-16').css({'font-size':'20px','color':'white'});
+                $('#informals-date-17').css({'font-size':'20px','color':'white'});
+                $('#informals-date-18').css({'font-size':'40px','color':'#FA8258'});
+            });
+            $('#litandd-date-15').click(function(){
+                $('#litandd-data-15').css({'display':'block'});
+                $('#litandd-data-16').css({'display':'none'});
+                $('#litandd-data-17').css({'display':'none'});
+                $('#litandd-data-18').css({'display':'none'});
+                $('#litandd-date-15').css({'font-size':'40px','color':'#FA8258'});
+                $('#litandd-date-16').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-17').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#litandd-date-16').click(function(){
+                $('#litandd-data-16').css({'display':'block'});
+                $('#litandd-data-15').css({'display':'none'});
+                $('#litandd-data-17').css({'display':'none'});
+                $('#litandd-data-18').css({'display':'none'});
+                $('#litandd-date-15').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-16').css({'font-size':'40px','color':'#FA8258'});
+                $('#litandd-date-17').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#litandd-date-17').click(function(){
+                $('#litandd-data-17').css({'display':'block'});
+                $('#litandd-data-15').css({'display':'none'});
+                $('#litandd-data-16').css({'display':'none'});
+                $('#litandd-data-18').css({'display':'none'});
+                $('#litandd-date-15').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-16').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-17').css({'font-size':'40px','color':'#FA8258'});
+                $('#litandd-date-18').css({'font-size':'20px','color':'white'});
+            });
+            $('#litandd-date-18').click(function(){
+                $('#litandd-data-18').css({'display':'block'});
+                $('#litandd-data-15').css({'display':'none'});
+                $('#litandd-data-16').css({'display':'none'});
+                $('#litandd-data-17').css({'display':'none'});
+                $('#litandd-date-15').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-16').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-17').css({'font-size':'20px','color':'white'});
+                $('#litandd-date-18').css({'font-size':'40px','color':'#FA8258'});
+            });
+        });
+    </script>
+ 
+</head>
+<body>
+
+	<div class="pt-wrapper">
+
+    <!--All Pages-->
+
+    <div class="pt-page pt-page-1">
+        <div class="social-buttons-121">
+                <img src="images/home.png" style="width:50px;height:50px;">
+                <img src="images/events.png" style="width:50px;height:50px;">
+                <img src="images/registration.png" style="width:50px;height:50px;">
+                <img src="images/fb.png" style="width:50px;height:50px;">
+                
+                
+        </div>
+<section class="main">
+            
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item ch-img-1">
+                            <div class="ch-info">
+                                <h3 class="pt-trigger" data-animation="40" data-goto="2">Music</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ch-item ch-img-2">
+                            <div class="ch-info">
+                                <h3 class="pt-trigger" data-animation="40" data-goto="3">Dance</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ch-item ch-img-3">
+                            <div class="ch-info">
+                                <h3 class="pt-trigger" data-animation="40" data-goto="4">Literary & Drama</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ch-item ch-img-4">
+                            <div class="ch-info">
+                                <h3 class="pt-trigger" data-animation="40" data-goto="5">Pro Shows</h3>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="ch-item ch-img-5">
+                            <div class="ch-info">
+                                <h3 class="pt-trigger" data-animation="40" data-goto="6">Informals</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </section>
+    </div>
+    <div class="pt-page pt-page-2" style="background-image:url(images/music.jpg);background-size:cover;">
+        <div class="social-buttons-121">
+                <img src="images/home.png" style="width:50px;height:50px;">
+                <img src="images/events.png" style="width:50px;height:50px;">
+                <img src="images/registration.png" style="width:50px;height:50px;">
+                <img src="images/fb.png" style="width:50px;height:50px;">
+                
+                
+        </div>
+		<div class="selectors">
+				<span class="pt-trigger" data-animation="41" data-goto="1">Back to events</span>
+				<span class="active121">Music</span>
+				<span class="pt-trigger" data-animation="42" data-goto="3">Dance</span>
+				<span class="pt-trigger" data-animation="42" data-goto="4">Literary & Drama</span>
+				<span class="pt-trigger" data-animation="42" data-goto="5">Proshows</span>
+				<span class="pt-trigger" data-animation="42" data-goto="6">Informals</span>
+                
+		</div>
+			
+        <h3 style="color:white;" class="dates-events"><span class="firstdate" id="music-date-15">15</span>-<span class="seconddate" id="music-date-16">16</span>-<span class="thirddate" id="music-date-17">17</span>-<span class="fourthdate" id="music-date-18">18</span></h3>
+
+        <ul id="music-data-15" class="links nav pagination">
+            <li><a id="dom-element1" href="#">15am</a></li>
+            <li><a id="dom-element2" href="#">11am</a></li>
+            <li><a id="dom-element3" href="#">11am</a></li>
+            <li><a id="dom-element4" href="#">11am</a></li>
+            <li><a id="dom-element5" href="#">11am</a></li>
+            <li><a id="dom-element6" href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+        </ul>
+        <ul id="music-data-16" class="links nav pagination">
+            <li><a id="dom-element7" href="#">16am</a></li>
+            <li><a id="dom-element8" href="#">11am</a></li>
+            <li><a id="dom-element9" href="#">11am</a></li>
+            <li><a id="dom-element10" href="#">11am</a></li>
+            <li><a id="dom-element11" href="#">11am</a></li>
+            <li><a id="dom-element12" href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+        </ul>
+        <ul id="music-data-17" class="links nav pagination">
+            <li><a id="dom-element13" href="#">17am</a></li>
+            <li><a id="dom-element14" href="#">11am</a></li>
+            <li><a id="dom-element15" href="#">11am</a></li>
+            <li><a id="dom-element16" href="#">11am</a></li>
+            <li><a id="dom-element17" href="#">11am</a></li>
+            <li><a id="dom-element18" href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+        </ul>
+        <ul id="music-data-18" class="links nav pagination">
+            <li><a id="dom-element19" href="#">18am</a></li>
+            <li><a id="dom-element20" href="#">11am</a></li>
+            <li><a id="dom-element21" href="#">11am</a></li>
+            <li><a id="dom-element22" href="#">11am</a></li>
+            <li><a id="dom-element23" href="#">11am</a></li>
+            <li><a id="dom-element24" href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+        </ul>
+
+    <div id="target-examples" class="section">
+                  
+        <div id="pane-target" class="pane outerabc">
+            <ul class="elements" style="width:12000px;list-style-type: none;">
+                <li id="one">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:11%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Melodieux</h3>
+                                Music is love in search of a word. It’s the only thing that can make you snivel without vindication.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="two">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:11%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Karoke</h3>
+                                It’s time to show off your vocal skills on your favourite songs…
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="three">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:11%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Unplugged</h3>
+                                Tone down the distortion, let the unadulterated melody of the strings take control in this Western Acoustic event. No technical snags, no loud sounds.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="four">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:11%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Antakshiri</h3>
+                                Music speaks what cannot be expressed, soothes the mind and gives it rest, flows from heaven to the soul!
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="five">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:11%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Incendary</h3>
+                                Rock is musical freedom. It’s saying, doing and playing what you want.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="six">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Psychadelia</h3>
+                                Great music is that which penetrates the ear with ease and leaves the memory with difficulty.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+    <div class="pt-page pt-page-3" style="background-image:url(images/dance.jpg);background-size:cover;">
+    	<div class="social-buttons-121">
+                <img src="images/home.png" style="width:50px;height:50px;">
+                <img src="images/events.png" style="width:50px;height:50px;">
+                <img src="images/registration.png" style="width:50px;height:50px;">
+                <img src="images/fb.png" style="width:50px;height:50px;">
+                
+                
+        </div>
+        <div class="selectors">
+				<span class="pt-trigger" data-animation="41" data-goto="1">Back to events</span>
+				<span class="pt-trigger"  data-animation="43" data-goto="2">Music</span>
+				<span class="active121" >Dance</span>
+				<span class="pt-trigger" data-animation="42" data-goto="4">Literary & Drama</span>
+				<span class="pt-trigger" data-animation="42" data-goto="5">Proshows</span>
+				<span class="pt-trigger" data-animation="42" data-goto="6">Informals</span>
+                
+		</div>
+        <ul class="links nav pagination">
+            <li><a id="dom-element7" href="#">8am</a></li>
+            <li><a id="dom-element8" href="#">11am</a></li>
+            <li><a id="dom-element9" href="#">11am</a></li>
+            <li><a id="dom-element10" href="#">11am</a></li>
+            <li><a id="dom-element11" href="#">11am</a></li>
+            <li><a id="dom-element12" href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+            <li><a  href="#">11am</a></li>
+        </ul>
+    <div id="target-examples1" class="section">
+                  
+        <div id="pane-target1" class="pane outerabc">
+            <ul class="elements" style="width:12000px;list-style-type: none;">
+                <li id="one1">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Event 1</h3>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="two1">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Event 1</h3>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="three1">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Event 1</h3>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="four1">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Event 1</h3>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="five1">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Event 1</h3>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="six1">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:10%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Event 1</h3>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                                </span>
+                                </div>
+                            </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    <div class="pt-page pt-page-4">
+    	<div class="social-buttons-121">
+                <img src="images/home.png" style="width:50px;height:50px;">
+                <img src="images/events.png" style="width:50px;height:50px;">
+                <img src="images/registration.png" style="width:50px;height:50px;">
+                <img src="images/fb.png" style="width:50px;height:50px;">
+                
+                
+        </div>
+       	<div class="selectors">
+				<span class="pt-trigger" data-animation="41" data-goto="1">Back to events</span>
+				<span class="pt-trigger"  data-animation="43" data-goto="2">Music</span>
+				<span class="pt-trigger" data-animation="43" data-goto="3">Dance</span>
+				<span class="active121">Literary & Drama</span>
+				<span class="pt-trigger" data-animation="42" data-goto="5">Proshows</span>
+				<span class="pt-trigger" data-animation="42" data-goto="6">Informals</span>
+                
+		</div>
+		<h3 style="color:white;" class="dates-events"><span class="firstdate" id="litandd-date-15">15</span>-<span class="seconddate" id="litandd-date-16">16</span>-<span class="thirddate" id="litandd-date-17">17</span>-<span class="fourthdate" id="litandd-date-18">18</span></h3>
+
+        <ul id="litandd-data-15" class="links nav pagination">
+            <li><a id="dom-element501" href="#">1am</a></li>
+            <li><a id="dom-element502" href="#">2am</a></li>
+            <li><a id="dom-element503" href="#">3am</a></li>
+            <li><a id="dom-element504" href="#">4am</a></li>
+            <li><a id="dom-element505" href="#">5am</a></li>
+            <li><a id="dom-element506" href="#">6am</a></li>
+            
+        </ul>
+        <ul id="litandd-data-16" class="links nav pagination">
+            <li><a id="dom-element507" href="#">7am</a></li>
+            <li><a id="dom-element508" href="#">8am</a></li>
+            <li><a id="dom-element509" href="#">9am</a></li>
+            <li><a id="dom-element510" href="#">10am</a></li>
+            <li><a id="dom-element511" href="#">11am</a></li>
+            <li><a id="dom-element512" href="#">12am</a></li>
+        
+        </ul>
+        <ul id="litandd-data-17" class="links nav pagination">
+            <li><a id="dom-element513" href="#">13am</a></li>
+            <li><a id="dom-element514" href="#">14am</a></li>
+            <li><a id="dom-element515" href="#">15am</a></li>
+            <li><a id="dom-element516" href="#">16am</a></li>
+            <li><a id="dom-element517" href="#">17am</a></li>
+            <li><a id="dom-element518" href="#">18am</a></li>
+           
+        </ul>
+        <ul id="litandd-data-18" class="links nav pagination">
+            <li><a id="dom-element519" href="#">19am</a></li>
+            <li><a id="dom-element520" href="#">20am</a></li>
+            <li><a id="dom-element521" href="#">21am</a></li>
+            <li><a id="dom-element522" href="#">22am</a></li>
+            <li><a id="dom-element523" href="#">23am</a></li>
+            <li><a id="dom-element524" href="#">24am</a></li>
+            
+        </ul>
+
+    <div id="target-examples4" class="section">
+                  
+        <div id="pane-target4" class="pane outerabc">
+            <ul class="elements" style="width:12000px;list-style-type: none;">
+                <li id="one5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>MUN</h3>
+                                MUN,the flagship event of Sarasva,is a two day conference that will test your ability to research,persuade and lead, fetching out the diplomat in you.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="two5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Cognoscencia</h3>
+                                One of the most awaited events of Effervescence features a mind boggling quiz where the best of the brains compete for the crown.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="three5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Feathers</h3>
+                                “Start writing, no matter what. The water does not flow until the faucet is turned on.”This event is for all the buzzing writers out there.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="four5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Crossfire</h3>
+                                This is an American parliamentary debate. It attracts the attention of every young politician who wishes to ameliorate at public speaking.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="five5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Dumb<br>Charades</h3>
+                                Everything is petty in front of the feeling which you get when you get your act right.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="six5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Aamne<br>Saamne</h3>
+                                News channel type debate Table debate , with a moderator in between Team of 2 , battle one on one with other team Topic to be decided on the spot.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="seven5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Trash Talk</h3>
+                                This event examines the heights of your imagination. Exploring something obvious is quite easy, but exhibiting illogical fact is not a cup of tea for everyone.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="eight5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Director's<br>Cut</h3>
+                                Ever dreamt of directing movies like 3 Idiots,Rang De Basanti,The Dark Night,Pulp Fiction or Interstellar?
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="nine5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Double Trouble</h3>
+                                The objective of this event is to find the imagination and creativity amongst the participants.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="ten5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Innovation</h3>
+                                The main dramatics event of Effervescence which will be held on the main stage.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="eleven5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Bindaas Bol</h3>
+                                A variation of Nukkad Natak, Bindaas Bol features outspoken acts. The participants are given the complete freedom over the subject of their play in this informal event.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="twelve5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Tongues on<br>Fire</h3>
+                                An informal event to bring out the real leg pulling ability of people in front of their opponents.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="thirteen5">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Kahani</h3>
+                                It is a script writing event organised to bring into action the writer behind every student.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    <div class="pt-page pt-page-5">
+        <div class="social-buttons-121">
+                <img src="images/home.png" style="width:50px;height:50px;">
+                <img src="images/events.png" style="width:50px;height:50px;">
+                <img src="images/registration.png" style="width:50px;height:50px;">
+                <img src="images/fb.png" style="width:50px;height:50px;">
+                
+                
+        </div>
+    	<div class="selectors">
+				<span class="pt-trigger" data-animation="41" data-goto="1">Back to events</span>
+				<span class="pt-trigger"  data-animation="43" data-goto="2">Music</span>
+				<span class="pt-trigger" data-animation="43" data-goto="3">Dance</span>
+				<span class="pt-trigger" data-animation="43" data-goto="4">Literary & Drama</span>
+				<span class="active121">Proshows</span>
+				<span class="pt-trigger" data-animation="42" data-goto="6">Informals</span>
+                
+		</div>
+        
+        <div style="width:100%;height:100%;">
+            <a href="proshows/innovation.html">
+            <div style="float:left;background-image:url('images/innovation.jpg');background-size:100% 50%;" class="oyesokebahar">
+                <div style="background:black;color:white;margin-top:90%;opacity:0.9;height:55%;line-height:200%;padding:10px">
+                    <h2 style="text-align:center;"><i>Innovation</i></h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                    </p>
+                    
+                </div>
+
+
+
+            </div>
+            </a>
+            <a href="proshows/alamode.html">
+            <div style="float:left;background-image:url('images/alamode.jpg');background-size:100% 50%;" class="oyesokebahar">
+                <div style="background:black;color:white;margin-top:90%;opacity:0.9;height:55%;line-height:200%;padding:10px">
+                    <h2 style="text-align:center;"><i>Ala Mode</i></h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                    </p>
+                    
+                </div>
+
+
+
+            </div>
+            </a>
+            <a href="proshows/incendary.html">
+            <div style="float:left;background-image:url('images/incendary.jpg');background-size:100% 50%;" class="oyesokebahar">
+                <div style="background:black;color:white;margin-top:90%;opacity:0.9;height:55%;line-height:200%;padding:10px">
+                    <h2 style="text-align:center;"><i>Incendary</i></h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                    </p>
+                    
+                </div>
+
+
+
+            </div>
+            </a>
+            <a href="proshows/footlose.html">
+            <div style="float:left;background-image:url('images/footlose.jpg');background-size:100% 50%;" class="oyesokebahar">
+                <div style="background:black;color:white;margin-top:90%;opacity:0.9;height:55%;line-height:200%;padding:10px">
+                    <h2 style="text-align:center;"><i>Footlose</i></h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been     the industry's standard dummy text ever since the 1500s..
+                    </p>
+                    
+                </div>
+
+
+
+            </div>
+            </a>
+        </div>
+    </div>
+    <div class="pt-page pt-page-6" style="background-image:url(images/informal1.jpg);background-size:cover;">
+        <div class="social-buttons-121">
+                <img src="images/home.png" style="width:50px;height:50px;">
+                <img src="images/events.png" style="width:50px;height:50px;">
+                <img src="images/registration.png" style="width:50px;height:50px;">
+                <img src="images/fb.png" style="width:50px;height:50px;">
+                
+                
+        </div>
+        <div class="selectors">
+                <span class="pt-trigger" data-animation="41" data-goto="1">Back to events</span>
+                <span class="pt-trigger"  data-animation="43" data-goto="2">Music</span>
+                <span class="pt-trigger" data-animation="43" data-goto="3">Dance</span>
+                <span class="pt-trigger" data-animation="43" data-goto="4">Literary & Drama</span>
+                <span class="pt-trigger" data-animation="43" data-goto="5">Proshows</span>
+                <span class="active121">Informals</span>
+                
+        </div>
+        <h3 style="color:white;" class="dates-events"><span class="firstdate" id="informals-date-15">15</span>-<span class="seconddate" id="informals-date-16">16</span>-<span class="thirddate" id="informals-date-17">17</span>-<span class="fourthdate" id="informals-date-18">18</span></h3>
+        <ul id="informals-data-15" class="links nav pagination">
+            <li><a id="dom-element601" href="#">1am</a></li>
+            <li><a id="dom-element602" href="#">2am</a></li>
+            <li><a id="dom-element603" href="#">3am</a></li>
+            <li><a id="dom-element604" href="#">4am</a></li>
+            <li><a id="dom-element605" href="#">5am</a></li>
+            <li><a id="dom-element606" href="#">6am</a></li>
+            <li><a id="dom-element607" href="#">7am</a></li>
+
+        </ul>
+        <ul id="informals-data-16" class="links nav pagination">
+            <li><a id="dom-element608" href="#">8am</a></li>
+            <li><a id="dom-element609" href="#">9am</a></li>
+            <li><a id="dom-element610" href="#">10am</a></li>
+            <li><a id="dom-element611" href="#">11am</a></li>
+            <li><a id="dom-element612" href="#">12am</a></li>
+            <li><a id="dom-element613" href="#">13am</a></li>
+            <li><a id="dom-element614" href="#">14am</a></li>
+
+        </ul>
+        <ul id="informals-data-17" class="links nav pagination">
+            <li><a id="dom-element615" href="#">15am</a></li>
+            <li><a id="dom-element616" href="#">16am</a></li>
+            <li><a id="dom-element617" href="#">17am</a></li>
+            <li><a id="dom-element618" href="#">18am</a></li>
+            <li><a id="dom-element619" href="#">19am</a></li>
+            <li><a id="dom-element620" href="#">20am</a></li>
+            <li><a id="dom-element621" href="#">11am</a></li>
+
+        </ul>
+        <ul id="informals-data-18" class="links nav pagination">
+            <li><a id="dom-element622" href="#">8am</a></li>
+            <li><a id="dom-element623" href="#">11am</a></li>
+            <li><a id="dom-element624" href="#">11am</a></li>
+            <li><a id="dom-element625" href="#">11am</a></li>
+            <li><a id="dom-element626" href="#">11am</a></li>
+            <li><a id="dom-element627" href="#">11am</a></li>
+            <li><a id="dom-element628" href="#">11am</a></li>
+
+        </ul>
+    <div id="target-examples3" class="section">
+                  
+        <div id="pane-target3" class="pane outerabc">
+            <ul class="elements" style="width:12000px;list-style-type: none;">
+                <li id="one6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Treasure<br>Hunt</h3>
+                                You’ll see some rhyme and you will see some reason. Treasure Hunt is the game to play. 
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="two6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Gully<br>Cricket</h3>
+                                It sure has been some time since we have broken some neighbourhood  windows trying the helicopter shot.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="three6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Roadies</h3>
+                                A remake of the popular T.V. show,Roadies is not where you’ll score brownie points if you just sing or dance. 
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="four6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Gamer's<br>Asylum</h3>
+                                Experience the world of computer games. Gear up for the ultimate gaming battle.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="five6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Blind Date</h3>
+                                Ever dared of thinking that you can challenge the much clichéd love story of Romeo and Juliet or Adam and Eve? If you have, register it .
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="six6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Anime Quiz</h3>
+                                All Naruto, One Piece and DBZ fans, get going and be ready to live up to your fantasy and prove that you are the biggest anime freak!! Dattebayo!!
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="seven6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Street<br>Soccer</h3>
+                                Inspired by the unbelievable tricks of the skilful footballers, this is one heck of an event for all the soccer maniacs! Let the ball do the talking.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="eight6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Honest<br>Movie Review</h3>
+                                As the name suggests, participants have to prepare a honest movie trailer/review of a bollywood movie.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="nine6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Pillow<br>Fight</h3>
+                                The oh-so-common sport that is usually played on bed comes with a 'twist'.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="ten6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Bollywood<br>Mimicry</h3>
+                                Kitne aadmi the?" The golden voices of legendary bollywood actors will be put to test as the contestants have to mimic them for the ultimate mimicry artist crown.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="eleven6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Friends<br>Quiz</h3>
+                                I will be there for you ,when the rain starts to pour..” To all the FRIENDS enthusiasts! It’s a golden opportunity for you to prove your ultimate love for friends.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="twelve6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>GOT Quiz</h3>
+                                “dum dum da da dum dum da da dum dum da da dum dum da da dum” . GoT fans will know what this is because we never stop humming it.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="thirteen6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>China Town</h3>
+                                Raise the stakes, put on your pokerface and set the scene for an unforgettable casino experience. So be ready and gamble to galore.All are invited!
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="fourteen6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Basketball</h3>
+                                blah blah blah
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="fifteen6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>B Quiz</h3>
+                                Business is a game, played for fantastic stakes and you’re in competition with experts . If you want to win, you have to be the master of the game.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="sixteen6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Intuizione</h3>
+                                When a management team with a  reputation for brilliance tackles a business with a reputation of bad economics, it is the reputation of the business that remains intact.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="seventeen6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Balloon<br>Fight</h3>
+                                Burst the balloon tied to your opponent’s leg while saving the one tied to your leg. Participate in a group of 5.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="eighteen6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Bollywood<br>Tambola</h3>
+                                Adding flavor to one of the most popular party game is the masala and the grandeur of one of the biggest Indian Industry – Bollywood.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="nineteen6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Alternate<br>Ending</h3>
+                                When a management team with a  reputation for brilliance tackles a business with a reputation of bad economics, it is the reputation of the business that remains intact.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+                <li id="twenty6">
+                            <div class="every121 sectionabc">
+                                <div class="imgcontainer121" style="padding-left:0px;">
+                                    <img src="music.jpg" class="image121">
+                                </div>
+                                <div class=" textcontainer121">
+                                <button id="open121" style="position:absolute;margin-left:12.5%;margin-top:0.1%;"class="btn btn-info">Info</button>
+                                <span class="content121">
+                                <h3>Silver<br>Screen</h3>
+                                When a management team with a  reputation for brilliance tackles a business with a reputation of bad economics, it is the reputation of the business that remains intact.
+                                </span>
+                                </div>
+                            </div>
+                </li>
+            </ul>
+        </div>
+    </div>    
+		
+
+    
+
+    </div>
+
+
+
+<div class="pt-message">
+    <p>Your browser does not support CSS animations.</p>
+</div>
+
+<script src="js/transition.js"></script>
+</body>
+</html>
