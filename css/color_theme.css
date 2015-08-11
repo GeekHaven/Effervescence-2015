@@ -31,15 +31,15 @@ blockquote.type1:before,
 .widget_tag_cloud a:hover,
 .fs_thmb_viewport .fs_thmb_list li .fs_thmb_fadder,
 .fs_grid_module .grid_gallery-item .item_hover-img .item_hover-fadder {
-	background-color:#ff5474;
+	background-color:#DACFCF;
 }
 .widget_mailchimpsf_widget .mc_submit:hover,
 .flickr_fadder,
 .shortcode_button.btn_type1:hover {
-	background-color:#ff5474!important;
+	background-color:#DACFCF!important;
 }
 header nav ul.menu  li .sub-menu a {
-	background:#ff5474;
+	background:#DACFCF;
 	background:rgba(255,84,116,0.9);
 }
 header nav ul.menu  li .sub-menu li {
