@@ -19,9 +19,12 @@
 	<!-- loader -->
 	<div class="loader">
 		<div class="loader-projector">	
-  			<img src="image/loader/projector.png" height="100" width="100">
+  			<img src="image/loader/cam.png" style="width: 65%;height: 50%;">
 		</div>
-		<h1 data-text="It's loading…">It's loading…</h1>
+
+		<div id="load" data-text="">
+			<!--<div id="load-text" data-text="It's loading…">It's loading…</div>-->
+		</div>
 	</div>
 	<script type="text/javascript">
 	
@@ -31,7 +34,7 @@
 		setTimeout(function() {
 			$("body").css("overflow", "visible");
 			$('.loader').fadeOut(400);
-		}, 4000);
+		}, 2800);
 
 	});
 	</script>
