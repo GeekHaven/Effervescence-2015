@@ -1,7 +1,7 @@
 
 
 function slide() {
-//<<<<<<< HEAD
+
 	$("html, body,*").mousewheel(function(e, delta) {
 	  	this.scrollLeft -= (delta * 30);
 		e.preventDefault();
@@ -31,11 +31,4 @@ function slide() {
 		});
 	
 }
-//=======
-	$("html, body").mousewheel(function(e, delta) {
-	
-	  	this.scrollLeft -= (delta * 30);
-		e.preventDefault();		
-	});
 
-//>>>>>>> d69e26bc474b2e90390852aeb3e986cdc53db852
