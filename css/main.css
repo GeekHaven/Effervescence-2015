@@ -1,3 +1,56 @@
+/* loader */
+.loader {
+	width : 100%;
+	height : 100%;
+	overflow: hidden;
+	top : 0;
+	left : 0;
+	position: absolute;
+	z-index: 300;
+	background-color : 	#3498db;
+	font-family: Arial, sans;
+}
+
+.loader-projector {
+  float : left;
+  width : 30%;
+  position : relative;
+  top : 45px;
+  -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
+}
+
+h1 {
+    position: relative;
+    color: rgba(0, 0, 0, .3);
+    font-size: 7em;
+    float : left;
+    width: 70%;
+    display  inline-block;
+}
+
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    background-color: #ff0;
+    max-width: 7em;
+    white-space: nowrap;
+    color: #fff;
+    -webkit-animation : loading 4s linear infinite;
+    animation: loading 4s linear infinite;
+  	-webkit-animation-direction : alternate;
+  	animation-direction : alternate;
+}
+
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+/* loader end */
+
 
 /*Scrollbar*/
 

@@ -8,6 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pxloader-images.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/main.js"></script>
@@ -15,6 +16,25 @@
 </head>
 
 <body>
+	<!-- loader -->
+	<div class="loader">
+		<div class="loader-projector">	
+  			<img src="image/loader/projector.png" height="100" width="100">
+		</div>
+		<h1 data-text="It's loading…">It's loading…</h1>
+	</div>
+	<script type="text/javascript">
+	
+	$("body").css("overflow", "hidden");
+	
+	$("document").ready(function() {
+		setTimeout(function() {
+			$("body").css("overflow", "visible");
+			$('.loader').fadeOut();
+		}, 4000);
+
+	});
+	</script>
 
 	<!-- Menu -->
 	<div style="position:fixed;z-index:2;">

@@ -19,7 +19,7 @@ a:hover{
 	font-size: 20px;
 }
 #menu-text{
-	/*border-top:3px dashed #868A08;*/
+	font-family: 'Orbitron', sans-serif;
 	width:300px;
 	height:40px;
 	background-color:black;
@@ -36,7 +36,11 @@ a:hover{
 	color:#737171;
 }
 #box{
-	background:black;height:0px;width:300px;opacity:0.8;font-family: 'Orbitron', sans-serif;
+	background:black;
+	height:0px;
+	width:300px;
+	opacity:0.8;
+	font-family: 'Orbitron', sans-serif;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
