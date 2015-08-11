@@ -15,7 +15,17 @@
 		background-color:rgba(0, 0, 0, 0.77)
 	}
 	</style>
-	
+	<script>
+	$(function(){
+      		$("html,body,*").mousewheel(function(event, delta){
+      			this.scrollLeft -=(delta * 30); 
+      			event.preventDefault();
+      		});
+      	});
+
+      	/*resizes the section as the device changes */
+      	
+  	  </script> 
 </head>
 <body>
 <!--menu begins here-->
