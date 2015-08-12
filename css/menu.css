@@ -17,25 +17,45 @@
 
 /*Scrollbar Ends*/
 
-a:link{
+#box a:link{
 	color:white;
 	text-decoration: none;
 	font-size: 20px;
 }
-a:visited{
+#box a:visited{
 	color:white;
 	text-decoration: none;
 	font-size: 20px;
 }
-a:active{
+#box a:active{
 	color:white;
 	text-decoration: none;
 	font-size: 20px;
 }
-a:hover{
+#box a:hover{
 	color:#737171;
 	text-decoration: none;
 	font-size: 20px;
+}
+#nav-contact a:link{
+	color:white;
+	text-decoration: none;
+	font-size: 17px;
+}
+#nav-contact a:visited{
+	color:white;
+	text-decoration: none;
+	font-size: 17px;
+}
+#nav-contact a:active{
+	color:white;
+	text-decoration: none;
+	font-size: 17px;
+}
+#nav-contact a:hover{
+	color:#737171;
+	text-decoration: none;
+	font-size: 17px;
 }
 #menu-text{
 	font-family: 'Orbitron', sans-serif;
