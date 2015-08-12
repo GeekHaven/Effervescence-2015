@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('#menu-text').click(function(){
 		if(flag==0){
     		$("#box").animate({height: "300px"},200);
-        	$("#text0").delay(50).animate({left: '280px', top: '250px'});
+			$("#text0").delay(50).animate({left: '280px', top: '250px'});
         	$("#text1").delay(100).animate({left: '280px', top: '255px'});
         	$("#text2").delay(150).animate({left: '280px', top: '260px'});
         	$("#text3").delay(200).animate({left: '280px', top: '265px'});
@@ -15,7 +15,7 @@ $(document).ready(function(){
     	}
     	else{
     		$("#box").delay(1000).animate({height: "0px"});
-       		$("#text0").delay(450).animate({left: '-250px', top: '-210px'},"slow");
+			$("#text0").delay(450).animate({left: '-250px', top: '-210px'},"slow");
        		$("#text1").delay(400).animate({left: '-250px', top: '-180px'},"slow");
         	$("#text2").delay(350).animate({left: '-250px', top: '-150px'},"slow");
         	$("#text3").delay(300).animate({left: '-250px', top: '-120px'},"slow");
