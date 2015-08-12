@@ -17,22 +17,22 @@
 
 /*Scrollbar Ends*/
 
-a:link{
+#box a:link{
 	color:white;
 	text-decoration: none;
 	font-size: 20px;
 }
-a:visited{
+#box a:visited{
 	color:white;
 	text-decoration: none;
 	font-size: 20px;
 }
-a:active{
+#box a:active{
 	color:white;
 	text-decoration: none;
 	font-size: 20px;
 }
-a:hover{
+#box a:hover{
 	color:#737171;
 	text-decoration: none;
 	font-size: 20px;
