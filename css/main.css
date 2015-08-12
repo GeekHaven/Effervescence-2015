@@ -116,6 +116,8 @@
 	right:0%;
 	height:100%;
 	width:11%;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 0.7em;
 }
 
 .days, .hours, .minutes, .seconds {
