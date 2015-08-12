@@ -1,5 +1,5 @@
 $('document').ready(function() {
-	$('#back1').css({'height':'105%', 'width':'105%', 'transition':'all ease-in-out 3s'});
+	$('#back1').css({'height':'105%', 'width':'105%', 'transition':'all ease-in-out 6s'});
 	alink();
 	$(window).scroll(function() {
 		scrollcontrol();
