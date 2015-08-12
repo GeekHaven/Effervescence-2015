@@ -106,7 +106,7 @@ box-shadow: -44px -15px 23px 6px rgba(0,0,0,0.75);
 	position:fixed;
 	top:50%;
 	margin-top:-113px;
-	z-index:99;
+	z-index:1;
 	opacity: 0;
 
 	transition:opacity 400ms;
