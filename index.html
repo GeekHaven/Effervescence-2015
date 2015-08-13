@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Effervescence 2k15</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+	<link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+	<!-- loader -->
+	<div class="loader">
+		<div class="loader-projector">	
+  			<img src="image/loader/cam.png" style="width: 65%;height: 50%;">
+		</div>
+
+		<div id="load" data-text="">
+			<!--<div id="load-text" data-text="It's loading…">It's loading…</div>-->
+		</div>
+	</div>
+	<script type="text/javascript">	
+		$("body").css('overflow', "hidden");
+		$("document").ready(function() {
+			setTimeout(function() {
+				$("body").css("overflow", "visible");
+				$('.loader').fadeOut(400);
+				$('.slide1, .slide2, .slide3').css('display', 'block');
+			}, 4000);
+
+		});
+	</script>
+	<!-- Menu -->
+	<div style="position:fixed;z-index:12;">
+		<div id="box">
+			
+			<span id="text0" style="position:absolute;margin-left:-250px;margin-top:-210px;"><a href="#" >Home</a></span>
+			<span id="text1" style="position:absolute;margin-left:-250px;margin-top:-180px;"><a href="events/propage.html" >Proshows</a></span>
+			<span id="text2" style="position:absolute;margin-left:-250px;margin-top:-150px;"><a href="events/index.html" >Events</a></span>
+
+			<span id="text3" style="position:absolute;margin-left:-250px;margin-top:-120px;"><a href="sponsors.html" >Sponsors</a></span>
+			<span id="text4" style="position:absolute;margin-left:-250px;margin-top:-90px;"><a href="">Registration</a></span>
+			<span id="text5" style="position:absolute;margin-left:-250px;margin-top:-60px;"><a href="gallery.html" >Gallery</a></span>
+			<span id="text6" style="position:absolute;margin-left:-250px;margin-top:-30px;"><a href="contact.html" >Contact Us</a></span>
+			
+		</div>
+		<div id="menu-text">
+			<span style="position:absolute;margin-top:5px;">
+			<span id="menu-text-menu">MENU</span>
+			<img id="arrow" src="image/menu_arr.png" style="margin-left:12em">
+			</span>
+		</div>
+	</div>
+	<!-- Menu Ends -->
+		
+	<section class="slide1">
+        <!--<div class="scope"></div>
+        <div class="scopeFade"></div>-->
+        <img id="logo" src="image/logo.png" style="z-index:10;">
+        <img src="image/crowd.jpg" id="flower" class="demo092" style="position:fixed;"/>
+		<canvas id="mycanvas" width="1500" height="700" style="position:absolute;"></canvas>
+		<script src="js/scrawlCore-min.js"></script>
+		<script>
+		var mycode = function(){
+		  //define variables
+		  var myPad = scrawl.pad.mycanvas,
+			here,
+			gradient,
+			myGloom,
+			mySpotlight;
+
+		  //import images into scrawl library
+		  scrawl.getImagesByClass('demo092');
+
+		  //define designs (gradient)
+		  gradient = scrawl.newRadialGradient({
+			name: 'spotlight',
+			startRadius: 50,
+			endRadius: 150,
+			color: [
+			  {color: 'rgba(0,0,0,0)', stop: 0},
+			  {color: 'rgba(0,0,0,0.8)', stop: 1},
+			],
+		  });
+
+		  //define sprites
+		  scrawl.newPicture({
+			source: 'flower',
+			width: 1500,
+			height: 700,
+		  });
+
+		  myGloom = scrawl.newBlock({
+			name: 'gloomy',
+			fillStyle: 'rgba(0,0,0,0.8)',
+			method: 'fill',
+			width: 1500,
+			height: 700,
+			order: 1,
+		  });
+
+		  mySpotlight = myGloom.clone({
+			name: 'shiny',
+			fillStyle: 'spotlight',
+		  });
+
+		  //animation object
+		  scrawl.newAnimation({
+			fn: function(){
+			  here = myPad.getMouse();
+			  if(here.active) {
+				gradient.set({
+				  startX: here.x,
+				  startY: here.y,
+				  endX: here.x,
+				  endY: here.y,
+				});
+				myGloom.set({visibility: false});
+				mySpotlight.set({visibility: true});
+			  }
+			  else {
+				myGloom.set({visibility: true});
+				mySpotlight.set({visibility: false});
+			  }
+			  scrawl.render();
+			},
+		  });
+		};
+
+		scrawl.loadModules({
+		  path: 'js/',
+		  modules: ['block', 'images', 'animation'],
+		  callback: function(){
+			window.onload = function(){
+			  scrawl.init();
+			  mycode();
+			};
+		  },
+		});
+		</script>
+        
+        
+        <!-- Counter -->
+		<div class="counter">
+        	<div class="days">
+				<div id="cback">
+                <hr id="cline">
+                <div id="cbackhide"></div>
+                <p id="cvalue"></p>
+                <p id="ctext">Days</p>
+                </div>
+            </div>
+        	<div class="hours">
+				<div id="cback">
+                <hr id="cline">
+                <div id="cbackhide"></div>
+                <p id="cvalue"></p>
+                <p id="ctext">Hours</p>
+                </div>
+            </div>
+        	<div class="minutes">
+				<div id="cback">
+                <hr id="cline">
+                <div id="cbackhide"></div>
+                <p id="cvalue"></p>
+                <p id="ctext">Minutes</p>
+                </div>
+            </div>
+        	<div class="seconds">
+				<div id="cback">
+                <hr id="cline">
+                <div id="cbackhide"></div>
+                <p id="cvalue"></p>
+                <p id="ctext">Seconds</p>
+                </div>
+            </div>
+		</div>
+		<!-- Counter Ends -->
+
+        <!-- Sponsor Box -->
+       	<div class="sponsorbox">
+	    	<img src="image/sponsortv/backbox.png" id="backbox">
+        	<img src="image/sponsortv/1.png" id="sponsors">
+    	</div>
+        <!-- Sponsor Box Ends -->
+
+<!--        <img id="logo" src="image/logo.jpg"> -->
+    </section>
+	<section class="slide2">
+    	<img id="back" src="image/crowd2.jpg">
+        <p id="head" style="font-family:Orbitron;">About Us</p>
+        <p id="content" style="font-family:Orbitron;">
+        	Effervescence is a platform of youthful energy showcasing intelllectuality, creativity and the cultural treat. The cultural and managerial spirits mingle to bring forth the Fizz, Frolic and Festivity of this extravaganza. Effervescenceis a cultural extravaganza spanning 4 days of high octane action. The four days of campus events which comprise of informal and other events in the morning and to hold the night fever we have a full platter of dance, dramatics, music and literary competitions. The concluding night of the effervescence is always the most anticipated and illustrious event which has seen bands like Bombay Vikings, Euphoria, Silk Route and Strings(to name a few) performing live. This effervesence is going to take the definition of fun to a whole new dimension! So, dont wait anymore. Join us this October from 15th to 18th and make effervescence a grand success. 
+        </p>
+    </section>
+	<section class="slide3">
+    	<img id="back" src="image/crowd3.jpg">
+        <div class="sociallinks">
+            <a href="https://www.facebook.com/effervescence.iiita?fref=ts"><img id="icon" src="image/facebook.png"></a>
+            <a href="https://www.youtube.com/user/effervescenceMM13"><img id="icon" src="image/twitter.png"></a>
+            <a href="https://www.youtube.com/user/effervescenceMM13"><img id="icon" src="image/youtube.png"></a>
+            <a href="https://instagram.com/effe2k15/"><img id="icon" src="image/instagram.png"></a></div>
+        </div>
+        
+		<div id="googleMap"></div>    
+    </section>
+
+</body>
+</html>

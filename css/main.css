@@ -1,0 +1,354 @@
+/* loader */
+.loader {
+	width : 100%;
+	height : 100%;
+	overflow: hidden;
+	top : 0;
+	left : 0;
+	position: absolute;
+	z-index: 300;
+	background-image:url('../image/back.jpg');
+	background-color:#2E1F2C;
+	background-size:100% 100%;
+	font-family: Arial, sans;
+}
+
+.loader-projector {
+  float : left;
+  width : 30%;
+  position : relative;
+  top : 150px;
+  left : -34px;
+  text-align: center;
+}
+
+section {
+	display : none;
+}
+
+#load-text {
+	color: rgba(0, 0, 0, .3);
+	position:relative;
+    display  inline-block;
+    top:55px;
+    
+}
+
+#load-text:before {
+    content: attr(data-text);
+    position:absolute;
+    overflow: hidden;
+    top:3px;
+    /*background-image : -webkit-gradient(radial, 717 104, 110, -67 109, 30, from(rgba(60, 60, 60, 0)), to(rgb(255, 255, 255)));*/
+    max-width:22em;
+    white-space: nowrap;
+    color: #fff;
+   	-webkit-animation : loading-texting 4s linear infinite;
+    animation: loading-texting 4s linear infinite;
+  	-webkit-animation-direction : alternate;
+  	animation-direction : alternate;	
+}
+
+#load {
+    position: relative;
+    color: rgba(0, 0, 0, .3);
+    top: 170px;
+    font-size: 5.69em;
+    float : left;
+    width: 70%;
+    display  inline-block;
+}
+
+#load:before {
+    content: attr(data-text);
+    width:110%;
+    left:-105px;
+    position: absolute;
+    overflow: hidden;
+    height:20em;
+    top: -20px;
+    background-image: -webkit-gradient(radial, 1042 132, 127, -67 128, 20, from(rgba(60, 60, 60, 0)), to(rgb(255, 255, 255)));
+    white-space: nowrap;
+    color: #fff;
+    max-width: 22em;
+    -webkit-animation : loading 4s linear infinite;
+    animation: loading 4s linear infinite;
+  	-webkit-animation-direction : alternate;
+  	animation-direction : alternate;
+}
+
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+
+@keyframes loading-texting {
+    0% {
+        max-width:0px;
+    }
+}
+/* loader end */
+
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+	width: 100%;
+	height: 1.5em;
+}	
+
+::-webkit-scrollbar-track {		
+    background: url('../image/check_scroll.png');		
+	background-size: 1.6em;	
+}		
+
+::-webkit-scrollbar-thumb {		
+  background: url('../image/scroll_tmb_hor.png') no-repeat center;
+  background-size: 2em 1.5em;
+}		
+
+/*Scrollbar Ends*/
+
+/*Counter*/
+
+.counter {
+	position: absolute;
+	right:0%;
+	height:100%;
+	width:11%;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 0.7em;
+}
+
+.days, .hours, .minutes, .seconds {
+	position:absolute;
+	height:22%;
+	width:85%;
+}
+
+.days {
+	top:3%;
+}
+
+.hours {
+	top:27%;
+}
+
+.minutes {
+	top:52%;
+}
+
+.seconds {
+	top:77%;
+}
+
+#cback {
+	position:absolute;
+	left:5%;
+	width:90%;
+	height:80%;
+	border-radius:50%;
+}
+
+#cline {
+	position:absolute;
+	top:43.5%;
+	width:40%;
+	left:50%;
+	border-color:black;
+	transform-origin:left;
+	z-index:1;
+}
+
+#ctext {
+	position:absolute;
+	top:100%;
+	color:white;
+	font-size:1.5em;
+}
+
+#cbackhide {
+	position:absolute;
+	top:0%;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	background-color:white;
+	opacity:0.5;
+}
+
+#cvalue {
+	position:absolute;
+	top:30%;
+	left:27%;
+	color:white;
+	font-size:3em;
+}
+
+.days #ctext {
+	left:30%;
+}
+
+.hours #ctext {
+	left:25%;
+}
+
+.minutes #ctext {
+	left:15%;
+}
+
+.seconds #ctext {
+	left:15%;
+}
+/* Counter Ends */
+
+/* Home Back */
+
+.scope {
+	position:absolute;
+	height:55%;
+	width:30%;
+	background:url('../image/photodune-4429665-concert-ambience-l.jpg') fixed 90% 90%;
+	border-radius:50%;
+}
+
+.scopeFade {
+	position:absolute;
+	height:55%;
+	width:30%;
+	border-radius:50%;
+	background: -webkit-radial-gradient(rgba(29,31,32,0) 5%, rgba(29,31,32,1) 68%); /*Safari 5.1-6*/
+	background: -o-radial-gradient(rgba(29,31,32,0) 5%,rgba(29,31,32,1) 68%); /*Opera 11.1-12*/
+	background: -moz-radial-gradient(rgba(29,31,32,0) 5%,rgba(29,31,32,1) 68%); /*Fx 3.6-15*/
+	background: radial-gradient(rgba(29,31,32,0) 5%, rgba(29,31,32,1) 68%); /*Standard*/
+	border-radius: 50%;
+}
+/* Home Back Ends */
+
+/* Sponsor Box */
+
+.sponsorbox {
+	position:absolute;
+	top:75%;
+	left:3%;
+	height:25%;
+	width:16%;
+	opacity:1;
+}
+
+#backbox {
+	position:absolute;
+	height:100%;
+	width:100%;
+	border-radius:10%;
+	z-index:1;
+}
+
+#sponsors {
+	position:absolute;
+	left:16%;
+	top:35%;
+	height:41.5%;
+	width:50.5%;
+	border-radius:25%;
+	z-index:2;
+}
+
+/* Sponsor Box Ends */
+
+body,html {
+	margin:0;
+	padding:0;
+}
+
+section {
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+
+section p{
+	margin:0;
+	padding:0;
+}
+
+.slide1 {
+	position:absolute;
+	background-color:black;
+}
+
+.slide2 {
+	position:absolute;
+	left:100%;
+}
+
+.slide3 {
+	position:absolute;
+	left:200%;
+}
+
+#back {
+	height:100%;
+	width:100%;
+}
+
+.slide1 #logo {
+	position:absolute;
+	top:30%;
+	left:20%;
+	width: 56%;
+}
+
+.slide2 #head {
+	position:absolute;
+	top:3%;
+	left:74%;
+	color:white;
+	font-size:4em;
+}
+
+.slide2 #content {
+	position:absolute;
+	top:15%;
+	left:60%;
+	color:white;
+	font-size:1.2em;
+}
+
+.sociallinks {
+	position:absolute;
+	top:15%;
+	left:2%;
+	height:40%;
+	width:5%;
+}
+
+.sociallinks a{
+	margin:0;
+	width:100%;
+	height:25%;
+}
+
+.sociallinks #icon{
+	height:24%;
+	width:100%;
+}
+
+.subscribe {
+	position:absolute;
+	top:15%;
+	left:8%;
+	height:50%;
+	width:35%;
+	background-color:blue;
+}
+
+#googleMap {
+	position:absolute;
+	margin:0;
+	top:15%;
+	left:48%;
+	height:80%;
+	width:50%;
+}
