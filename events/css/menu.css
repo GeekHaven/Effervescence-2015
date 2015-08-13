@@ -16,7 +16,6 @@
 }		
 
 /*Scrollbar Ends*/
-
 a:link{
 	color:white;
 	text-decoration: none;
@@ -33,6 +32,27 @@ a:active{
 	font-size: 20px;
 }
 a:hover{
+	color:#737171;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#box a:link{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+}
+#box a:visited{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+}
+#box a:active{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+}
+#box a:hover{
 	color:#737171;
 	text-decoration: none;
 	font-size: 20px;
