@@ -20,9 +20,10 @@
   top : 150px;
   left : -34px;
   text-align: center;
-  /*-ms-transform: rotate(15deg); /* IE 9 */
-   /* -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
-    /*transform: rotate(15deg);*/
+}
+
+section {
+	display : none;
 }
 
 #load-text {
