@@ -157,11 +157,11 @@ function counter() {
 
 x=2;
 function sponsorbox() {
-	$(".sponsorbox").animate({top:'80%'},{duration:"100", easing:"swing" ,queue:false});
+	$(".sponsorbox").animate({top:'80%'},{duration:"100", easing:"swing", queue:false});
 	$(".sponsorbox").fadeTo("1000",0,function(){
 		if(x>46)
 			x = 1;
-		$(".sponsorbox").animate({top:'75%'},{duration:"100", easing:"swing" ,queue:false});
+		$(".sponsorbox").animate({top:'75%'},{duration:"100", easing:"swing", queue:false});
 		$(".sponsorbox").fadeTo("300",1);
 		$("#sponsors").attr('src',"image/sponsortv/" + x + ".png");
 		x++;
