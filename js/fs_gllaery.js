@@ -7,6 +7,8 @@
 	License : MIT License / GPL License
 */
 
+/*updated to use current version of jquery */
+
 jQuery.fn.fs_gallery = function(fs_options) {
 	//Set Variables
 	var fs_el = $(this),
@@ -51,13 +53,13 @@ jQuery.fn.fs_gallery = function(fs_options) {
 		thisSlide++;
 		cleanSlide = thisSlide-2;
 		nxtSlide = thisSlide+1;
-		if (thisSlide == $('.fs_gallery_container').find('li').size()) {
+		if (thisSlide == $('.fs_gallery_container').find('li').length) {
 			thisSlide = 0;
-			cleanSlide = $('.fs_gallery_container').find('li').size()-3;
+			cleanSlide = $('.fs_gallery_container').find('li').length-3;
 			nxtSlide = thisSlide+1;
 		}
 		if (thisSlide == 1) {
-			cleanSlide = $('.fs_gallery_container').find('li').size()-2;
+			cleanSlide = $('.fs_gallery_container').find('li').length-2;
 		}
 
 		$('.fs_title').fadeOut(300);
@@ -85,10 +87,10 @@ jQuery.fn.fs_gallery = function(fs_options) {
 		nxtSlide = thisSlide-1;
 		cleanSlide = thisSlide+2;
 		if (thisSlide < 0 ) {
-			thisSlide = $('.fs_gallery_container').find('li').size()-1;
+			thisSlide = $('.fs_gallery_container').find('li').length-1;
 			cleanSlide = 1;
 		}
-		if (thisSlide == $('.fs_gallery_container').find('li').size()-2) {
+		if (thisSlide == $('.fs_gallery_container').find('li').length-2) {
 			cleanSlide = 0;
 		}
 		$('.fs_title').fadeOut(500);
