@@ -13,34 +13,29 @@
 	body{
 		background-image:url('image/back1.jpg');
 		background-size: 700% 100%;
+		font-family: 'Orbitron', sans-serif;
 	}
 	</style>
 	<script>
-	$(function(){
-      		$("html,body,*").mousewheel(function(event, delta){
-      			this.scrollLeft -=(delta * 30); 
-      			event.preventDefault();
-      		});
-      	});
-
-      	/*resizes the section as the device changes */
-      	
-  	  </script> 
+		$(function(){
+	  		$("html,body,*").mousewheel(function(event, delta){
+	  			this.scrollLeft -=(delta * 30); 
+	  			event.preventDefault();
+	  		});
+	  	});
+  	</script> 
 </head>
 <body>
 <!--menu begins here-->
 <div style="position:fixed;z-index:2;">
-	<div id="box">
-		
+	<div id="box">		
 		<span id="text0" style="position:absolute;margin-left:-250px;margin-top:-210px;"><a href="index.html" >Home</a></span>
 		<span id="text1" style="position:absolute;margin-left:-250px;margin-top:-180px;"><a href="events/propage.html" >Proshows</a></span>
 		<span id="text2" style="position:absolute;margin-left:-250px;margin-top:-150px;"><a href="events/index.html" >Events</a></span>
-
 		<span id="text3" style="position:absolute;margin-left:-250px;margin-top:-120px;"><a href="#" >Sponsors</a></span>
 		<span id="text4" style="position:absolute;margin-left:-250px;margin-top:-90px;"><a href="">Registration</a></span>
 		<span id="text5" style="position:absolute;margin-left:-250px;margin-top:-60px;"><a href="gallery.html" >Gallery</a></span>
 		<span id="text6" style="position:absolute;margin-left:-250px;margin-top:-30px;"><a href="contact.html" >Contact Us</a></span>
-
 	</div>
 	<div id="menu-text">
 		<span style="position:absolute;margin-top:5px;">
@@ -105,7 +100,6 @@
                         <img src="image/sponsor/amar.jpg" style="width:150px;height:100px;float:left;margin-left:10px;margin-top:10px;">
                         <img src="image/sponsor/ecut.jpg" style="width:130px;height:100px;float:left;margin-left:10px;margin-top:10px;">
                         <img src="image/sponsor/matrix.jpg" style="width:130px;height:100px;float:left;margin-left:10px;margin-top:10px;">
-
                     </div>
                 </div>
 			</div>

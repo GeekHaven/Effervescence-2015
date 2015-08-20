@@ -7,8 +7,9 @@ $('document').ready(function() {
 function alink() {
 	$('.proside input[type="radio"]').click(function() {
 		address = $(this).val();
-		console.log($(address).position().top);
-		$('body, html').animate({scrollTop:$(address).position().top},700);
+		var val = (parseInt(address)-1) * $(window).height();
+		console.log(val);
+		$('.popupbox').animate({scrollTop:val},700);
     });
 }
 
