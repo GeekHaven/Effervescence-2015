@@ -1,3 +1,68 @@
+var baseUrl = 'image/check_scroll.png',
+    baseUrl2 = 'image/frame_buttons.png',
+    baseUrl3 = 'image/instagram.png',
+    baseUrl4 = 'image/facebook.png',
+    baseUrl5 = 'image/logo.png',
+    baseUrl6 = 'image/twitter.png',
+    baseUrl7 = 'image/crowd.jpg',
+    baseUrl8 = 'image/crowd2.jpg',
+    baseUrl9 = 'image/crowd3.jpg',
+    baseUrl10 = 'image/menu_arr.png',
+    baseUrl11 = 'image/effe.png',
+    baseUrl12 = 'image/youtube.png',
+    baseUrl13 = 'image/scroll_tomb_hot.png',
+    baseUrl14 = 'image/sponsortv/1.png',
+    loader = new PxLoader(); 
+
+ var pxImage = new PxLoaderImage(baseUrl);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl2);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl3);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl4);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl5);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl6);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl7);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl8);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl9);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl10);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl11);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl12);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl13);
+ loader.add(pxImage);
+ pxImage = new PxLoaderImage(baseUrl14);
+ loader.add(pxImage);
+ 
+
+// callback that runs every time an image loads 
+loader.addProgressListener(function(e) {
+    //to get the ratio of iamges loaded
+    var loadedRatio = e.completedCount / e.totalCount;
+    //change the max-width property of 
+    // #load to get our projector effect
+    //change the duration if required
+    $('#load')
+    .animate({
+        maxWidth : (loadedRatio) * 12 + 'em'
+    }, 50, function(){
+        if (loadedRatio == 1) {
+            $('.loader').fadeOut(400);
+        	$('.slide1, .slide2, .slide3').css('display', 'block');
+        }
+    });
+}); 
+ 
+loader.start(); 
 $("document").ready(function() {
 	slide();
 	//homeback();
@@ -13,29 +78,6 @@ function slide() {
 	$("html, body").mousewheel(function(e, delta) {
 	  	this.scrollLeft -= (delta * 30);
 		e.preventDefault();
-/*		maxscroll = $(".slide2").position().left; 
-		left = $("body").scrollLeft();
-		if(e.originalEvent.wheelDelta==120) {
-			con = left-maxscroll;
-			$(this).animate({scrollLeft:con},{duration:1000});
-		}
-		if(e.originalEvent.wheelDelta==-120) {
-			con = left+maxscroll;
-			$(this).animate({scrollLeft:con},{duration:1000});
-		} 
-	});
-	$('html, body').keydown(function(e){
-		maxscroll = $(".slide2").position().left;
-		left = $("body").scrollLeft();
-		e.preventDefault();
-		if(e.which==37) {
-			con = left-maxscroll;
-			$(this).animate({scrollLeft:con},{duration:1000});
-		}
-		if(e.which==39) {
-			con = left+maxscroll;
-			$(this).animate({scrollLeft:con},{duration:1000});
-		} */
 	});
 }
 
