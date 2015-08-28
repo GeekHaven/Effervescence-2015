@@ -4,10 +4,13 @@
 	<base href="/">
     <title>gallery</title>
 
+
+	<link rel="stylesheet" type="text/css" href="css/fs_gallery.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
     <link rel="stylesheet" type="text/css" href="css/color_theme.css" id="theme_color">
     <link rel="stylesheet" type="text/css" href="css/skin.css">
 	<link href="css/menu.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/fs_gllaery.css">
+	<link rel="stylesheet" type="text/css" href="css/fs_gallery.css">
 	<link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
 	<style>
 		body {
@@ -17,12 +20,23 @@
 	</style>
 		
 	<script src="js/jquery.min.js"></script>
+	<script src="js/pxloader-images.js"></script>
+	<script src="js/gallery.js"></script>
 	<script src="js/menu.js"></script>
     <script type="text/javascript" src="js/fs_gallery.js"></script>
 	
 </head>
 
 <body>
+<!-- loader  ends -->
+<div class="loader">
+	<div class="loader-projector">	
+			<img src="image/loader/cam.png">
+	</div>
+	<div id="load" data-text="">
+	</div>
+</div>
+<!-- loader ends -->
 <div class="fullscreen_layout">	
 <!--		menu begins		-->
 	<div style="position:fixed;z-index:2;">

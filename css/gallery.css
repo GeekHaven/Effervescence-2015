@@ -1,0 +1,42 @@
+/* loader */
+.loader {
+	width : 100%;
+	height : 100%;
+	overflow: hidden;
+	top : 0;
+	left : 0;
+	position: absolute;
+	z-index: 300;
+	background-image:url('../image/back.jpg');
+	background-color:#2E1F2C;
+	background-size:100% 100%;
+	font-family: Arial, sans;
+}
+.loader-projector img {
+  width: 65%;
+  height: 82%;
+}
+
+.loader-projector {
+  float : left;
+  width : 30%;
+  position : relative;
+  top : 150px;
+  left : -34px;
+  text-align: center;
+}
+
+#load {
+  width: 120%;
+  height: 20em;
+  position: absolute;
+  overflow:hidden;
+  color: rgba(0, 0, 0, .3);
+  top: 155px;
+  left: 304px;
+  font-size: 5.69em;
+  background-image: -webkit-gradient(radial, 1042 132, 127, -67 128, 20, 
+    from(rgba(60, 60, 60, 0)), to(rgb(255, 255, 255)));
+  float : left;
+  display  inline-block;
+}

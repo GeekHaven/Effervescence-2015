@@ -12,6 +12,10 @@
 	background-size:100% 100%;
 	font-family: Arial, sans;
 }
+.loader-projector img {
+  width: 65%;
+  height: 82%;
+}
 
 .loader-projector {
   float : left;
@@ -22,71 +26,20 @@
   text-align: center;
 }
 
-section {
-	display : none;
-}
-
-#load-text {
-	color: rgba(0, 0, 0, .3);
-	position:relative;
-    display  inline-block;
-    top:55px;
-    
-}
-
-#load-text:before {
-    content: attr(data-text);
-    position:absolute;
-    overflow: hidden;
-    top:3px;
-    /*background-image : -webkit-gradient(radial, 717 104, 110, -67 109, 30, from(rgba(60, 60, 60, 0)), to(rgb(255, 255, 255)));*/
-    max-width:22em;
-    white-space: nowrap;
-    color: #fff;
-   	-webkit-animation : loading-texting 4s linear infinite;
-    animation: loading-texting 4s linear infinite;
-  	-webkit-animation-direction : alternate;
-  	animation-direction : alternate;	
-}
-
 #load {
-    position: relative;
-    color: rgba(0, 0, 0, .3);
-    top: 170px;
-    font-size: 5.69em;
-    float : left;
-    width: 70%;
-    display  inline-block;
-}
-
-#load:before {
-    content: attr(data-text);
-    width:110%;
-    left:-105px;
-    position: absolute;
-    overflow: hidden;
-    height:20em;
-    top: -20px;
-    background-image: -webkit-gradient(radial, 1042 132, 127, -67 128, 20, from(rgba(60, 60, 60, 0)), to(rgb(255, 255, 255)));
-    white-space: nowrap;
-    color: #fff;
-    max-width: 22em;
-    -webkit-animation : loading 4s linear infinite;
-    animation: loading 4s linear infinite;
-  	-webkit-animation-direction : alternate;
-  	animation-direction : alternate;
-}
-
-@keyframes loading {
-    0% {
-        max-width: 0;
-    }
-}
-
-@keyframes loading-texting {
-    0% {
-        max-width:0px;
-    }
+  width: 120%;
+  height: 20em;
+  position: absolute;
+  overflow:hidden;
+  color: rgba(0, 0, 0, .3);
+  top: 155px;
+  left: 304px;
+  font-size: 5.69em;
+  max-width: 0;
+  background-image: -webkit-gradient(radial, 1042 132, 127, -67 128, 20, 
+    from(rgba(60, 60, 60, 0)), to(rgb(255, 255, 255)));
+  float : left;
+  display  inline-block;
 }
 /* loader end */
 

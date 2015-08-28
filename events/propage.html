@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
 	<link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
 
@@ -20,6 +21,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/js111.js"></script>
 	<script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
 	<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <style>
@@ -48,6 +50,10 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
     .social-buttons-121{
         position:absolute;margin-top:47%;margin-left:2%;z-index:10;
     }
+    .liningline{
+        line-height:150%;
+        font-size: 16px;
+    }
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
@@ -62,22 +68,34 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
     
 
     <div class="pt-page pt-page-8">
-        <div class="social-buttons-121">
-                <img src="images/home.png" style="width:50px;height:50px;">
-                <img src="images/events.png" style="width:50px;height:50px;">
-                <img src="images/registration.png" style="width:50px;height:50px;">
-                <img src="images/fb.png" style="width:50px;height:50px;">
+  
+         <div style="position:absolute;z-index:2;">
+            <div id="box">
                 
+                <span id="text0" style="position:absolute;margin-left:-250px;margin-top:-210px;"><a href="../index.html" >Home</a></span>
+                <span id="text1" style="position:absolute;margin-left:-250px;margin-top:-180px;"><a href="propage.html" >Proshows</a></span>
+                <span id="text2" style="position:absolute;margin-left:-250px;margin-top:-150px;"><a href="#" >Events</a></span>
+    
+                <span id="text3" style="position:absolute;margin-left:-250px;margin-top:-120px;"><a href="../sponsors.html" >Sponsors</a></span>
+                <span id="text4" style="position:absolute;margin-left:-250px;margin-top:-90px;"><a href="">Registration</a></span>
+                <span id="text5" style="position:absolute;margin-left:-250px;margin-top:-60px;"><a href="../gallery.html" >Gallery</a></span>
+                <span id="text6" style="position:absolute;margin-left:-250px;margin-top:-30px;"><a href="../contact.html" >Contact Us</a></span>
                 
-        </div>
-        
+            </div>
+            <div id="menu-text">
+                <span style="position:absolute;margin-top:5px;">
+                <span id="menu-text-menu">MENU</span>
+                <img id="arrow" src="images/menu_arr.png" style="margin-left:12em">
+                </span>
+            </div>
+        </div>       
         
         <div style="width:100%;height:100%;">
             <a href="footlose.html">
             <div style="float:left;background-image:url('images/djnight.jpg');background-size:100% 50%;" class="oyesokebahar">
                 <div style="background:black;color:white;margin-top:94%;opacity:0.9;height:55%;line-height:200%;padding:10px">
                     <h2 style="text-align:center;"><i>EDM Night</i></h2>
-                    <p>
+                    <p class="liningline">
                         The sound of youth is here. The bashy DJ night will take your enthusiasm and energy to an altogether new level. Effe presents you "The Best Party Of The Year"
                     </p>
                     
@@ -91,7 +109,7 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
             <div style="float:left;background-image:url('images/alamode.jpg');background-size:100% 50%;" class="oyesokebahar">
                 <div style="background:black;color:white;margin-top:94%;opacity:0.9;height:55%;line-height:200%;padding:10px">
                     <h2 style="text-align:center;"><i>Ala Mode</i></h2>
-                    <p>
+                    <p class="liningline">
                         "If you're tired of fashion, your'e tired of life" . Fashion encompasses the total spectrum of human activity. Being the prime platform to score for the best uprising talent , A'la Mode is back with bigger and better stakes. A'la Mode is your chance to set the stage on fire with your elegance, compassion, style and professionalism. If you're a total fashion freak, come lead the trend with your creativity and moves in front of huge exciting audience.
                     </p>
                     
@@ -105,7 +123,7 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
             <div style="float:left;background-image:url('images/incendary.jpg');background-size:100% 50%;" class="oyesokebahar">
                 <div style="background:black;color:white;margin-top:94%;opacity:0.9;height:55%;line-height:200%;padding:10px">
                     <h2 style="text-align:center;"><i>Incendiary</i></h2>
-                    <p>
+                    <p class="liningline">
                         Rock is musical freedom. It's saying, doing and playing what you want. Freedom from pain, suffering and the external world, and that's pretty close to my definition of rock. For all rock lovers, Virtuosi organises 'Incendiary - the rock night'. The bands set the stage on fire as the crowd witnesses the clash of the gladiators to establish their supremacy in rock music and entertain the crowd as well. Calling it only a head bangers or a rocker's haven would be an understatement.
                     </p>
                     
@@ -119,7 +137,7 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
             <div style="float:left;background-image:url('images/sona.jpg');background-size:100% 50%;" class="oyesokebahar">
                 <div style="background:black;color:white;margin-top:94%;opacity:0.9;height:55%;line-height:200%;padding:10px">
                     <h2 style="text-align:center;"><i>Celebrity Night</i></h2>
-                    <p>
+                    <p class="liningline">
                         The most awaited stage event where the best of the Bollywood mesmerize us with their soulful performances . Effervescence proudly presents Celebrity Night. Get ready for the ultimate experience.
                     </p>
                     
