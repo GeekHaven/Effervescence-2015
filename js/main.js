@@ -10,7 +10,7 @@ var baseUrl = 'image/check_scroll.png',
     baseUrl10 = 'image/menu_arr.png',
     baseUrl11 = 'image/effe.png',
     baseUrl12 = 'image/youtube.png',
-    baseUrl13 = 'image/scroll_tomb_hot.png',
+    baseUrl13 = 'image/scroll_tmb_hor.png',
     baseUrl14 = 'image/sponsortv/1.png',
     loader = new PxLoader(); 
 
@@ -48,14 +48,15 @@ var baseUrl = 'image/check_scroll.png',
 loader.addProgressListener(function(e) {
     //to get the ratio of iamges loaded
     var loadedRatio = e.completedCount / e.totalCount;
-    //change the max-width property of 
+        	console.log(loadedRatio);    //change the max-width property of 
     // #load to get our projector effect
     //change the duration if required
     $('#load')
     .animate({
-        maxWidth : (loadedRatio) * 12 + 'em'
+        maxWidth : (loadedRatio) * 14 + 'em'
     }, 50, function(){
         if (loadedRatio == 1) {
+        	console.log(0);
             $('.loader').fadeOut(400);
         	$('.slide1, .slide2, .slide3').css('display', 'block');
         }
