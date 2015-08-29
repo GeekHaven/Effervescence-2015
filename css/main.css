@@ -1,4 +1,7 @@
 /* loader */
+section {
+	display : none;
+}
 .loader {
 	width : 100%;
 	height : 100%;

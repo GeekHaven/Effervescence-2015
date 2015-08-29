@@ -35,6 +35,7 @@
   top: 155px;
   left: 304px;
   font-size: 5.69em;
+  max-width: 0;
   background-image: -webkit-gradient(radial, 1042 132, 127, -67 128, 20, 
     from(rgba(60, 60, 60, 0)), to(rgb(255, 255, 255)));
   float : left;

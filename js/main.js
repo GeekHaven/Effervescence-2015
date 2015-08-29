@@ -48,16 +48,15 @@ var baseUrl = 'image/check_scroll.png',
 loader.addProgressListener(function(e) {
     //to get the ratio of iamges loaded
     var loadedRatio = e.completedCount / e.totalCount;
-        	console.log(loadedRatio);    //change the max-width property of 
+    //change the max-width property of 
     // #load to get our projector effect
     //change the duration if required
     $('#load')
     .animate({
-        maxWidth : (loadedRatio) * 14 + 'em'
-    }, 50, function(){
+        maxWidth : (loadedRatio) * 12 + 'em'
+    }, 70, function(){
         if (loadedRatio == 1) {
-        	console.log(0);
-            $('.loader').fadeOut(400);
+            $('.loader').fadeOut(1000);
         	$('.slide1, .slide2, .slide3').css('display', 'block');
         }
     });
