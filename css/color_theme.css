@@ -1,8 +1,8 @@
-t/* *** MAIN COLOR: #ff5474 *** */
+/* *** MAIN COLOR: #ff5474 *** 
 
 ::selection {background:#ff5474;}
 ::-moz-selection {background:#ff5474;}
-
+*/
 .highlighted_colored,
 .widget_nav_menu ul li a:hover,
 .widget_archive ul li a:hover,
