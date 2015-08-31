@@ -13,11 +13,16 @@ section {
 	background-image:url('../image/back.jpg');
 	background-color:#2E1F2C;
 	background-size:100% 100%;
-	font-family: Arial, sans;
+	font-family: Orbitron, sans;
+	color : #ececec;
 }
 .loader-projector img {
   width: 65%;
   height: 82%;
+}
+a {
+	color : #89c4f4;
+	text-decoration: none;
 }
 
 .loader-projector {

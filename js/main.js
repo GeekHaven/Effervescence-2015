@@ -56,9 +56,11 @@ loader.addProgressListener(function(e) {
         maxWidth : (loadedRatio) * 12 + 'em'
     }, 70, function(){
         if (loadedRatio == 1) {
-            $('.loader').fadeOut(1000);
-        	$('.slide1, .slide2, .slide3').css('display', 'block');
-        }
+            setTimeout(function() {
+            	$('.loader').fadeOut(2000);
+        		$('.slide1, .slide2, .slide3').css('display', 'block');
+        	}, 1000);
+       	}
     });
 }); 
  
