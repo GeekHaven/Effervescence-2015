@@ -70,22 +70,22 @@ $("document").ready(function() {
 	},5000);
 	
 	var down = {};
-	var counter = 0;
+	var counter2 = 0;
 	$(document).keydown(function(event){
      	var keycode = (event.keyCode ? event.keyCode : event.which);
      	if(keycode == '39'){
-          	if (down['39'] == null && counter < 2) { // first press
-          		counter++;
+          	if (down['39'] == null && counter2 < 2) { // first press
+          		counter2++;
           		$("body, html").animate({
-          			"scrollLeft" : ($(window).width() * counter) + "px" 
+          			"scrollLeft" : ($(window).width() * counter2) + "px" 
           		}, "ease");
               	down['39'] = true; // record that the key's down
           	}
      	} else if (keycode == '37') {
-     		if (down['37'] == null && counter >= 0) { // first press
-          		counter--;
+     		if (down['37'] == null && counter2 >= 0) { // first press
+          		counter2--;
           		$("body, html").animate({
-          			"scrollLeft" : ($(window).width() * counter) + "px" 
+          			"scrollLeft" : ($(window).width() * counter2) + "px" 
           		}, "ease");
           		down['37'] = true; // record that the key's down
           	}
