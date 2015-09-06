@@ -43,14 +43,10 @@ var baseUrl = 'image/check_scroll.png',
  pxImage = new PxLoaderImage(baseUrl14);
  loader.add(pxImage);
  
-
-// callback that runs every time an image loads 
 loader.addProgressListener(function(e) {
-    //to get the ratio of iamges loaded
+    
     var loadedRatio = e.completedCount / e.totalCount;
-    //change the max-width property of 
-    // #load to get our projector effect
-    //change the duration if required
+    
     $('#load')
     .animate({
         maxWidth : (loadedRatio) * 12 + 'em'
@@ -72,6 +68,35 @@ $("document").ready(function() {
 	setInterval(function() {
 		sponsorbox();
 	},5000);
+	
+	var down = {};
+	var counter2 = 0;
+	$(document).keydown(function(event){
+     	var keycode = (event.keyCode ? event.keyCode : event.which);
+     	if(keycode == '39'){
+          	if (down['39'] == null && counter2 < 2) { // first press
+          		counter2++;
+          		$("body, html").animate({
+          			"scrollLeft" : ($(window).width() * counter2) + "px" 
+          		}, "ease");
+              	down['39'] = true; // record that the key's down
+          	}
+     	} else if (keycode == '37') {
+     		if (down['37'] == null && counter2 >= 0) { // first press
+          		counter2--;
+          		$("body, html").animate({
+          			"scrollLeft" : ($(window).width() * counter2) + "px" 
+          		}, "ease");
+          		down['37'] = true; // record that the key's down
+          	}
+     	}
+   	});
+
+	$(document).keyup(function(event) {
+     	var keycode = (event.keyCode ? event.keyCode : event.which);
+     	down[keycode] = null;
+	});
+
 	google.maps.event.addDomListener(window, 'load', googlemap);
 
 });
@@ -81,6 +106,7 @@ function slide() {
 	  	this.scrollLeft -= (delta * 30);
 		e.preventDefault();
 	});
+
 }
 
 function homeback() {
