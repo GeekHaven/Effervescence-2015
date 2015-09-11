@@ -134,9 +134,168 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
     .dates-events{
         margin-left:43%;
     }
+    .navigation-images{
+        margin-top: 40%;
+        width:50px;
+        height:70px;
+        
+    }
+    .navimagefist{
+        margin-left:17%;
+    }
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script>
+    var moveleftmusic=0;
+    var moverightmusic=0;
+    var moveleftliterary=0;
+    var moverightliterary=0;
+    var moverightdrama =0;
+    var moveleftdrama=0;
+    var moveleftinformals=0;
+    var moverightinformals=0;
+    $(document).ready(function(){
+        //music begin
+        $('#moveitmove').click(function(){
+            
+            if(moveleftmusic<300){
+                moveleftmusic += 100;
+                moverightmusic = -moveleftmusic;
+                console.log(moveleftmusic);
+                moveitnow(moveleftmusic);
+            }
+             
+        });
+        function moveitnow(x){
+            $('#iskohila').animate({
+              
+                marginLeft: -x
+            }, "fast");
+        }
+        $('#moveitmoveback').click(function(){
+            if(moverightmusic<0){
+                moveleftmusic -=100;
+                moverightmusic = -moveleftmusic;
+                console.log(moverightmusic);
+                moveitbacknow(moverightmusic);
+            }
+             
+        });
+        function moveitbacknow(x){
+            $('#iskohila').animate({
+              
+                marginLeft: x
+            }, "fast");
+        }
+        //music end
+
+        //literary begin
+        $('#moveitmove-literary').click(function(){
+            
+            if(moveleftliterary<500){
+                moveleftliterary += 100;
+                moverightliterary = -moveleftliterary;
+                console.log(moveleftliterary);
+                moveitnowliterary(moveleftliterary);
+            }
+             
+        });
+        function moveitnowliterary(x){
+            $('#literary-pane-move').animate({
+              
+                marginLeft: -x
+            }, "fast");
+        }
+        $('#moveitmoveback-literary').click(function(){
+            
+            if(moverightliterary<0){
+                moveleftliterary -=100;
+                moverightliterary = -moveleftliterary;
+                console.log(moverightliterary);
+                moveitbacknowliterary(moverightliterary);
+            }
+             
+        });
+        function moveitbacknowliterary(x){
+            $('#literary-pane-move').animate({
+              
+                marginLeft: x
+            }, "fast");
+        }
+        //literary end
+        //drama begin
+        $('#moveitmove-drama').click(function(){
+            
+            if(moveleftdrama<300){
+                moveleftdrama += 100;
+                moverightdrama = -moveleftdrama;
+                console.log(moveleftdrama);
+                moveitnowdrama(moveleftdrama);
+            }
+             
+        });
+        function moveitnowdrama(x){
+            $('#drama-pane-move').animate({
+              
+                marginLeft: -x
+            }, "fast");
+        }
+        $('#moveitmoveback-drama').click(function(){
+            
+            if(moverightdrama<0){
+                moveleftdrama -=100;
+                moverightdrama = -moveleftdrama;
+                console.log(moverightdrama);
+                moveitbacknowdrama(moverightdrama);
+            }
+             
+        });
+        function moveitbacknowdrama(x){
+            $('#drama-pane-move').animate({
+              
+                marginLeft: x
+            }, "fast");
+        }
+        //drama end
+        //informals begin
+        $('#moveitmove-informals').click(function(){
+            
+            if(moveleftinformals<3600){
+                moveleftinformals += 200;
+                moverightinformals = -moveleftinformals;
+                console.log(moveleftinformals);
+                moveitnowinformals(moveleftinformals);
+            }
+             
+        });
+        function moveitnowinformals(x){
+            $('#informals-pane-move').animate({
+              
+                marginLeft: -x
+            }, "fast");
+        }
+        $('#moveitmoveback-informals').click(function(){
+            
+            if(moverightinformals<0){
+                moveleftinformals -=200;
+                moverightinformals = -moveleftinformals;
+                console.log(moverightinformals);
+                moveitbacknowinformals(moverightinformals);
+            }
+             
+        });
+        function moveitbacknowinformals(x){
+            $('#informals-pane-move').animate({
+              
+                marginLeft: x
+            }, "fast");
+        }
+        //informals end
+
+    });
+
+    </script>
     
 </head>
 <body style="background-color:black;">
@@ -338,11 +497,12 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
             <li><a  href="#">N/A</a></li>
             <li><a  href="#">N/A</a></li>
         </ul> -->
-
+    
     <div id="target-examples" class="section">
-                  
-        <div id="pane-target" class="pane outerabc">
-            <ul class="elements" style="width:1500px;list-style-type: none;">
+                
+        <div id="pane-target" class="pane outerabc" style="float:left">
+        
+            <ul class="elements" style="width:1500px;list-style-type: none;" id="iskohila">
                 <li id="one">
                             <div class="every121 sectionabc">
                                 <div class="imgcontainer121" style="padding-left:0px;">
@@ -429,8 +589,10 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
                 </li>
             </ul>
         </div>
+
     </div>
-	
+    <img src="images/arrowright.png" id="moveitmoveback" class="navigation-images navimagefist">
+	<img src="images/arrowleft.png" id="moveitmove" class="navigation-images">
 </div>
     <div class="pt-page pt-page-3" style="background-image:url(images/dance.jpg);background-size:100% 100%;">
     	
@@ -491,7 +653,7 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
     <div id="target-examples1" class="section" style="margin-left:5%;">
                   
         <div id="pane-target1" class="pane outerabc">
-            <ul class="elements" style="width:1000px;list-style-type: none;">
+            <ul class="elements" style="width:1000px;list-style-type: none;" id="dance-pane-move">
                 <li id="one1">
                             <div class="every121 sectionabc">
                                 <div class="imgcontainer121" style="padding-left:0px;">
@@ -611,7 +773,7 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
     <div id="target-examples4" class="section">
                   
         <div id="pane-target4" class="pane outerabc">
-            <ul class="elements" style="width:1600px;list-style-type: none;">
+            <ul class="elements" style="width:1650px;list-style-type: none;" id="literary-pane-move">
                 <li id="one5">
                             <div class="every121 sectionabc">
                                 <div class="imgcontainer121" style="padding-left:0px;">
@@ -715,6 +877,11 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
             </ul>
         </div>
     </div>
+    <img src="images/arrowright.png" id="moveitmoveback-literary" class="navigation-images navimagefist">
+    <img src="images/arrowleft.png" id="moveitmove-literary" class="navigation-images">
+    
+    
+
 </div>
     <div class="pt-page pt-page-5" style="background-image:url(images/drama-bg.jpg);background-size:100% 100%;">
         
@@ -775,7 +942,7 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
     <div id="target-examples4" class="section">
                   
         <div id="pane-target4" class="pane outerabc">
-            <ul class="elements" style="width:1500px;list-style-type: none;">
+            <ul class="elements" style="width:1500px;list-style-type: none;" id="drama-pane-move">
                 <li id="eight5">
                             <div class="every121 sectionabc">
                                 <div class="imgcontainer121" style="padding-left:0px;">
@@ -865,7 +1032,9 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
             </ul>
         </div>
     </div>
-
+        <img src="images/arrowright.png" id="moveitmoveback-drama" class="navigation-images navimagefist">
+        <img src="images/arrowleft.png" id="moveitmove-drama" class="navigation-images">
+    
     </div>
 
 
@@ -1054,7 +1223,7 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
     <div id="target-examples6" class="section">
                   
         <div id="pane-target6" class="pane outerabc">
-            <ul class="elements" style="width:4800px;list-style-type: none;">
+            <ul class="elements" style="width:4800px;list-style-type: none;" id="informals-pane-move">
                 <li id="one6">
                             <div class="every121 sectionabc">
                                 <div class="imgcontainer121" style="padding-left:0px;">
@@ -1338,7 +1507,9 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
             </ul>
         </div>
     </div>
-        
+        <img src="images/arrowright.png" id="moveitmoveback-informals" class="navigation-images navimagefist">
+    <img src="images/arrowleft.png" id="moveitmove-informals" class="navigation-images">
+    
     </div>
 
     <div class="pt-page pt-page-8" style="background-image:url(images/online-bg.jpg);background-size:100% 100%;">
