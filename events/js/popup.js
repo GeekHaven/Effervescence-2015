@@ -8,7 +8,7 @@ function alink() {
 	$('.proside input[type="radio"]').click(function() {
 		address = $(this).val();
 		var val = (parseInt(address)-1) * $(window).height();
-		console.log(val);
+		//console.log(val);
 		$('.popupbox').animate({scrollTop:val},700);
     });
 }
@@ -158,12 +158,11 @@ function dataupdate(id) {
 						} 
 			}			
 			
-						
-						
-						
-						
-
-	if(id!=undefined) {
+	if (id === undefined) {
+		$('.procontent #summary').html("To be updated.");
+		$('.procontent #guidelines').html("To be updated");
+		$('.procontent #description').html("To be updated.");
+	} else {
 		summary = events[id]['EventSummary'];
 		guidelines = events[id]['Guidelines'];
 		description = events[id]['EventDescription'];
