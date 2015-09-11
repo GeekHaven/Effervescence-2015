@@ -197,23 +197,6 @@ box-shadow: 0px 5px 10px 6px rgba(133,123,133,1);
             </div>
         </section>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidetext > input').click(function() {
-                var no = $(this).attr('value') ;
-                //var width = parseInt($('#pro1').css('width')) / 4;
-                //var top =  width * no;
-                var top = $('#pro' + no).offset().top; 
-                console.log(top);
-                $('*').animate({
-                    scrollTop: top
-                }, {
-                    duration : 1000,
-                    queue: false
-                });
-            });
-        });
-    </script>
 	<!-- Popup Box Ends -->
 	<div class="pt-wrapper">
 

@@ -2,7 +2,24 @@ $('document').ready(function() {
 	dataupdate();
 	alink();
 	popup();
+	scrollPop();
 });
+
+function scrollPop() {
+	$('#sidetext > input').click(function() {
+        var no = $(this).attr('value') ;
+        //var width = parseInt($('#pro1').css('width')) / 4;
+        //var top =  width * no;
+        var top = $('#pro' + no).offset().top; 
+        console.log(top);
+        $('*').animate({
+            scrollTop: top
+        }, {
+            duration : 1000,
+            queue: false
+        });
+    });
+}
 
 function alink() {
 	$('.proside input[type="radio"]').click(function() {
