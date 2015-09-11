@@ -23,6 +23,12 @@ function popup() {
     });
 	$('#closebutton').click(function() {
 		$('.popupbox, .proside').slideUp(1000);
+		setTimeout(function() {
+			if ($('.popupbox').css('display') === "none") {
+				$('*').scrollTop(0);
+				$('#radio1').attr('checked', 'checked');
+			}
+		}, 1300);
 	});
 }
 
@@ -214,12 +220,6 @@ var events = {
 					"Guidelines":"<ol><li> The entries in this contest will comprise of two partners: Either boy-boy, girl-girl or boy-girl. </li><li> Time limit is 2.5 - 4 minutes (strictly). </li><li>This will comprise of a single round so perform your best !! </li>Judging Criteria: Choreography, Chemistry, Expressions, Stage Usage, Audience Response.</li> </ol>\n Points to be noted:<ol><li> Participants should report to the DANCE ROOM by 11 a.m on the day of the event. They should bring their edited music along with them in a pen drive.</li><li>Auditions will be taken before the actual event to shortlist the candidates. No space for practice will be provided. So candidates have to be prepared beforehand.</li></ol>"
 				},
 				
-				"streetdance":{
-					"EventSummary":"Bhartendu Singh :- 7388524900",
-					"EventDescription":"They are often improvisational, encouraging and social in nature and touch the audiences hearts.",
-					"Guidelines":"to be updated soon"
-				},
-				
 				"carpediem":{
 					"EventSummary":"Bhartendu Singh :- 7388524900",
 					"EventDescription":"It is the solo dance competition where the participants set the stage on fire.",
@@ -229,7 +229,7 @@ var events = {
 				"streetdance":{
 					"EventSummary":"Bhartendu Singh :- 7388524900",
 					"EventDescription":"The spectacular GROUP dance competition of the Dance Club to test your synchronization and dancing skills.",
-					"Guidelines":"<ol><li>The time limit is 7-10 minutes.<\li><li>The team shall consist of 8-20 members.<\li></ol>\nPoints to be noted: Participants should report to the DANCE ROOM by 11 a.m on the day of the event. They should bring their edited music along with them in a pen drive."
+					"Guidelines":"<ol><li>The time limit is 7-10 minutes.</li><li>The team shall consist of 8-20 members.</li></ol>\nPoints to be noted: Participants should report to the DANCE ROOM by 11 a.m on the day of the event. They should bring their edited music along with them in a pen drive."
 				},
 				
 				"cogniscentia":{
@@ -299,7 +299,7 @@ var events = {
 				},				
 			}			
 			
-	if (id === undefined) {
+	if (id == undefined) {
 		$('.procontent #summary').html("To be updated.");
 		$('.procontent #guidelines').html("To be updated");
 		$('.procontent #description').html("To be updated.");
